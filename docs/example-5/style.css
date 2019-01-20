@@ -1,0 +1,670 @@
+body {
+    margin: 0;
+}
+
+.container {
+    width: 1180px;
+    margin: auto;
+    padding: 20px 0;
+}
+
+.header {
+    background: url(images/bg_slider.png);
+    background-size: 100%;
+    height: 1004px;
+}
+
+.header .container {
+    font-family: Montserrat, sans-serif;
+    color: white;
+}
+
+.header .container .navbar {
+    flex-flow: row nowrap;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.header .container .navbar .menu a {
+    text-decoration: none;
+    color: white;
+    font-size: 14px;
+    font-weight: 300;
+    padding: 10px;
+}
+
+.header .container .navbar .menu a.icon {
+    font-size: 18px;
+}
+
+.header .container .navbar .menu a:nth-child(8) {
+    padding-right: 40px;
+}
+
+.header .container .navbar .menu a:hover {
+    color: #998675;
+}
+
+.header .container .banner_text {
+    text-align: center;
+    padding-top: 220px;
+    font-family: "Myriad Pro Regular", serif;
+}
+
+.header .container .banner_text h2 {
+    font-size: 36px;
+}
+
+.header .container .banner_text h1 {
+    font-size: 52px;
+}
+
+.header .container .banner_text p {
+    font-family: Montserrat, sans-serif;
+    font-weight: 300;
+    font-size: 16px;
+    padding-bottom: 30px;
+}
+
+.header .container .banner_text a {
+    text-decoration: none;
+    background-color: #998675;
+    font-family: "Myriad Pro Regular", serif;
+    color: white;
+    font-size: 14px;
+    padding: 15px 20px;
+    border-radius: 5px;
+    border-bottom: 2px solid #736356;
+}
+
+.header .container .banner_text a:hover {
+    background-color: white;
+    color: #998675;
+}
+
+.header .container .slider {
+    padding-top: 330px;
+    text-align: center;
+}
+
+.header .container .slider a {
+    text-decoration: none;
+    color: #909193;
+    font-size: 14px;
+}
+
+.header .container .slider a.hover_circle {
+    color: white;
+    font-size: 16px;
+}
+
+.short_info .container {
+    flex-flow: row nowrap;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    padding: 70px 0;
+}
+
+.short_info .container .columns {
+    padding: 0 10px;
+}
+
+.short_info .container .columns i {
+    font-size: 40px;
+    padding-bottom: 25px;
+}
+
+.short_info .container .columns h2 {
+    color: #555555;
+    font-family: "Myriad Pro Regular", serif;
+}
+
+.short_info .container .columns p {
+    color: #555555;
+    font-family: "Montserrat Light", sans-serif;
+}
+
+.short_info .container .columns p.underline {
+    color: #ACACAC;
+    font-size: 30px;
+    font-weight: bold;
+    margin: 0;
+}
+
+.waxom_realisation {
+    background-color: #FBFAF8;
+}
+
+.waxom_realisation .container {
+    padding-top: 70px;
+    padding-bottom: 0;
+}
+
+.waxom_realisation .container .title_style {
+    text-align: center;
+    width: 760px;
+    padding-left: 220px;
+    margin-bottom: 40px;
+}
+
+.waxom_realisation .container .title_style h1 {
+    font-size: 30px;
+    color: #555555;
+    font-family: "Myriad Pro Regular", serif;
+}
+
+.waxom_realisation .container .title_style p {
+    font-size: 16px;
+    color: #8C8C8C;
+    font-family: "Montserrat Light", sans-serif;
+    line-height: 25px;
+}
+
+.waxom_realisation .container .realisation_slider {
+    margin: 0;
+    height: 480px;
+}
+
+.waxom_wordpress {
+    background-color: #261E1B;
+}
+
+.waxom_wordpress .container {
+    flex-flow: row nowrap;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    padding: 30px 0;
+}
+
+.waxom_wordpress .container a {
+    text-decoration: none;
+    background-color: #998675;
+    font-family: "Myriad Pro Regular", serif;
+    color: white;
+    font-size: 14px;
+    padding: 15px 20px;
+    border-radius: 5px;
+    border-bottom: 2px solid #736356;
+}
+
+.waxom_wordpress .container a:hover {
+    background-color: white;
+    color: #998675;
+}
+
+.waxom_wordpress .container p {
+    color: white;
+    font-family: "Myriad Pro Regular", serif;
+    font-size: 28px;
+}
+
+.waxom_wordpress .container p span {
+    color: #C7B299;
+}
+
+.latest_work .container {
+    padding: 70px;
+}
+
+.latest_work .container .title_style {
+    text-align: center;
+    width: 760px;
+    padding-left: 220px;
+}
+
+.latest_work .container .title_style h1 {
+    font-size: 30px;
+    color: #555555;
+    font-family: "Myriad Pro Regular", serif;
+}
+
+.latest_work .container .title_style p {
+    font-size: 16px;
+    color: #8C8C8C;
+    font-family: "Montserrat Light", sans-serif;
+    line-height: 25px;
+}
+
+.latest_work .container .title_links {
+    flex-flow: row nowrap;
+    align-items: center;
+    display: flex;
+    text-align: center;
+    padding-top: 20px;
+    padding-left: 330px;
+}
+
+.latest_work .container .title_links a {
+    text-decoration: none;
+    border: 1px solid #ACACAC;
+    padding: 5px 10px;
+    font-family: "Montserrat Light", sans-serif;
+    font-size: 14px;
+    color: #8C8C8C;
+    border-radius: 5px;
+    margin-left: 15px;
+}
+
+.latest_work .container .title_links a:hover {
+    color: white;
+    background-color: #998675;
+}
+
+.latest_work .container .project_menu {
+    flex-flow: row wrap;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.latest_work .container .project_menu .section {
+    position: relative;
+    margin: 60px 15px;
+    width: 30%;
+}
+
+.latest_work .container .project_menu .section .arrow {
+    position: absolute;
+    top: 220px;
+}
+
+.latest_work .container .project_menu .section .arrow .arrow_text {
+    position: absolute;
+    top: 20px;
+    padding-left: 15px;
+}
+
+.latest_work .container .project_menu .section .arrow .arrow_text h2 {
+    font-family: "Raleway Medium", serif;
+    color: #C7B299;
+    font-size: 20px;
+    margin-bottom: 0;
+    padding-bottom: 6px;
+}
+
+.latest_work .container .project_menu .section .arrow .arrow_text p {
+    font-family: "Montserrat Light", sans-serif;
+    font-size: 14px;
+    color: #D1D1D1;
+    margin-top: 0;
+}
+
+.latest_work .container .btn_load {
+    text-align: center;
+    padding: 100px 0 0 70px;
+}
+
+.latest_work .container .btn_load a {
+    text-decoration: none;
+    background-color: #998675;
+    font-family: "Myriad Pro Regular", serif;
+    color: white;
+    font-size: 14px;
+    padding: 15px 20px;
+    border-radius: 5px;
+    border-bottom: 2px solid #736356;
+}
+
+.latest_work .container .btn_load a:hover {
+    background-color: white;
+    color: #998675;
+}
+
+.video {
+    background: url(images/bg_video.png);
+    background-size: 100%;
+    height: 700px;
+}
+
+.video .container {
+    text-align: center;
+    color: white;
+    padding-top: 250px;
+}
+
+.video .container i {
+    font-size: 80px;
+}
+
+.video .container h1 {
+    color: white;
+    font-family: "Raleway Medium", serif;
+    font-size: 30px;
+}
+
+.video .container p {
+    color: white;
+    font-family: "Montserrat Light", sans-serif;
+    font-size: 16px;
+}
+
+.video .container p.time {
+    color: #C7B299;
+    font-family: "Myriad Pro Regular", serif;
+    font-size: 14px;
+}
+
+.mobile_devices .container {
+    flex-flow: row nowrap;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    text-align: left;
+    padding-top: 70px;
+    padding-bottom: 0;
+}
+
+.mobile_devices .container .for_mobile {
+    width: 60%;
+}
+
+.mobile_devices .container .for_mobile h2 {
+    font-family: "Myriad Pro Regular", serif;
+    font-size: 30px;
+    color: #555555;
+}
+
+.mobile_devices .container .for_mobile p {
+    line-height: 25px;
+    font-family: "Montserrat Light", sans-serif;
+    color: #8C8C8C;
+    font-size: 15px;
+}
+
+.mobile_devices .container .for_mobile p.arrow_list {
+    margin-left: 40px;
+    font-family: "Montserrat Light", sans-serif;
+    color: #8C8C8C;
+    font-size: 15px;
+}
+
+.mobile_devices .container .for_mobile p.arrow_list i {
+    color: #C7B295;
+}
+
+.our_likes {
+    background: linear-gradient(to top, #221D1A, #4E3427);
+}
+
+.our_likes .container {
+    flex-flow: row nowrap;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    padding: 70px;
+}
+
+.our_likes .container .like i {
+    color: #C7B295;
+    font-size: 48px;
+    margin-bottom: 25px;
+}
+
+.our_likes .container .like p {
+    color: white;
+    font-family: "Myriad Pro Regular", serif;
+    font-size: 48px;
+    line-height: 30px;
+    margin: 0;
+}
+
+.our_likes .container .like p span {
+    color: #C7B295;
+    font-family: "Montserrat Light", sans-serif;
+    font-size: 14px;
+}
+
+.recent_post .container {
+    padding: 70px;
+}
+
+.recent_post .container .title_style {
+    text-align: center;
+    width: 760px;
+    padding-left: 220px;
+    margin-bottom: 40px;
+}
+
+.recent_post .container .title_style h2 {
+    font-family: "Myriad Pro Regular", serif;
+    font-size: 30px;
+    color: #555555;
+}
+
+.recent_post .container .title_style p {
+    line-height: 25px;
+    font-family: "Montserrat Light", sans-serif;
+    color: #8C8C8C;
+    font-size: 15px;
+}
+
+.recent_post .container .our_posts {
+    flex-flow: row nowrap;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+}
+
+.recent_post .container .our_posts .post {
+    position: relative;
+    border: 1px solid #E4E4E4;
+    width: 370px;
+}
+
+.recent_post .container .our_posts .post .post_info {
+    text-align: left;
+    width: 340px;
+    padding: 0 0 20px 20px;
+}
+
+.recent_post .container .our_posts .post .post_info p.post_title {
+    font-size: 20px;
+    font-family: "Raleway Medium", serif;
+    color: #555555;
+}
+
+.recent_post .container .our_posts .post .post_info p {
+    color: #8C8C8C;
+    font-family: "Montserrat Light", sans-serif;
+    font-size: 14px;
+}
+
+.recent_post .container .our_posts .post .post_info a {
+    color: #C7B299;
+    font-family: "Montserrat Light", sans-serif;
+    font-size: 14px;
+    text-decoration: none;
+}
+
+.recent_post .container .our_posts .post .post_date {
+    position: absolute;
+    top: 0;
+    color: white;
+    font-family: "Montserrat Light", sans-serif;
+    padding: 20px;
+}
+
+.recent_post .container .our_posts .post .post_date p.day {
+    font-size: 24px;
+    background-color: #363636;
+    margin: 0;
+    padding: 10px;
+    border-radius: 5px 5px 0 0;
+}
+
+.recent_post .container .our_posts .post .post_date p.month {
+    font-size: 12px;
+    background-color: #242424;
+    margin: 0;
+    padding: 10px;
+    border-radius: 0 0 5px 5px;
+}
+
+.recent_post .container .pages_posts {
+    text-align: center;
+    padding-top: 30px;
+}
+
+.recent_post .container .pages_posts a {
+    text-decoration: none;
+    color: #ACACAC;
+    font-size: 30px;
+    padding: 10px;
+}
+
+.recent_post .container .pages_posts a:hover {
+    color: #C7B299;
+}
+
+.partners {
+    background: url(images/bg_partners.png);
+    background-size: 100%;
+}
+
+.partners .container {
+    padding: 70px 0;
+    flex-flow: row nowrap;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer {
+    background-color: #191919;
+}
+
+.footer .container {
+    padding: 70px 0;
+    flex-flow: row nowrap;
+    align-items: flex-start;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer .container h2 {
+    color: white;
+    font-family: "Myriad Pro Regular", serif;
+    font-size: 24px;
+}
+
+.footer .container p {
+    color: #555555;
+    font-family: "Montserrat Light", sans-serif;
+    font-size: 14px;
+}
+
+.footer .container .waxom_logo {
+    width: 280px;
+}
+
+.footer .container .waxom_logo a {
+    color: #D1D1D1;
+    text-decoration: none;
+    font-size: 14px;
+    font-family: "Myriad Pro Regular", serif;
+}
+
+.footer .container .waxom_logo a:hover {
+    text-decoration: underline;
+}
+
+.footer .container .rec_posts_footer {
+    padding-left: 20px;
+    width: 265px;
+}
+
+.footer .container .rec_posts_footer p.grey_text,
+.footer .container .rec_posts_footer p.white_text {
+    border-bottom: 1px solid #555555;
+    padding-bottom: 15px;
+}
+
+.footer .container .rec_posts_footer p:last-child {
+    border-bottom: none;
+}
+
+.footer .container .rec_posts_footer p.grey_text span {
+    font-size: 12px;
+    font-family: "Montserrat Light", sans-serif;
+}
+
+.footer .container .rec_posts_footer p.white_text {
+    color: white;
+}
+
+.footer .container .rec_posts_footer p.white_text span {
+    font-size: 12px;
+    font-family: "Montserrat Light", sans-serif;
+}
+
+.footer .container .our_twitter {
+    padding-left: 20px;
+    width: 265px;
+}
+
+.footer .container .our_twitter p.text_with_links {
+    border-bottom: 1px solid #555555;
+    padding-bottom: 15px;
+}
+
+.footer .container .our_twitter p.text_with_links:last-child {
+    border-bottom: none;
+}
+
+.footer .container .our_twitter p.text_with_links a {
+    text-decoration: none;
+    color: #00BFF3;
+}
+
+.footer .container .our_twitter p.text_with_links span {
+    font-size: 12px;
+    font-family: "Montserrat Light", sans-serif;
+}
+
+.footer .container .dribble_widget {
+    padding-left: 20px;
+    width: 265px;
+}
+
+.copyright {
+    background-color: #111111;
+}
+
+.copyright .container {
+    padding: 30px 0;
+    flex-flow: row nowrap;
+    align-items: center;
+    display: flex;
+    text-align: left;
+    color: #555555;
+    font-size: 12px;
+    font-family: "Montserrat Light", sans-serif;
+}
+
+.copyright .container p {
+    border-right: 1px solid #555555;
+    padding-right: 15px;
+}
+
+.copyright .container a {
+    text-decoration: none;
+    color: #555555;
+    border-right: 1px solid #555555;
+    padding: 0 15px;
+}
+
+.copyright .container a:hover {
+    color: white;
+}
+
+.copyright .container a:last-child {
+    border-right: none;
+}

@@ -1,0 +1,252 @@
+body {
+    margin: 150px 100px;
+    background-color: #262239;
+    font-family: HelveticaNeueCyr, serif;
+    color: #555555;
+}
+
+a.red_btn {
+    background-color: #F25A29;
+    text-decoration: none;
+    color: white;
+    border-radius: 13px;
+    padding: 10px 25px;
+    font-size: 13px;
+}
+
+a.red_btn:hover {
+    background-color: #494D66;
+}
+
+a.link {
+    font-weight: bold;
+    text-decoration: none;
+    color: #555555;
+    font-size: 13px;
+}
+
+a.link:hover {
+    text-decoration: underline;
+}
+
+p.title {
+    font-size: 30px;
+}
+
+p.title span {
+    color: #F26E45;
+}
+
+p {
+    font-size: 15px;
+}
+
+.container {
+    width: 1000px;
+    margin: auto;
+    padding: 20px 0;
+}
+
+.header {
+    background: url(images/banner_bg.png);
+    background-size: 100%;
+    height: 700px;
+}
+
+.header .container .navbar {
+    color: white;
+    flex-flow: row nowrap;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.header .container .navbar .logo {
+    font-size: 40px;
+}
+
+.header .container .navbar .logo a {
+    text-decoration: none;
+    color: white;
+}
+
+.header .container .navbar .menu a {
+    text-decoration: none;
+    color: white;
+    font-size: 14px;
+    font-weight: 300;
+    padding: 10px;
+}
+
+.header .container .navbar .menu a:hover {
+    text-decoration: underline;
+}
+
+.header .container .text_get_service {
+    color: white;
+    text-align: center;
+    padding-top: 170px;
+}
+
+.header .container .text_get_service p {
+    font-size: 50px;
+}
+
+.quality {
+    background-color: white;
+}
+
+.quality .container {
+    padding: 70px 0;
+}
+
+.quality .container p.title {
+    text-align: center;
+    margin-top: 0;
+}
+
+.quality .container .three_columns {
+    flex-flow: row nowrap;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    text-align: left;
+}
+
+.quality .container .three_columns .column {
+    width: 25%;
+}
+
+.quality .container .three_columns .column i {
+    padding: 15px;
+    font-size: 30px;
+    color: #F26E45;
+    border: 2px solid #F26E45;
+    border-radius: 100px;
+}
+
+.quality .container .three_columns .column p.column_title {
+    font-size: 20px;
+}
+
+.awesome_service {
+    background: #F5F5F5 url(images/window.png) no-repeat right;
+    height: 550px;
+}
+
+.awesome_service .container {
+    position: relative;
+    padding: 70px 0;
+    flex-flow: row nowrap;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    text-align: left;
+}
+
+.awesome_service .container .left_text {
+    margin-top: 40px;
+    width: 40%;
+}
+
+.client_says {
+    background-color: white;
+}
+
+.client_says .container {
+    padding: 70px 0;
+}
+
+.client_says .container p.title {
+    text-align: center;
+}
+
+.client_says .container .rewiews {
+    flex-flow: row nowrap;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.client_says .container .rewiews a i {
+    font-size: 50px;
+    color: #EEEFF1;
+}
+
+.client_says .container .rewiews a i:hover {
+    color: #555555;
+}
+
+.client_says .container .rewiews .rewiew {
+    text-align: center;
+    padding: 20px;
+    border: 1px solid #EEEFF1;
+    width: 40%;
+}
+
+.client_says .container .rewiews .rewiew p {
+    font-style: italic;
+}
+
+.client_says .container .rewiews .rewiew p.employer {
+    color: #F26E45;
+}
+
+.build_career {
+    background: linear-gradient(to left, #FBFBFB, #FAFAFC);
+    height: 614px;
+}
+
+.build_career .container {
+    position: relative;
+    flex-flow: row nowrap;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    text-align: left;
+}
+
+.build_career .container img {
+    position: absolute;
+    top: 0;
+    left: -352px;
+}
+
+.build_career .container .right_text {
+    width: 45%;
+    margin: 120px 0 0 330px;
+}
+
+.build_career .container .right_text a.red_btn {
+    display: block;
+    width: 50px;
+    margin-top: 20px;
+}
+
+.footer {
+    background-color: #4A4A4A;
+}
+
+.footer .container {
+    padding: 30px 0;
+    flex-flow: row nowrap;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    color: white;
+    font-size: 15px;
+}
+
+.footer .container .social_logo a {
+    text-decoration: none;
+    font-size: 15px;
+    color: white;
+    padding: 10px;
+}
+
+.footer .container .social_logo a:hover {
+    color: #F26E45;
+}

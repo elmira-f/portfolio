@@ -1,0 +1,491 @@
+body {
+    font-family: "Blogger Sans Light", serif;
+    margin: 0;
+}
+
+.container {
+    width: 1200px;
+    margin: auto;
+    padding: 15px 0;
+}
+
+.header {
+    color: white;
+    background-color: black;
+}
+
+.header .navbar {
+    flex-flow: row nowrap;
+    align-items: center;
+    display: flex;
+}
+
+.header .navbar .logo {
+    margin-right: 50px;
+}
+
+.header .navbar .menu {
+    flex: auto;
+    flex-flow: row nowrap;
+    justify-content: flex-end;
+    display: flex;
+}
+
+.header .navbar .menu a {
+    text-decoration: none;
+    color: #CCCCCC;
+    font-size: 15px;
+    margin-left: 50px;
+    padding: 10px;
+}
+
+.banner {
+    background: url(images/background.png);
+    background-size: 100%;
+}
+
+.banner .inside_banner {
+    color: white;
+    padding: 70px 0;
+    flex-flow: row nowrap;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    font-family: Kalinga, serif;
+}
+
+.banner .inside_banner .info h3 {
+    font-size: 15px;
+    margin-bottom: 30px;
+    color: #CCCCCC;
+}
+
+.banner .inside_banner .info a {
+    text-decoration: none;
+    padding: 5px;
+    border: 1px solid white;
+    font-size: 15px;
+    color: white;
+}
+
+.banner .inside_banner .info img {
+    height: 50px;
+}
+
+.banner .inside_banner .form_your_free {
+    color: black;
+    background-color: #F5F5F5;
+    text-align: center;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.banner .inside_banner .form_your_free h2 {
+    background-color: #F5F5F5;
+    margin: 0;
+    font-size: 18px;
+    padding: 20px;
+}
+
+.banner .inside_banner .form_your_free h2 span {
+    color: #FF9B51;
+}
+
+.banner .inside_banner .form_your_free form {
+    background-color: white;
+}
+
+.banner .inside_banner .form_your_free form input {
+    border: none;
+    border-bottom: 1px solid #CCCCCC;
+    height: 30px;
+    padding-left: 10px;
+}
+
+.banner .inside_banner .form_your_free form ::placeholder {
+    color: #CCCCCC;
+}
+
+.banner .inside_banner .form_your_free form p {
+    text-align: center;
+    padding: 10px 30px;
+    margin: 0;
+}
+
+.banner .inside_banner .form_your_free button {
+    background-color: #FF9B51;
+    color: white;
+    border: none;
+    width: 400px;
+    height: 50px;
+}
+
+.content .container {
+    border-bottom: 3px solid #CCCCCC;
+    width: 100%;
+}
+
+.content .container .container_for_media {
+    width: 1200px;
+    margin: auto;
+    font-family: "Blogger Sans Light", serif;
+}
+
+.content .container .media {
+    color: black;
+    flex-flow: row nowrap;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+}
+
+.content .container .media .social h2 {
+    margin: 0;
+}
+
+.content .container .media .social p {
+    color: #CCCCCC;
+    margin: 0;
+    font-size: 15px;
+}
+
+.content .container .media i {
+    color: #CCCCCC;
+    font-size: 45px;
+}
+
+.tab {
+    background-color: #F5F5F5;
+}
+
+.tab .container {
+    flex-flow: row nowrap;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    padding: 90px 0;
+    font-family: "Blogger Sans Light", serif;
+}
+
+.tab .container .tabs {
+    background-color: #333333;
+    border-radius: 5px;
+    flex-flow: column;
+    display: flex;
+    width: 110px;
+    height: 330px;
+}
+
+.tab .container .tabs a {
+    text-decoration: none;
+    color: white;
+    text-align: center;
+    padding-top: 43px;
+    flex: auto;
+    border-bottom: 1px solid white;
+}
+
+.tab .container .tabs a:last-child {
+    border-bottom: none;
+}
+
+.tab .container .tabs a:hover {
+    background-color: #FF9B51;
+}
+
+.tab .container .tabs_text h1 {
+    padding-bottom: 30px;
+    font-size: 24px;
+}
+
+.tab .container .tabs_text h3 {
+
+    font-size: 15px;
+    padding-bottom: 20px;
+}
+
+.tab .container .tabs_text a {
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+    background-color: #FF9B51;
+    border-radius: 5px;
+}
+
+.sub_list .container {
+    flex-flow: row nowrap;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    padding: 90px 0;
+    font-family: "Blogger Sans Light", serif;
+}
+
+.sub_list .container .sub_section {
+    width: 40%;
+}
+
+.sub_list .container .sub_section h1 {
+    font-size: 25px;
+}
+
+.sub_list .container .sub_section h3 {
+    font-size: 15px;
+}
+
+.sub_list .container .sub_section .title_common {
+    flex-flow: row nowrap;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+}
+
+.sub_list .container .sub_section .title_common i {
+    font-size: 20px;
+    color: #FF9B51;
+    padding: 10px;
+    border: 2px solid #FF9B51;
+    border-radius: 150px;
+}
+
+.sub_list .container .sub_section .title_common h2 {
+    font-size: 18px;
+}
+
+.sub_list .container .sub_section .title_common p {
+    font-size: 15px;
+}
+
+.standart_pic {
+    background-color: #F5F5F5;
+}
+
+.standart_pic .container {
+    flex-flow: row nowrap;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    padding: 90px 0;
+    font-family: "Blogger Sans Light", serif;
+}
+
+.standart_pic .container h1 {
+    font-size: 25px;
+}
+
+.awesome {
+    text-align: center;
+    padding-top: 90px;
+}
+
+.awesome .columns {
+    padding-top: 25px;
+    flex-flow: row nowrap;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 90px;
+    font-family: "Blogger Sans Light", serif;
+    text-align: center;
+}
+
+.awesome .columns i {
+    font-size: 35px;
+    color: #FF9B51;
+    border: 2px solid #FF9B51;
+    padding: 10px;
+    border-radius: 150px;
+}
+
+.price {
+    text-align: center;
+    padding-top: 90px;
+    background-color: #F5F5F5;
+}
+
+.price_columns {
+    padding-bottom: 90px;
+    background-color: #F5F5F5;
+}
+
+.price_columns .container {
+    flex-flow: row nowrap;
+    align-items: flex-end;
+    display: flex;
+    justify-content: space-between;
+}
+
+.price_columns .basic {
+    text-align: center;
+    width: 345px;
+}
+
+.price_columns .basic h2 {
+    background-color: #333333;
+    color: white;
+    margin: 0;
+    border-bottom: 1px solid white;
+    padding: 15px;
+}
+
+.price_columns .basic div {
+    background-color: #333333;
+    color: white;
+    margin: 0;
+}
+
+.price_columns .basic div h4 {
+    font-size: 60px;
+    margin: 0;
+    padding-top: 15px;
+}
+
+.price_columns .basic div p {
+    margin: 0;
+    padding-bottom: 15px;
+}
+
+.price_columns .basic .list {
+    margin: 0;
+    border-top: 3px solid #FF9B51;
+}
+
+.price_columns .basic .list p {
+    border: 1px solid #F5F5F5;
+    margin: 0;
+    background-color: white;
+    color: black;
+    padding: 13px 0;
+}
+
+.price_columns .professional h3 {
+    background-color: #FF9B51;
+    margin: 0;
+    color: white;
+    padding: 10px 0;
+}
+
+.customers_say {
+    text-align: center;
+    padding-top: 90px;
+}
+
+.people_rev .container {
+    flex-flow: row nowrap;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 90px;
+}
+
+.people_rev .container .rev .photo {
+    flex-flow: row nowrap;
+    align-items: center;
+    display: flex;
+}
+
+.people_rev .photo p {
+    padding-left: 10px;
+}
+
+.people_rev h4 {
+    padding: 15px;
+    background-color: #F5F5F5;
+    border-radius: 5px;
+}
+
+.stylish {
+    text-align: center;
+    padding: 50px 0;
+    background: url(images/stylish.png);
+    background-size: 100%;
+    color: white;
+}
+
+.stylish h1 {
+    font-size: 40px;
+}
+
+.stylish a {
+    text-decoration: none;
+    color: white;
+    padding: 5px;
+    border: 1px solid white;
+}
+
+.contact {
+    text-align: center;
+    padding-top: 90px;
+}
+
+.form_contact {
+    padding-bottom: 90px;
+}
+
+.form_contact .two_col {
+    flex-flow: row nowrap;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.form_contact .left, .right {
+    width: 500px;
+}
+
+.form_contact .left input {
+    border: none;
+    border-bottom: 1px solid #CCCCCC;
+    color: #CCCCCC;
+    height: 30px;
+    padding-left: 10px;
+    width: 500px;
+}
+
+.form_contact .right input {
+    border: none;
+    border-bottom: 1px solid #CCCCCC;
+    color: #CCCCCC;
+    padding-left: 10px;
+    width: 500px;
+    height: 150px;
+}
+
+.form_contact .butt {
+    text-align: center;
+    padding-top: 20px;
+}
+
+.form_contact .butt button {
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+    background-color: #FF9B51;
+    border-radius: 5px;
+    border: none;
+}
+
+.footer {
+    background-color: black;
+}
+
+.footer .social_footer {
+    flex-flow: row nowrap;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer .social_footer i {
+    color: white;
+    font-size: 15px;
+    padding: 10px;
+}
+
+.footer p {
+    color: white;
+    text-align: center;
+}

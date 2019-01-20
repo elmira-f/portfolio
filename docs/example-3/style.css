@@ -1,0 +1,772 @@
+body {
+    margin: 0;
+}
+
+.container {
+    width: 1230px;
+    margin: auto;
+    padding: 20px 0;
+}
+
+.header {
+    background: url(images/bg_banner.png);
+    background-size: 100%;
+    height: 960px;
+}
+
+.header .container {
+    font-family: Lato, sans-serif;
+}
+
+.header .container .navbar {
+    flex-flow: row nowrap;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.header .container .navbar .logo a {
+    text-decoration: none;
+    color: white;
+    font-size: 26px;
+    font-family: Lato, sans-serif;
+    font-weight: 500;
+}
+
+.header .container .navbar .menu a {
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    font-family: Lato, sans-serif;
+    font-weight: 400;
+    padding: 13px;
+}
+
+.header .container .navbar .menu a:hover {
+    border-radius: 50px;
+    border: 3px solid white;
+    padding: 10px;
+}
+
+.header .container .navbar .menu a:last-child:hover {
+    border: none;
+    padding: 13px;
+}
+
+.header .container .navbar .menu a i {
+    font-size: 14px;
+}
+
+.header .container .banner_text {
+    text-align: center;
+    padding-top: 200px;
+}
+
+.header .container .banner_text h1 {
+    font-family: ChunkFive;
+    color: white;
+    font-size: 90px;
+    margin-bottom: 0;
+}
+
+.header .container .banner_text h1 span {
+    color: #00A19E;
+}
+
+.header .container .banner_text p {
+    color: white;
+    font-family: Lato, sans-serif;
+    font-size: 18px;
+    line-height: 30px;
+    padding-bottom: 40px;
+}
+
+.header .container .banner_text a {
+    font-size: 16px;
+    font-family: "Lato Black";
+    text-decoration: none;
+    color: black;
+    border-radius: 50px;
+    background-color: #FFFFA3;
+    padding: 20px;
+}
+
+.header .container .banner_text a:hover {
+    background-color: white;
+}
+
+.city_of_love .container {
+    flex-flow: row nowrap;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    font-family: Lato, sans-serif;
+    padding: 70px 0;
+}
+
+.city_of_love .container .text_right {
+    width: 50%;
+}
+
+.city_of_love .container .text_right h1 {
+    font-size: 60px;
+    color: #2ED3CD;
+    font-family: "ChunkFive";
+}
+
+.city_of_love .container .text_right h1 span {
+    color: #00A19E;
+}
+
+.city_of_love .container .text_right p {
+    color: #777777;
+    font-size: 16px;
+    line-height: 30px;
+}
+
+.destination {
+    background-color: #F4FFFF;
+}
+
+.destination .container .destination_title {
+    flex-flow: row nowrap;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    font-family: Lato, sans-serif;
+}
+
+.destination .container .destination_title h1 {
+    font-size: 60px;
+    color: #2ED3CD;
+    padding-left: 150px;
+    font-family: "ChunkFive";
+}
+
+.destination .container .destination_title h1 span {
+    color: #00A19E;
+}
+
+.destination .container .destination_title a {
+    text-decoration: none;
+    font-size: "Myriad Pro Regular";
+    color: #AEAEAE;
+    font-size: 16px;
+    padding-right: 150px;
+}
+
+.destination .container p {
+    color: #777777;
+    font-size: 16px;
+    line-height: 30px;
+    width: 53%;
+    padding-left: 150px;
+}
+
+.destination .container .destination_search {
+    flex-flow: row nowrap;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    padding: 25px 150px;
+}
+
+.destination .container .destination_search form {
+    position: relative;
+}
+
+.destination .container .destination_search form input {
+    height: 36px;
+    width: 236px;
+    border-radius: 50px;
+    border: 1px solid #B5B5B5;
+    padding-left: 15px;
+}
+
+.destination .container .destination_search form button {
+    position: absolute;
+    right: 10px;
+    bottom: 5px;
+    border: none;
+    font-size: 18px;
+    text-transform: uppercase;
+    color: #777777;
+    background-color: white;
+}
+
+.destination .container .destination_search .destination_sort a.now_sort {
+    font-family: "Lato Black";
+    color: #777777;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.destination .container .destination_search .destination_sort a {
+    font-family: "Myriad Pro Regular";
+    text-decoration: none;
+    color: #AEAEAE;
+    font-size: 16px;
+}
+
+.destination .container .gallery img.top_pic {
+    position: absolute;
+    font-family: Lato, sans-serif;
+    padding-left: 50px;
+}
+
+.destination .container .gallery .info_first_pic {
+    position: relative;
+    top: 0;
+    left: 750px;
+    width: 800px;
+    padding: 60px 20px;
+}
+
+.destination .container .gallery .info_first_pic h2 {
+    color: #2ED3CD;
+    font-size: 30px;
+    font-weight: 300;
+    padding: 10px 0 0 10px;
+}
+
+.destination .container .gallery .info_first_pic p {
+    font-weight: bold;
+    font-size: 16px;
+    color: #777777;
+    line-height: 30px;
+    padding-left: 10px;
+}
+
+.destination .container .second_gallery {
+    flex-flow: row nowrap;
+    display: flex;
+    justify-content: space-between;
+    padding: 50px 0;
+}
+
+.destination .container .second_gallery .left_pic_gallery .top_sec_pic {
+    position: absolute;
+}
+
+.destination .container .second_gallery .left_pic_gallery .top_sec_pic {
+    width: 670px;
+    height: 360px;
+}
+
+.destination .container .second_gallery .left_pic_gallery {
+    padding-left: 55px;
+}
+
+.destination .container .second_gallery .left_pic_gallery .info_bromo {
+    position: relative;
+    top: 0;
+    left: 0;
+    padding: 10px;
+}
+
+.destination .container .second_gallery .left_pic_gallery .info_bromo h2 {
+    color: #2ED3CD;
+    font-size: 30px;
+    font-weight: 300;
+}
+
+.destination .container .second_gallery .left_pic_gallery .info_bromo p.text_bromo {
+    font-size: 16px;
+    color: #777777;
+    line-height: 30px;
+    padding-left: 0;
+}
+
+.destination .container .second_gallery .right_pic_gallery {
+    width: 470px;
+    height: 360px;
+    padding-right: 10px;
+}
+
+.destination .container .links_for_pages {
+    text-align: center;
+    padding: 0 0 30px;
+}
+
+.destination .container .links_for_pages a {
+    text-decoration: none;
+    color: #AEAEAE;
+    font-weight: bold;
+    font-size: 16px;;
+    font-family: "Lato Black";
+    padding: 8px;
+}
+
+.destination .container .links_for_pages a:hover {
+    color: #00A19E;
+}
+
+.set_ittinery .container {
+    text-align: center;
+    font-family: "ChunkFive";
+}
+
+.set_ittinery .container h1 {
+    font-size: 60px;
+    color: #2ED3CD;
+}
+
+.set_ittinery .container h1 span {
+    color: #00A19E;
+}
+
+.set_ittinery .container p {
+    color: #777777;
+    font-size: 16px;
+    line-height: 30px;
+    font-family: Lato, sans-serif;
+    width: 60%;
+    padding-left: 250px;
+}
+
+.list_your_ittinery .container {
+    flex-flow: row nowrap;
+    display: flex;
+    justify-content: space-between;
+    padding: 50px 0;
+}
+
+.list_your_ittinery .container .form_ittinery {
+    position: absolute;
+}
+
+.list_your_ittinery .container .city_plans {
+    position: relative;
+    top: 70px;
+    left: 0;
+}
+
+.list_your_ittinery .container .city_plans .data {
+    width: 540px;
+    margin-left: 45px;
+    flex-flow: row nowrap;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    text-align: center;
+}
+
+.list_your_ittinery .container .city_plans .data p {
+    font-family: "Lato Black";
+    color: #29D9C2;
+    font-size: 16px;
+}
+
+.list_your_ittinery .container .city_plans .data a {
+    text-decoration: none;
+    font-family: "Lato Black";
+    color: #29D9C2;
+    font-size: 16px;
+}
+
+.list_your_ittinery .container .city_plans .name_of_city {
+    flex-flow: row nowrap;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 540px;
+    margin-left: 60px;
+    text-align: center;
+    background-color: white;
+    border: 1px solid #ACACAC;
+    border-radius: 10px;
+}
+
+.list_your_ittinery .container .city_plans .name_of_city:nth-child(n+3) {
+    margin-top: 15px;
+}
+
+.list_your_ittinery .container .city_plans .name_of_city .pic_city {
+    flex-flow: row nowrap;
+    display: flex;
+    align-items: center;
+}
+
+.list_your_ittinery .container .city_plans .name_of_city .pic_city img {
+    width: 40px;
+    height: 40px;
+    padding: 0 10px;
+}
+
+.list_your_ittinery .container .city_plans .name_of_city .pic_city p {
+    font-family: Lato, sans-serif;
+    font-size: 24px;
+    color: #626262;
+    padding-left: 10px;
+}
+
+.list_your_ittinery .container .city_plans .name_of_city p.time {
+    font-family: Lato, sans-serif;
+    font-size: 18px;
+    color: #626262;
+    padding-right: 20px;
+}
+
+.list_your_ittinery .container .city_plans .notes {
+    width: 500px;
+    background-color: #F5E99F;
+    border: 1px solid #ACACAC;
+    margin-left: 80px;
+}
+
+.list_your_ittinery .container .city_plans .notes p {
+    font-size: 18px;
+    color: #626262;
+    padding-left: 20px;
+    font-family: Lato, sans-serif;
+}
+
+.list_your_ittinery .container .city_plans .btn_add_city {
+    width: 540px;
+    margin-left: 60px;
+    text-align: center;
+    background-color: #FBF6A4;
+    border: 3px dashed #ACACAC;
+    padding: 20px 0;
+}
+
+.list_your_ittinery .container .city_plans a.add_new_city {
+    text-decoration: none;
+    font-size: 14px;
+    color: #626262;
+    font-family: Lato, sans-serif;
+}
+
+.list_your_ittinery .container .ittinery .btn_print_save {
+    width: 620px;
+    margin-left: 50px;
+    align-items: center;
+    padding-bottom: 50px;
+    padding-top: 150px;
+    text-align: right;
+    display: block;
+}
+
+.list_your_ittinery .container .ittinery .btn_print_save a.save {
+    text-decoration: none;
+    background-color: #C5F484;
+    border-radius: 50px;
+    font-family: "Myriad Pro Regular";
+    color: white;
+    font-size: 16px;
+    padding: 20px;
+    margin-right: 15px;
+    padding: 21px;
+}
+
+.list_your_ittinery .container .ittinery .btn_print_save a.save:hover {
+    background-color: #41D7CC;
+    border: 1px solid #ACACAC;
+    color: #626262;
+    padding: 20px;
+}
+
+.list_your_ittinery .container .ittinery .btn_print_save a.print {
+    text-decoration: none;
+    background-color: #41D7CC;
+    border-radius: 50px;
+    font-family: "Myriad Pro Regular";
+    color: white;
+    font-size: 16px;
+    padding: 21px;
+}
+
+.list_your_ittinery .container .ittinery .btn_print_save a.print:hover {
+    background-color: #C5F484;
+    border: 1px solid #ACACAC;
+    color: #626262;
+    padding: 20px;
+}
+
+.list_your_ittinery .container .list {
+    width: 530px;
+}
+
+.list_your_ittinery .container .list .list_title {
+    text-align: center;
+    width: 470px;
+}
+
+.list_your_ittinery .container .list .list_title h2 {
+    font-family: "Lato Black";
+    color: #29D9C2;
+    font-size: 18px;
+}
+
+.list_your_ittinery .container .list .sort_by {
+    flex-flow: row nowrap;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 23px;
+    width: 470px;
+}
+
+.list_your_ittinery .container .list .sort_by .type_of_sort {
+    flex-flow: row nowrap;
+    display: flex;
+    align-items: center;
+}
+
+.list_your_ittinery .container .list .sort_by i {
+    font-size: 14px;
+    color: #626262;
+}
+
+.list_your_ittinery .container .list .sort_by .type_of_sort p {
+    color: #29D9C2;
+    font-family: "Lato Black";
+    font-size: 16px;
+}
+
+.list_your_ittinery .container .list .sort_by .type_of_sort a {
+    color: #626262;
+    font-family: "Myriad Pro Regular";
+    text-decoration: none;
+    padding-left: 10px;
+}
+
+.list_your_ittinery .container .list .sort_by .type_of_sort a i {
+    font-size: 14px;
+    color: #626262;
+}
+
+.list_your_ittinery .container .list .place_and_time {
+    flex-flow: row nowrap;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 470px;
+    height: 70px;
+    background-color: white;
+    border: 1px solid #ACACAC;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+.list_your_ittinery .container .list .place_and_time p {
+    color: #626262;
+    font-family: "Myriad Pro Regular";
+    font-size: 24px;
+    line-height: 5px;
+    padding-left: 15px;
+}
+
+.list_your_ittinery .container .list .place_and_time p.hours {
+    font-size: 14px;
+}
+
+.list_your_ittinery .container .list .place_and_time p.hours span {
+    color: #29D9C2;
+}
+
+.list_your_ittinery .container .list .place_and_time .lil_photo {
+    padding-right: 15px;
+    text-align: right;
+}
+
+.list_your_ittinery .container .list .place_and_time .lil_photo img {
+    width: 60px;
+    height: 30px;
+    display: block;
+    padding: 0 0 7px 5px;
+}
+
+.list_your_ittinery .container .list .place_and_time .lil_photo a {
+    text-decoration: none;
+    color: #29D9C2;
+    font-size: 14px;
+    font-family: "Myriad Pro Regular";
+}
+
+.list_your_ittinery .container .list .place_and_time .lil_photo a:hover {
+    text-decoration: underline;
+}
+
+.contact {
+    background: url(images/bg_contact.png);
+    background-size: 100%;
+}
+
+.contact .container h1 {
+    font-size: 60px;
+    color: white;
+    font-family: ChunkFive;
+    text-align: center;
+}
+
+.contact .container .find_us_form {
+    flex-flow: row nowrap;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding-bottom: 50px;
+}
+
+.contact .container .find_us_form .contact_form {
+    width: 470px;
+}
+
+.contact .container .find_us_form .contact_form p input {
+    width: 470px;
+    height: 55px;
+    background-color: white;
+    border: 1px solid #ACACAC;
+    border-radius: 10px;
+    color: #626262;
+    font-family: "Myriad Pro Regular";
+    font-size: 14px;
+    font-style: italic;
+    padding-left: 20px;
+}
+
+.contact .container .find_us_form .contact_form p textarea {
+    width: 470px;
+    height: 100px;
+    background-color: white;
+    border: 1px solid #ACACAC;
+    border-radius: 10px;
+    color: #626262;
+    font-family: "Myriad Pro Regular";
+    font-size: 14px;
+    font-style: italic;
+    padding-left: 20px;
+}
+
+.contact .container .find_us_form .contact_form form button {
+    background-color: #C5F484;
+    border-radius: 50px;
+    font-family: "Myriad Pro Regular";
+    color: white;
+    font-size: 16px;
+    padding: 21px;
+    border: none;
+    cursor: pointer;
+}
+
+.contact .container .find_us_form .contact_form form button:hover {
+    background-color: #C5F484;
+    border: 1px solid #ACACAC;
+    color: #626262;
+    padding: 20px;
+}
+
+.contact .container .find_us_form .center_word {
+    color: white;
+    font-size: 14px;
+    font-family: "Myriad Pro Regular";
+    padding-top: 180px;
+}
+
+.contact .container .find_us_form .info_find_us h2 {
+    font-size: 45px;
+    font-family: "Myriad Pro Regular";
+    color: white;
+}
+
+.contact .container .find_us_form .info_find_us p {
+    font-family: Lato, sans-serif;
+    color: white;
+    font-size: 12px;
+    line-height: 30px;
+}
+
+.keep_in_touch {
+    background: url(images/bg_keep_in_touch.png);
+    background-size: 100%;
+}
+
+.keep_in_touch .container {
+    flex-flow: row nowrap;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px 0;
+}
+
+.keep_in_touch .container .touch_title h1 {
+    font-family: "ChunkFive";
+    font-size: 60px;
+    color: white;
+    margin-bottom: 0;
+}
+
+.keep_in_touch .container .touch_title p {
+    color: white;
+    font-family: Lato, sans-serif;
+    font-size: 16px;
+    margin-top: 0;
+}
+
+.keep_in_touch .container .touch_form form {
+    position: relative;
+    margin-top: 50px;
+}
+
+.keep_in_touch .container .touch_form form input {
+    width: 470px;
+    height: 70px;
+    background-color: white;
+    border: 1px solid #ACACAC;
+    border-radius: 10px;
+    color: #626262;
+    font-family: "Myriad Pro Regular";
+    font-size: 14px;
+    font-style: italic;
+    padding-left: 20px;
+}
+
+.keep_in_touch .container .touch_form form button {
+    color: white;
+    height: 73px;
+    width: 70px;
+    font-size: 50px;
+    border: none;
+    background-color: #01A3A6;
+    position: absolute;
+    top: 0;
+    right: 0;
+    border-radius: 0 10px 10px 0;
+}
+
+.footer {
+    background: url(images/bg_footer.png);
+    background-size: 100%;
+    height: 360px;
+}
+
+.footer .container .social_media {
+    flex-flow: row nowrap;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #555555;
+    font-family: Lato, sans-serif;
+    font-size: 16px;
+}
+
+.footer .container .social_media a {
+    text-decoration: none;
+    font-size: 30px;
+    color: #555555;
+    padding: 5px;
+}
+
+.footer .container .social_media a:hover {
+    color: white;
+}
+
+.footer .container p.copyright {
+    color: #ACACAC;
+    font-family: Lato, sans-serif;
+    font-size: 16px;
+    text-align: center;
+    padding-top: 220px;
+}

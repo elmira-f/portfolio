@@ -1,0 +1,327 @@
+.btn-success {
+    background-color: #7AC438;
+}
+
+.header {
+    border-bottom: 1px solid #BBBBBB;
+    background-color: white;
+}
+
+.header .inner {
+    display: flex;
+    align-items: center;
+    width: 1200px;
+    padding: 20px;
+    margin: auto;
+    text-transform: uppercase;
+    font-size: 12px;
+}
+
+.header a {
+    padding: 10px;
+    color: black;
+}
+
+.header img {
+    width: 185px;
+}
+
+.header .menu {
+    flex: auto;
+    margin: 0 25px;
+    width: 100%;
+}
+
+.header .search {
+    align-items: center;
+    display: flex;
+}
+
+.content {
+    background-color: #0080C3;
+    color: white;
+}
+
+.content .inner {
+    position: relative;
+    padding: 130px 20px;
+    width: 1200px;
+    margin: auto;
+}
+
+.content .info {
+    width: 50%;
+}
+
+.content .view {
+    position: absolute;
+    top: 40px;
+    left: 50%;
+}
+
+.text_center {
+    text-align: center;
+    width: 1200px;
+    margin: auto;
+    padding: 90px 40px 40px;
+}
+
+.four_columns {
+    width: 1200px;
+    margin: auto;
+    padding-bottom: 40px;
+    display: flex;
+    align-items: center;
+}
+
+.four_columns > div {
+    font-size: 16px;
+    border-right: 1px solid lightgray;
+    padding-left: 20px;
+}
+
+.four_columns > div i {
+    color: lightskyblue;
+    font-size: 48px;
+}
+
+.four_columns :last-child {
+    border-right: none;
+}
+
+.four_columns > div h4 {
+    padding: 20px 0;
+}
+
+.four_columns > div p {
+    color: grey;
+}
+
+.black_line {
+    background-color: #1D2120;
+    color: white;
+}
+
+.black_line .inside {
+    width: 1200px;
+    margin: auto;
+}
+
+.black_line .inside .text_inside {
+    text-align: center;
+    padding: 50px;
+}
+
+.black_line .inside .other_logo {
+    padding: 30px;
+    text-align: center;
+}
+
+.black_line .inside .other_logo img {
+    padding: 0 20px;
+}
+
+.market_place {
+    width: 1200px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+}
+
+.market_place > div {
+    padding: 40px 0;
+}
+
+.market_place .mark_text {
+    width: 50%;
+}
+
+.market_place .mark_text p {
+    padding: 30px 0;
+}
+
+.market_place .mark_text a {
+    background-color: #01AFE8;
+}
+
+.gray_line {
+    background-color: #E3E3E3;
+}
+
+.gray_line .inside_gray {
+    width: 1200px;
+    margin: auto;
+    text-align: center;
+    padding: 30px;
+}
+
+.gray_line .inside_gray > div {
+    padding: 20px;
+}
+
+.gray_line .inside_gray .methods_logo img {
+    padding-right: 30px;
+}
+
+.gray_line .inside_gray .methods_logo {
+    padding-left: 90px;
+    padding-right: 90px;
+}
+
+.gray_line .inside_gray div button {
+    width: 154px;
+    border-color: black;
+    color: black;
+}
+
+.support {
+    width: 1200px;
+    margin: auto;
+}
+
+.support .h2 h2 {
+    text-align: center;
+    padding: 50px;
+}
+
+.support .two_columns {
+    display: flex;
+    text-align: center;
+    padding-bottom: 60px;
+}
+
+.support .two_columns .first_col {
+    width: 50%;
+}
+
+.support .two_columns .second_col {
+    width: 50%;
+}
+
+.support .two_columns > div {
+    border-right: 1px solid lightgray;
+    padding: 10px 10px 20px;
+}
+
+.support .two_columns :last-child {
+    border-right: none;
+}
+
+.first_footer {
+    background-color: #E3E3E3;
+}
+
+.first_footer .inside_1_footer {
+    width: 1200px;
+    margin: auto;
+    display: flex;
+    text-align: center;
+    padding: 30px;
+}
+
+.first_footer .inside_1_footer > h4,
+.first_footer .inside_1_footer > a {
+    padding: 25px;
+}
+
+.second_footer {
+    background-color: #1D2120;
+    color: white;
+}
+
+.second_footer .links {
+    width: 1200px;
+    margin: auto;
+}
+
+.second_footer .links .links_columns {
+    display: flex;
+    align-items: flex-start;
+    padding: 40px
+}
+
+.second_footer .links .links_columns .links_1,
+.second_footer .links .links_columns .links_2,
+.second_footer .links .links_columns .links_3,
+.second_footer .links .links_columns .links_4 {
+    width: 15%
+}
+
+.second_footer .links .links_columns .links_5 {
+    width: 40%;
+}
+
+.second_footer .links .links_columns div h5 {
+    color: gray;
+}
+
+.second_footer .links .links_columns div a {
+    color: white;
+}
+
+.second_footer .links .links_columns div a:hover {
+    text-decoration: none;
+    color: lightskyblue;
+}
+
+.second_footer .links .links_columns .links_5 form {
+    display: inline-block;
+    vertical-align: top;
+    position: relative;
+}
+
+.second_footer .links .links_columns .links_5 form input {
+    width: 445px;
+}
+
+.second_footer .links .links_columns .links_5 form button {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    z-index: 8;
+    outline: none;
+    border: none;
+    display: inline-block;
+    border-radius: 10px;
+    width: 40px;
+    font-size: 10px;
+}
+
+.second_footer .links .links_columns .links_5 form input[type="search"] {
+    outline: none;
+    border: 2px solid #222222;
+    padding: 5px 100px 5px 30px;
+    display: block;
+    width: 100%;
+    height: 50px;
+    background: #FFFFFF;
+    border-radius: 25px;
+}
+
+.second_footer .links .menu_2 {
+    display: flex;
+    text-align: center;
+    color: white;
+}
+
+.second_footer .links .menu_2 .copy {
+    flex: auto;
+    width: 100%;
+    text-align: left;
+    padding-left: 20px;
+}
+
+.second_footer .links .menu_2 .link3 {
+    display: flex;
+    text-align: center;
+}
+
+.second_footer .links .menu_2 .link3 a {
+    padding: 20px;
+    text-decoration: none;
+    color: white;
+}
+
+.second_footer .links .menu_2 .link3 a:hover {
+    color: blue;
+}
