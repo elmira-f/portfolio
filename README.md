@@ -29,3 +29,15 @@
 ![Image](https://elmira-f.github.io/portfolio/example-5/image.png)
 
 [Link](https://elmira-f.github.io/portfolio/example-5/)
+
+## Sephora (responsive)
+
+![Image](https://elmira-f.github.io/portfolio/sephora/image.png)
+
+[Link](https://elmira-f.github.io/portfolio/sephora/)
+
+## Skype (responsive)
+
+![Image](https://elmira-f.github.io/portfolio/skype/image.png)
+
+[Link](https://elmira-f.github.io/portfolio/skype/)

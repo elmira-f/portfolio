@@ -1,0 +1,384 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "SF Regular", "Segoe System UI Regular", "Segoe UI Regular", sans-serif;
+    font-size: 12px;
+    color: black;
+}
+
+.app {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-flow: row nowrap;
+}
+
+.app .sidebar {
+    width: 400px;
+    background-color: #f0f4f8;
+    border-right: 1px solid #d5d9de;
+    overflow: hidden;
+}
+.app .sidebar .your_properties {
+    flex-flow: row nowrap;
+    align-items: center;
+    display: flex;
+    text-align: center;
+    padding: 10px;
+}
+.app .sidebar .your_properties a.your_settings {
+    margin-right: 5px;
+}
+.app .sidebar .your_properties a.your_settings img {
+    border-radius: 50px;
+    width: 40px;
+}
+.app .sidebar .your_properties a.your_properties {
+    text-decoration: none;
+    color: black;
+    width: 100%;
+}
+.app .sidebar .your_properties a.dots {
+    text-decoration: none;
+    color: black;
+    font-size: 4px;
+    width: 35px;
+}
+.app .sidebar .searching_btn {
+    position: relative;
+    padding: 0 10px;
+}
+.app .sidebar .searching_btn a.search {
+    position: absolute;
+    bottom: 5px;
+    left: 0;
+    width: 275px;
+    height: 30px;
+}
+.app .sidebar .searching_btn a.search_for_number {
+    position: absolute;
+    bottom: 5px;
+    left: 275px;
+    width: 30px;
+    height: 30px;
+}
+.app .sidebar .contacts {
+    padding: 10px 0;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    display: flex;
+    text-align: center;
+    border-bottom: 1px solid #d5d9de;
+}
+.app .sidebar .contacts a {
+    font-size: 20px;
+    color: grey;
+    padding: 0 20px;
+    text-decoration: none;
+    line-height: 10px;
+}
+.app .sidebar .contacts a span {
+    font-size: 10px;
+}
+.app .sidebar .contacts a:active {
+    color: #0078d7;
+}
+.app .sidebar .contacts a:hover {
+    color: black;
+}
+.app .sidebar .your_chats {
+    flex-flow: row nowrap;
+    align-items: center;
+    display: flex;
+    text-align: center;
+    justify-content: space-between;
+    padding: 10px;
+}
+.app .sidebar .your_chats a.last_chats {
+    text-decoration: none;
+    color: #8a8d9e;
+    font-weight: 700px;
+    font-size: 14px;
+}
+.app .sidebar .your_chats a.last_chats span i {
+    color: lightgray;
+    font-weight: 200px;
+}
+.app .sidebar .your_chats a.last_chats:hover {
+    color: lightgray;
+}
+.app .sidebar .your_chats a.add_chat {
+    color: black;
+    text-decoration: none;
+    background-color: white;
+    padding: 10px 15px;
+    border-radius: 20px;
+    box-shadow: 0 0 7px rgba(0,0,0,0.2);
+}
+.app .sidebar .your_chats a.add_chat span i {
+    color: lightgray;
+    font-weight: 100px;
+}
+.app .sidebar .your_friends .friend,
+.app .sidebar .your_friends .friend_active {
+    flex-flow: row nowrap;
+    align-items: flex-start;
+    display: flex;
+    text-align: center;
+    justify-content: space-between;
+    padding: 10px;
+}
+.app .sidebar .your_friends .friend_active {
+    background-color: #c7edfc;
+}
+.app .sidebar .your_friends .friend img,
+.app .sidebar .your_friends .friend_active img {
+    border-radius: 50px;
+    margin-right: 10px;
+    width: 40px;
+}
+.app .sidebar .your_friends .friend .chat,
+.app .sidebar .your_friends .friend_active .chat{
+    flex-flow: row nowrap;
+    align-items: center;
+    display: flex;
+    text-align: left;
+}
+.app .sidebar .your_friends .friend .chat .msg p.name,
+.app .sidebar .your_friends .friend_active .chat .msg p.name {
+    color: black;
+    font-size: 16px;
+    margin: 0;
+}
+.app .sidebar .your_friends .friend .chat .msg p.last_msg,
+.app .sidebar .your_friends .friend_active .chat .msg p.last_msg{
+    color: #8a8d9e;
+    font-size: 14px;
+    margin: 0;
+}
+.app .sidebar .your_friends .friend p.time,
+.app .sidebar .your_friends .friend_active p.time {
+    color: #8a8d9e;
+    font-size: 12px;
+}
+.app .sidebar .lets_talk {
+    text-align: center;
+    padding: 30px 40px;
+}
+.app .sidebar .lets_talk p {
+    color: black;
+    font-size: 25px;
+    font-weight: 700px;
+    line-height: 30px;
+    margin-top: 0;
+}
+.app .sidebar .lets_talk .use_search {
+    flex-flow: row nowrap;
+    align-items: flex-start;
+    display: flex;
+    text-align: left;
+    color: #8a8d9e;
+}
+.app .sidebar .lets_talk .use_search i {
+    font-size: 16px;
+}
+.app .sidebar .lets_talk .use_search p {
+    color: #8a8d9e;
+    font-size: 16px;
+    line-height: 20px;
+    margin-top: 0;
+    padding-left: 5px;
+}
+
+.app .chat {
+    width: 100%;
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+.app .chat .info {
+    background-color: #ffffff;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    padding: 20px;
+    border-bottom: 1px solid #d5d9de;
+}
+.app .chat .info .userinfo p {
+    font-size: 24px;
+    font-weight: 700;
+    color: black;
+    margin: 0;
+}
+.app .chat .info .userinfo .her_his_info {
+    flex-flow: row nowrap;
+    align-items: center;
+    display: flex;
+    text-align: center;
+    justify-content: space-between;
+    padding-top: 5px;
+}
+.app .chat .info .userinfo .her_his_info a {
+    text-decoration: none;
+    color: #8a8d9e;
+    font-weight: 400;
+    font-size: 12px;
+    border-right: 2px solid #8a8d9e;
+    padding: 0 10px;
+}
+.app .chat .info .userinfo .her_his_info a:hover {
+    color: #d5d9de;
+}
+.app .chat .info .userinfo .her_his_info a:last-child {
+    border-right: none;
+}
+.app .chat .info .userinfo .her_his_info a:first-child {
+    padding-left: 0;
+}
+.app .chat .info .userinfo .her_his_info a i {
+    font-size: 10px;
+}
+.app .chat .info .userinfo .her_his_info a.status i {
+    color: greenyellow;
+}
+.app .chat .info .buttons {
+    padding: 0 20px;
+}
+.app .chat .info .buttons a {
+    display: inline-block;
+    font-size: 18px;
+    color: black;
+    text-decoration: none;
+    background-color: #f1f1f4;
+    padding: 10px 13px;
+    border-radius: 40px;
+    margin-right: 10px;
+}
+.app .chat .info .buttons a:last-child {
+    margin-right: 0;
+}
+.app .chat .info .buttons a:hover {
+    background-color: lightgray;
+}
+
+.app .chat .message {
+    text-align: center;
+    padding: 25px;
+}
+.app .chat .message .input {
+    width: 75%;
+    background-color: #f0f4f8;
+    border-radius: 10px;
+    flex-flow: row nowrap;
+    align-items: center;
+    display: inline-flex;
+}
+.app .chat .message .input a {
+    font-size: 28px;
+    text-decoration: none;
+    color: rgb(138, 141, 145);
+    padding: 10px;
+}
+.app .chat .message .input a:hover {
+    color: black;
+}
+.app .chat .message .input textarea {
+    background-color: transparent;
+    border: none;
+    font-family: sans-serif;
+    padding: 10px;
+    width: 100%;
+    height: 30px;
+    align-items: center;
+    resize: none;
+    font-size: 14px;
+}
+
+.app .chat .history {
+    height: 100%;
+    text-align: center;
+    overflow: scroll;
+    overflow-x: hidden;
+}
+.app .chat .history .clouds {
+    display: inline-block;
+    width: 75%;
+    overflow: auto;
+    overflow-x: hidden;
+}
+.app .chat .history .clouds::-webkit-scrollbar{
+    width:8px;
+}
+.app .chat .history .clouds::-webkit-scrollbar-thumb{
+    border-width:1px 1px 1px 2px;
+    border-radius: 10px;
+    background-color: lightgray;
+}
+.app .chat .history .clouds p.date {
+    color: rgb(138, 141, 145);
+}
+.app .chat .history .clouds p.date span {
+    text-decoration: line-through;
+    color: rgb(138, 141, 145);
+}
+.app .chat .history .clouds .friend_msg {
+    flex-flow: row nowrap;
+    align-items: flex-start;
+    display: flex;
+    text-align: left
+}
+.app .chat .history .clouds .friend_msg img {
+    margin-right: 10px;
+    border-radius: 50px;
+    width: 40px;
+}
+.app .chat .history .clouds .friend_msg p {
+    color: rgb(138, 141, 145);
+    margin: 0;
+}
+.app .chat .history .clouds .friend_msg .msg_from_friend .live_msg {
+    flex-flow: row nowrap;
+    align-items: flex-start;
+    display: flex;
+    text-align: left;
+    justify-content: space-between;
+    margin-bottom: 2px;
+}
+.app .chat .history .clouds .friend_msg .msg_from_friend .live_msg a {
+    color: rgb(138, 141, 145);
+}
+.app .chat .history .clouds .friend_msg .msg_from_friend .live_msg a i {
+    font-size: 16px;
+}
+.app .chat .history .clouds .friend_msg .msg_from_friend .live_msg p.text {
+    color: black;
+    background-color: #f2f6f9;
+    padding: 10px;
+    border-radius: 0 10px 10px 0;
+    margin-right: 5px;
+}
+.app .chat .history .clouds .friend_msg .msg_from_friend .live_msg p.text:last-child {
+    border-radius: 0 10px 10px 10px;
+}
+.app .chat .history .clouds .your_msg {
+    text-align: right;
+}
+.app .chat .history .clouds .your_msg p {
+    color: rgb(138, 141, 145);
+    margin: 0;
+}
+.app .chat .history .clouds .your_msg p.text_answer {
+    display: inline-block;
+    color: black;
+    background-color: #dbf4fd;
+    padding: 10px;
+    border-radius: 10px 0 0 10px;
+    margin: 0 0 2px 0;
+}
+
+
+@media (max-width: 500px) {
+    .app .sidebar {
+        display: none;
+    }
+}
