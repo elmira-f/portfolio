@@ -1,0 +1,338 @@
+body {
+    font-family: "PT Sans", sans-serif;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: inherit;
+    color: white;
+}
+
+div.container {
+    position: relative;
+    padding: 30px 15px;
+}
+
+/* ------------------------------------------------------ */
+
+#block_1 {
+    background: url(images/bkg1_mbl.jpg) center;
+    background-size: cover;
+    -webkit-box-shadow: 0 1px 10px 0 rgba(0,0,0,0.5);
+    -moz-box-shadow: 0 1px 10px 0 rgba(0,0,0,0.5);
+    box-shadow: 0 1px 10px 0 rgba(0,0,0,0.5);
+    overflow: hidden;
+}
+
+#block_1 p {
+    margin-bottom: 0;
+}
+
+#block_1 .program_header .asterisk {
+    vertical-align: top;
+}
+
+#block_1 .program_title {
+    font-family: "Inset F Heavy", sans-serif;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.75);
+    font-size: 48px;
+    line-height: 55px;
+    color: #e1041e;
+    margin: 30px 0;
+}
+
+#block_1 .program_border {
+    background-image: url(images/br_1.png);
+    background-repeat: no-repeat;
+    background-position-x: 50%;
+    background-position-y: 50px;
+    background-size: 400px;
+}
+
+#block_1 .program_description {
+    margin: 20px 0;
+}
+
+#block_1 .program_description span {
+    text-transform: uppercase;
+}
+
+#block_1 .why_new_quote {
+    position: relative;
+    background-color: rgba(255, 255, 255, 0.3);
+    border: 1px solid #e1041e;
+    border-radius: 10px;
+    font-size: 20px;
+    color: black;
+    max-width: 255px;
+    padding: 10px;
+    display: inline-block;
+    margin: 5px;
+}
+
+#block_1 .why_new_quote .asterisk {
+    position: absolute;
+    top: -6px;
+    left: -7px;
+}
+
+#block_1 .take_part_btn {
+    background-color: #ece411;
+    border-radius: 50px;
+    font-family: Arial, sans-serif;
+    font-size: 22px;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 15px;
+    margin: 10px 0;
+    -webkit-box-shadow: 0 3px 2px 0 rgba(0,0,0,0.75);
+    -moz-box-shadow: 0 3px 2px 0 rgba(0,0,0,0.75);
+    box-shadow: 0 3px 2px 0 rgba(0,0,0,0.75);
+    width: 100%;
+}
+
+#block_1 .take_part_btn:hover {
+    background-color: #D0C910;
+}
+
+#block_1 .event_date {
+    font-size: 20px;
+    text-transform: uppercase;
+    color: #4e1118;
+}
+
+#block_1 .lt_women, #block_1 .rt_women {
+    display: inline-block;
+    width: 293px;
+    height: 637px;
+    position: absolute;
+    bottom: 0;
+}
+
+#block_1 .lt_women {
+    background-image: url(images/w1_mbl.png);
+    left: -135px;
+}
+
+#block_1 .rt_women {
+    background-image: url(images/w2_mbl.png);
+    right: -135px;
+}
+
+/* ------------------------------------------------------ */
+
+#block2 .container {
+    margin: 50px 15px;
+}
+
+#block_2 p {
+    color: black;
+}
+
+#block_2 p.math_symbol {
+    font-size: 60px;
+}
+
+/* ------------------------------------------------------ */
+
+#block_3 {
+    position: relative;
+    color: black;
+}
+
+#block_3 .reality_show_line {
+    border-top: 2px solid #e1041e;
+    width: 100%;
+    position: absolute;
+    top: 35px;
+    left: 0;
+}
+
+#block_3 .reality_show_program {
+    font-family: "Inset F Heavy", sans-serif;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.75);
+    font-size: 48px;
+    line-height: 55px;
+    color: #e1041e;
+    position: relative;
+    z-index: 10;
+    background-color: white;
+    display: inline-block;
+    padding: 0 10px;
+    margin: 0;
+}
+
+#block_3 .reality_show_date {
+    margin: 0;
+}
+
+/* ------------------------------------------------------ */
+
+#block_4 {
+    background: #91D3D2 url(images/bkg2_mbl.jpg) no-repeat 0;
+    background-size: cover;
+    font-weight: normal;
+    color: black;
+    position: relative;
+}
+
+#block_4 .program_day_1 {
+    list-style-image: url(images/b2.png);
+    padding: 0;
+}
+
+#block_4 .program_day_1 .inner {
+    list-style-image: url(images/b3.png);
+}
+
+#block_4 .program_day_1 li span{
+    font-weight: bold;
+}
+
+#block_4 .program_day_1 > li:nth-child(1) { margin-left: 25px; }
+#block_4 .program_day_1 > li:nth-child(2) { margin-left: 30px; }
+#block_4 .program_day_1 > li:nth-child(3) { margin-left: 37px; }
+#block_4 .program_day_1 > li:nth-child(4) { margin-left: 42px; }
+#block_4 .program_day_1 > li:nth-child(5) { margin-left: 42px; }
+#block_4 .program_day_1 > li:nth-child(6) { margin-left: 30px; }
+#block_4 .program_day_1 > li:nth-child(7) { margin-left: 21px; }
+#block_4 .program_day_1 > li:nth-child(8) { margin-left: 7px; }
+
+#block_4 .program_icon {
+    background-image: url(images/circle.png);
+    width: 363px;
+    height: 361px;
+    position: absolute;
+    top: 50%;
+    margin-top: -190px;
+    left: -220px;
+}
+
+#block_4 .program_results {
+    position: relative;
+    margin: 0 20px;
+}
+
+#block_4 .results_line {
+    border-top: 2px solid #e1041e;
+    width: 100%;
+}
+
+#block_4 .results_line_top {
+    position: absolute;
+    left: 0;
+}
+
+#block_4 .results_header {
+    background-color: #91D3D2;
+    display: inline-block;
+    position: relative;
+    z-index: 10;
+    font-size: 30px;
+    color: red;
+    padding: 0 10px;
+    font-weight: bold;
+}
+
+#block_4 .results_info {
+    font-weight: bold;
+}
+
+/* ------------------------------------------------------ */
+
+@media (min-width: 798px) {
+    #block_1 {
+        background-image: url(images/bkg1_tbl.jpg);
+    }
+
+    #block_1 .program_border {
+        background-position-y: 55px;
+        background-size: 490px;
+    }
+
+    #block_1 .program_title {
+        font-size: 60px;
+        line-height: 70px;
+    }
+}
+
+/* ------------------------------------------------------ */
+
+@media (min-width: 992px) {
+    #block_1 {
+        background-image: url(images/bkg1_dskt.jpg);
+        color: black;
+    }
+
+    #block_1 .program_border {
+        background-image: url(images/br_2.png);
+        background-size: 830px;
+    }
+
+    #block_1 .program_title {
+        margin-bottom: 10px;
+        font-size: 65px;
+    }
+
+    #block_1 .program_title p {
+        display: inline;
+    }
+
+    #block_1 .program_description {
+        font-size: 25px;
+        margin: 0 0 20px;
+    }
+
+    #block_1 .lt_women, #block_1 .rt_women {
+        height: 553px;
+    }
+
+    #block_1 .lt_women {
+        background-image: url(images/w1.png);
+        left: -155px;
+    }
+
+    #block_1 .rt_women {
+        background-image: url(images/w2.png);
+        right: -155px;
+    }
+
+    #block_4 {
+        background-image: url(images/bkg2_tbl.jpg);
+        background-color: #a6d2d1;
+        background-position: center;
+    }
+
+    #block_4 .results_header {
+        background-color: #a6d2d1;
+    }
+}
+
+/* ------------------------------------------------------ */
+
+@media (min-width: 1200px) {
+    #block_1 .program_border {
+        background-position-y: 75px;
+        background-size: 995px;
+    }
+
+    #block_1 .program_title {
+        margin-top: 50px;
+        font-size: 80px;
+    }
+
+    #block_1 .program_description {
+        font-size: 30px;
+        margin: 0 0 50px;
+    }
+}
+
+/* ------------------------------------------------------ */
+
+@media (min-width: 1400px) {
+    #block_4 {
+        background-image: url(images/bkg2_dskt.jpg);
+    }
+
+    #block_4 .program_icon {
+        left: 80px;
+    }
+}
