@@ -156,6 +156,7 @@ a.btn:hover {
 #process_stages {
     margin-top: 50px;
     color: black;
+    overflow: hidden;
 }
 
 #process_stages .row {
@@ -164,14 +165,13 @@ a.btn:hover {
 
 #process_stages .side_title {
     position: absolute;
-    right: -480px;
-    top: 1210px;
-    margin-top: -440px;
+    right: -550px;
+    top: 1000px;
     font-size: 143px;
-    letter-spacing: .1em;
+    font-weight: 700;
     transform: rotate(90deg);
-    width: 400px;
     text-align: center;
+    color: #333333;
 }
 
 /* ------------------------------------------------------ */
