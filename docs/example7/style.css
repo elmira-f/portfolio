@@ -1,0 +1,401 @@
+body {
+    background: linear-gradient(to right, #ffffff 0%, #ece9e6 100%);
+    font-family: "Lato", sans-serif;
+    font-weight: 300;
+    font-size: 20px;
+    letter-spacing: 3px;
+    line-height: 1.5;
+    color: black;
+}
+
+strong {
+    font-weight: 700;
+}
+
+p {
+    margin-bottom: 0;
+}
+
+p.text {
+    letter-spacing: 1px;
+    text-align: justify;
+    font-size: 14px;
+    color: #808285;
+}
+
+h2 {
+    font-size: 24px;
+    font-weight: 700;
+}
+
+h3 {
+    font-size: 18px;
+    letter-spacing: .15em;
+    margin-bottom: 6px;
+}
+
+/* ------------------------------------------------------ */
+
+a {
+    color: black;
+}
+
+a.btn {
+    border: 3px solid #15adff;
+    border-radius: 0;
+    padding: 6px 35px;
+    margin-top: 30px;
+}
+
+a.btn:hover {
+    background: linear-gradient(to right, #00d0ff 0%, #15adff 100%);
+    border: none;
+    padding: 9px 38px;
+    color: white!important;
+}
+
+/* ------------------------------------------------------ */
+
+.navbar {
+    font-size: 15px;
+}
+
+.navbar .logo {
+    width: 90px;
+}
+
+.navbar .language a.active  {
+    font-weight: 700;
+    color: #68ceea;
+}
+
+.navbar .menu {
+    margin: 50px 0;
+}
+
+.navbar .menu a {
+    padding: 0 30px;
+}
+
+.navbar .menu a.active {
+    font-weight: 700;
+    color: #68ceea;
+}
+
+/* ------------------------------------------------------ */
+
+#start_development .row {
+    align-items: center;
+    min-height: 60vh;
+}
+
+/* ------------------------------------------------------ */
+
+#app_development {
+    overflow: hidden;
+}
+
+#app_development .phone_apps {
+    position: relative;
+    background: linear-gradient(to right, rgb(0, 210, 255) 0px, rgb(31, 162, 255) 100%);
+    margin: 120px auto 100px;
+    height: 100px;
+    width: 300px;
+    font-size: 40px;
+    font-weight: 700;
+}
+
+#app_development .phone_apps p.black_title {
+    position: absolute;
+    background: linear-gradient(to right, rgb(255, 255, 255) 0px, rgb(236, 233, 230) 100%);
+    left: 10px;
+    top: 10px;
+    bottom: 10px;
+    right: 10px;
+    color: black;
+    letter-spacing: 0.1em;
+    text-align: left;
+    padding-left: 20px;
+}
+
+#app_development .phone_apps img {
+    width: 200px;
+    position: absolute;
+    top: -80px;
+    right: -20px;
+    z-index: 10;
+}
+
+#app_development .phone_apps .bottom_line {
+    position: absolute;
+    background: linear-gradient(to right, rgb(0, 210, 255) 0px, rgb(31, 162, 255) 100%);
+    width: 100%;
+    height: 10px;
+    left: 0;
+    bottom: 0;
+    z-index: 11;
+}
+
+/* ------------------------------------------------------ */
+
+#web_development img.laptop {
+    margin: 120px auto 30px;
+    width: 100%;
+}
+
+#web_development img.logo {
+    width: 10%;
+    position: absolute;
+    top: 135px;
+    left: 50%;
+    margin-left: -5%;
+}
+
+/* ------------------------------------------------------ */
+
+#process_stages {
+    margin-top: 50px;
+    color: black;
+}
+
+#process_stages .row {
+    margin: 10px auto 35px;
+}
+
+#process_stages .side_title {
+    position: absolute;
+    right: -480px;
+    top: 1210px;
+    margin-top: -440px;
+    font-size: 143px;
+    letter-spacing: .1em;
+    transform: rotate(90deg);
+    width: 400px;
+    text-align: center;
+}
+
+/* ------------------------------------------------------ */
+
+#cooperate_with {
+    margin-top: 200px;
+}
+
+#cooperate_with .arrow img {
+    max-width: 40px;
+}
+
+#cooperate_with .logo_list {
+    overflow: hidden;
+}
+
+#cooperate_with .logo_list .inner {
+    width: 1500px;
+}
+
+#cooperate_with .logo_list img {
+    vertical-align: middle;
+    width: 200px;
+}
+
+/* ------------------------------------------------------ */
+
+#contact_us {
+    margin-top: 200px;
+    margin-bottom: 50px;
+}
+
+#contact_us .contact {
+    display: inline-block;
+    overflow: hidden;
+    width: 40px;
+    padding: 0 7px;
+    height: 40px;
+}
+
+#contact_us p.text {
+    text-align: center;
+}
+
+#contact_us form {
+    margin-top: 30px;
+}
+
+#contact_us form input {
+    width: 100%;
+    background: none;
+    border: none;
+    border-bottom: 2px solid #15adff;
+    font-size: 16px;
+    padding: 15px 5px;
+    margin: 5px;
+}
+
+/* ------------------------------------------------------ */
+
+#bottom_social_links {
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.social_links a {
+    display: inline-block;
+    overflow: hidden;
+    width: 34px;
+    padding: 0 7px;
+    height: 34px;
+}
+
+/* ------------------------------------------------------ */
+
+#chatbox {
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    z-index: 20;
+}
+
+#chatbox .chat_btn {
+    border-radius: 40px;
+    background-color: #15adff;
+    box-shadow: 1px 1px 6px rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    display: block;
+}
+
+#chatbox .chat_btn img {
+    width: 35px;
+}
+
+/* ------------------------------------------------------ */
+
+@media (min-width: 798px) {
+    p.text {
+        font-size: 16px;
+    }
+
+    h2 {
+        font-size: 40px;
+    }
+
+    h3 {
+        font-size: 24px;
+    }
+
+    .navbar .logo {
+        width: 120px;
+    }
+
+    #start_development p.title {
+        font-size: 27px;
+        letter-spacing: 10px;
+    }
+
+    #start_development p.text {
+        margin-top: 20px;
+    }
+
+    #app_development .phone_apps {
+        font-size: 85px;
+        width: 500px;
+        height: 165px;
+    }
+
+    #app_development .phone_apps img {
+        width: 250px;
+        top: -90px;
+    }
+
+    #app_development .phone_apps p.black_title {
+        left: 15px;
+        top: 15px;
+        right: 15px;
+        bottom: 15px;
+    }
+
+    #app_development .phone_apps .bottom_line {
+        height: 15px;
+    }
+
+    #process_stages .container {
+        position: relative;
+        background: url(images/line.svg) no-repeat center;
+        background-size: contain;
+        height: 1800px;
+    }
+
+    #process_stages .stage_1 {
+        position: absolute;
+        padding-right: 25px;
+        top: 372px;
+    }
+
+    #process_stages .stage_2 {
+        position: absolute;
+        top: 624px;
+    }
+
+    #process_stages .stage_3 {
+        position: absolute;
+        padding-right: 25px;
+        top: 873px;
+    }
+
+    #process_stages .stage_4 {
+        position: absolute;
+        top: 1125px;
+    }
+
+    #process_stages .stage_5 {
+        position: absolute;
+        padding-right: 25px;
+        top: 1375px;
+    }
+}
+
+/* ------------------------------------------------------ */
+
+@media (min-width: 1200px) {
+    p.text {
+        font-size: 21px;
+    }
+
+    .navbar .logo {
+        width: 140px;
+    }
+
+    h2 {
+        font-size: 70px;
+    }
+
+    h3 {
+        font-size: 39px;
+    }
+
+    #app_development .phone_apps {
+        font-size: 125px;
+        width: 700px;
+        height: 220px;
+    }
+
+    #app_development .phone_apps img {
+        width: 350px;
+        top: -140px;
+    }
+
+    #contact_us {
+        margin-bottom: 100px;
+    }
+
+    #contact_us form {
+        margin-top: 50px;
+    }
+}
+
+/* ------------------------------------------------------ */
+
+#particles-js {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+}

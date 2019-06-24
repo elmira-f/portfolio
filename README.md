@@ -34,6 +34,10 @@
 
 [Link](https://elmira-f.github.io/portfolio/example-6/)
 
+## Example 7 (responsive)
+
+[Link](https://elmira-f.github.io/portfolio/example-7/)
+
 ## Sephora (responsive)
 
 ![Image](https://elmira-f.github.io/portfolio/sephora/image.png)
