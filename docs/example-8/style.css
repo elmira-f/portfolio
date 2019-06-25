@@ -1,0 +1,410 @@
+body {
+    font-family: "Neo Sans Pro", sans-serif;
+    background-color: white;
+    padding: 0;
+    margin: 0;
+    font-size: 14px;
+    line-height: 1.2;
+    color: #939ca2;
+    min-width: 400px;
+}
+
+/* ------------------------------------------------------ */
+
+.container {
+    max-width: 960px;
+    margin: 25px;
+}
+
+/* ------------------------------------------------------ */
+
+.breadcrumbs {
+    font-family: "Myriad Pro", sans-serif;
+    font-size: 13px;
+}
+
+.breadcrumbs ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: end;
+    -ms-flex-align: end;
+    align-items: flex-end;
+    list-style-type: none;
+    margin: 25px 0 20px;
+    padding: 0;
+}
+
+.breadcrumbs li {
+    display: inline-block;
+}
+
+.breadcrumbs li a {
+    text-decoration: underline;
+    color: #939ca2;
+}
+
+.breadcrumbs li a:hover {
+    text-decoration: none;
+}
+
+.breadcrumbs li img {
+    vertical-align: bottom;
+    padding-right: 5px;
+}
+
+.breadcrumbs li span {
+    padding: 0 5px;
+}
+
+/* ------------------------------------------------------ */
+
+.title {
+    font-size: 28px;
+    font-weight: 500;
+    color: black;
+}
+
+/* ------------------------------------------------------ */
+
+.filters {
+    background-color: #eef8ff;
+    border: 1px solid #e5f0fb;
+    border-radius: 10px;
+    padding: 15px;
+    color: #60666a;
+}
+
+.filters form {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-flow: column;
+    flex-flow: column;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+.filters form > div {
+    margin: 6px 0;
+}
+
+.filters form .filter_name {
+    display: inline-block;
+    margin: 0;
+}
+
+.filters form label {
+    position: relative;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    display: inline-block;
+    height: 15px;
+    min-width: 15px;
+    vertical-align: middle;
+    padding: 0 4px;
+}
+
+.filters form label input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+
+.filters form .separator {
+    color: #c2d1dc;
+    display: none;
+}
+
+/* ------------------------------------------------------ */
+
+.filters .colors .holder {
+    position: absolute;
+    left: 4px;
+    top: 0;
+    border-radius: 15px;
+    height: 15px;
+    width: 15px;
+}
+
+.filters .colors input[value="red"] ~ .holder { background-color: #e30013; }
+.filters .colors input[value="black"] ~ .holder { background-color: #3b3b3b; }
+.filters .colors input[value="yellow"] ~ .holder { background-color: #e3c400; }
+.filters .colors input[value="white"] ~ .holder { background-color: #ffffff; }
+.filters .colors input[value="green"] ~ .holder { background-color: #76e300; }
+.filters .colors input[value="pink"] ~ .holder { background-color: #e300a0; }
+.filters .colors input[value="orange"] ~ .holder { background-color: #e17125; }
+
+.filters .colors input:checked ~ .circle {
+    position: absolute;
+    border: 2px solid #ff4343;
+    border-radius: 15px;
+    height: 19px;
+    width: 19px;
+    left: 0;
+    top: -4px;
+}
+
+/* ------------------------------------------------------ */
+
+.filters .quantity label {
+    padding-left: 24px;
+}
+
+.filters .quantity .holder {
+    position: absolute;
+    left: 4px;
+    top: -1px;
+    background-color: #d7e2ea;
+    border: 1px solid #bdcbd5;
+    border-radius: 3px;
+    height: 15px;
+    width: 15px;
+}
+
+.filters .quantity input:checked ~ .holder {
+    background-color: #f73e3d;
+    background-image: url(images/mark.png);
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    border: 1px solid #c12524;
+}
+
+/* ------------------------------------------------------ */
+
+.filters .sorting a {
+    text-decoration: none;
+    color: #aaaaaa;
+}
+
+.filters .sorting a.active {
+    color: #ff4343;
+}
+
+.filters .sorting a.active span {
+    border-bottom: 1px dashed;
+}
+
+.filters .sorting a.active:hover span {
+    border-bottom: none;
+}
+
+/* ------------------------------------------------------ */
+
+.pagination {
+    background-color: #eef8ff;
+    border: 1px solid #e5f0fb;
+    border-radius: 10px;
+    padding: 15px;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-flow: row nowrap;
+    flex-flow: row nowrap;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    color: #60666a;
+    margin-bottom: 25px;
+}
+
+.pagination a {
+    font-size: 14px;
+    text-decoration: none;
+    border-bottom: 1px solid;
+    color: #60666a;
+}
+
+.pagination a:hover {
+    border-bottom: none;
+}
+
+.pagination a.active {
+    font-weight: bold;
+}
+
+.pagination .pages a {
+    margin: 0 5px;
+}
+
+/* ------------------------------------------------------ */
+
+.products {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-flow: row wrap;
+    flex-flow: row wrap;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    text-align: center;
+    margin: 30px 0;
+}
+
+.products .product {
+    width: 192px;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    border: 1px solid #c2d1dc;
+    border-radius: 10px;
+    margin: 0;
+    padding: 10px;
+}
+
+.products .product a {
+    display: block;
+}
+
+.products .product a.picture {
+    text-decoration: none;
+    margin: 10px 0;
+    height: 130px;
+}
+
+.products .product a.picture img {
+    height: 100%;
+}
+
+.products .product a.title {
+    color: #0093ca;
+    font-size: 14px;
+}
+
+.products .product a.title:hover {
+    text-decoration: none;
+}
+
+.products .product p {
+    margin: 6px 0;
+}
+
+.products .product p.description {
+    margin-top: 20px;
+    color: #494949;
+}
+
+.products .product p.price {
+    color: #393939;
+}
+
+.products .product p.price span {
+    color: black;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.products .product p.old_price {
+    position: relative;
+    color: #aaaaaa;
+    font-size: 15px;
+}
+
+.products .product p.old_price .line {
+    position: absolute;
+    border-top: 3px solid #f73d3c;
+    -webkit-transform: rotate(-15deg);
+    -ms-transform: rotate(-15deg);
+    transform: rotate(-15deg);
+    left: 35%;
+    top: 35%;
+    width: 30%;
+}
+
+.products .product .purchase {
+    border-radius: 20px;
+    width: 65%;
+    background-color: #eef8ff;
+    margin: auto;
+    position: relative;
+    text-align: left;
+    padding: 8px;
+}
+
+.products .product .purchase form {
+    padding-right: 53px;
+}
+
+.products .product .purchase input {
+    border-radius: 20px;
+    border: 1px solid #c9c9c9;
+    padding: 5px;
+    width: 100%;
+}
+
+.products .product .purchase button {
+    position: absolute;
+    border-radius: 25px;
+    width: 43px;
+    height: 43px;
+    border: none;
+    background-color: #f73d3c;
+    background-image: url(images/cart.png);
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    top: 0;
+    right: 0;
+}
+
+/* ------------------------------------------------------ */
+
+@media (max-width: 500px) {
+    .products .product {
+        width: 65%;
+    }
+}
+
+/* ------------------------------------------------------ */
+
+@media (min-width: 800px) {
+    .filters form {
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+        -ms-flex-flow: row wrap;
+        flex-flow: row wrap;
+    }
+
+    .filters form > div {
+        margin: 0;
+    }
+
+    .filters form .separator {
+        display: block;
+    }
+}
+
+/* ------------------------------------------------------ */
+
+@media (min-width: 1010px) {
+    .container {
+        max-width: 960px;
+        margin: auto;
+    }
+
+    .products {
+        -webkit-box-pack: start;
+        -ms-flex-pack: start;
+        justify-content: start;
+    }
+}
