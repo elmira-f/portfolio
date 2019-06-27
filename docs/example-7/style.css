@@ -69,6 +69,11 @@ a.btn:hover {
     color: #68ceea;
 }
 
+.navbar .language a:hover  {
+    text-decoration: none;
+    color: #68ceea;
+}
+
 .navbar .menu {
     margin: 50px 0;
 }
