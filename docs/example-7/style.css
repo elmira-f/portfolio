@@ -74,11 +74,16 @@ a.btn:hover {
 }
 
 .navbar .menu a {
-    padding: 0 30px;
+    padding: 0 40px;
 }
 
 .navbar .menu a.active {
     font-weight: 700;
+    color: #68ceea;
+}
+
+.navbar .menu a:hover {
+    text-decoration: none;
     color: #68ceea;
 }
 
@@ -236,6 +241,23 @@ a.btn:hover {
 
 /* ------------------------------------------------------ */
 
+#web_agency img {
+    width: 100%;
+}
+
+#web_agency h4 {
+    margin-top: 25px;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+#web_agency p.text {
+    font-size: 14px;
+    margin: 10px 0;
+}
+
+/* ------------------------------------------------------ */
+
 #bottom_social_links {
     margin-top: 50px;
     margin-bottom: 50px;
@@ -354,6 +376,18 @@ a.btn:hover {
         padding-right: 25px;
         top: 1375px;
     }
+
+    #web_agency h2 {
+        font-size: 28px;
+    }
+
+    #web_agency h4 {
+        font-size: 18px;
+    }
+
+    #web_agency p.text {
+        font-size: 16px;
+    }
 }
 
 /* ------------------------------------------------------ */
@@ -395,8 +429,12 @@ a.btn:hover {
     }
 
     #contact_us.single_page h2 {
-        font-size: 75px;
+        font-size: 65px;
         margin-bottom: 80px;
+    }
+
+    #web_agency h2 {
+        font-size: 65px;
     }
 }
 
