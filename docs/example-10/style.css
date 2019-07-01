@@ -142,6 +142,24 @@ a.white_btn:hover {
 }
 /* ------------------------------------------------------ */
 
+#work_with_us {
+    background-image: url("images/work_with_us.jpg");
+    background-position-x: 100%;
+    background-size: cover;
+    padding: 150px 0;
+}
+#work_with_us h1 {
+    margin-bottom: 30px;
+    text-align: center;
+}
+#work_with_us img {
+    margin: 20px 0;
+}
+#work_with_us h3 {
+    margin: 20px 0;
+}
+/* ------------------------------------------------------ */
+
 @media (min-width: 768px) {
     #mobile_factory {
         margin-top: -61px;
