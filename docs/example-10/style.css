@@ -158,6 +158,83 @@ a.white_btn:hover {
 #work_with_us h3 {
     margin: 20px 0;
 }
+
+/* ------------------------------------------------------ */
+
+#prices {
+    background-color: #fffcfc;
+    padding: 150px 0;
+}
+#prices .blue_column {
+    padding: 10px;
+}
+#prices .blue_column .inner{
+    color: white;
+    background: linear-gradient(to bottom, #00b7ea 0%,#009ec3 100%);
+    padding: 60px 20px;
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between;
+    height: 600px;
+}
+#prices .blue_column h2 {
+    font-size: 48px;
+}
+#prices .blue_column h2,
+#prices .blue_column h3 {
+    font-size: 32px;
+    margin: 20px 0;
+}
+#prices .blue_column h4 {
+    font-size: 20px;
+    margin: 20px 0;
+}
+#prices .blue_column .line {
+    width: 124px;
+    height: 4px;
+    background-color: white;
+}
+#prices a.white_btn {
+    width: 75%;
+    align-self: center;
+    text-align: center;
+}
+#prices a.white_btn:hover {
+    color: #009ec3;
+}
+
+/* ------------------------------------------------------ */
+
+#our_latest_work {
+    padding: 50px 0 0;
+}
+#our_latest_work .title_our_works {
+    margin-bottom: 100px;
+    text-align: center;
+}
+#our_latest_work .images {
+    align-self: flex-end;
+}
+#our_latest_work .images img {
+    width: 100%;
+}
+
+/* ------------------------------------------------------ */
+
+#tasi_predicts {
+    background-image: url("images/tasi_bg.png");
+    background-position-x: 100%;
+    background-size: cover;
+    padding: 150px 0 0;
+    color: white;
+}
+#tasi_predicts .images {
+    align-self: flex-end;
+}
+#tasi_predicts .images img {
+    width: 100%;
+}
+
 /* ------------------------------------------------------ */
 
 @media (min-width: 768px) {
@@ -204,5 +281,11 @@ a.white_btn:hover {
     #app_develop a,
     #ar_development a {
         margin-top: 30px;
+    }
+
+    #prices h1,
+    #our_latest_work h1,
+    #tasi_predicts h1{
+        font-size: 54px;
     }
 }
