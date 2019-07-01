@@ -6,19 +6,14 @@ body {
     font-style: normal;
     color: #424242;
     font-size: 16px;
+    min-width: 400px;
 }
 
 /* ------------------------------------------------------ */
 
-h1 {
-
+a.bar_link {
+    color: black;
 }
-
-p.text {
-
-}
-
-/* ------------------------------------------------------ */
 
 a.blue_btn {
     display: inline-block;
@@ -28,18 +23,27 @@ a.blue_btn {
     color: #ffffff;
     background-color: rgba(60, 199, 198, 0.75);
     border-radius: 30px;
-    padding: 12px 35px;
+    padding: 15px;
 }
 a.blue_btn:hover {
     color: black;
     background-color: white;
 }
 
+a.white_btn {
+    display: inline-block;
+    text-decoration: none;
+    color: #ffffff;
+    border: 1px solid #e6eaf1;;
+    padding: 15px;
+}
+a.white_btn:hover {
+    background-color: white;
+    color: black;
+}
+
 /* ------------------------------------------------------ */
 
-.navbar {
-
-}
 .navbar a img {
     height: 45px;
 }
@@ -49,10 +53,14 @@ a.blue_btn:hover {
     text-transform: uppercase;
     line-height: 22px;
     letter-spacing: 1px;
-    font-weight: 400;
+    font-weight: 500;
     font-style: normal;
     color: #444444;
     font-size: 14px;
+    padding-left: 40px;
+}
+.navbar .menu a:hover {
+    color: rgba(60, 199, 198, 0.75);
 }
 
 /* ------------------------------------------------------ */
@@ -62,9 +70,13 @@ a.blue_btn:hover {
     background-size: cover;
     overflow: hidden;
 }
-
+#mobile_factory h1 {
+    font-size: 40px;
+}
 #mobile_factory p.text {
     margin: 50px 0;
+    font-size: 20px;
+    line-height: 20px;
 }
 
 #mobile_factory .images {
@@ -85,14 +97,49 @@ a.blue_btn:hover {
     width: 120px;
 }
 
+#mobile_factory img.watch {
+    position: absolute;
+    right: 29%;
+    width: 170px;
+}
 /* ------------------------------------------------------ */
 
 #ux_design {
     background-image: url("images/ux-design.jpg");
+    background-size: cover;
     padding: 150px 0;
     color: white;
 }
+#ux_design p.text {
+    color: #e6eaf1;
+}
 
+/* ------------------------------------------------------ */
+
+#app_develop {
+    background-image: url(images/apps_develop.jpg);
+    background-size: cover;
+    padding: 150px 0;
+}
+#app_develop a.blue_btn {
+    border-radius: 0;
+}
+#app_develop a.blue_btn:hover {
+    border: 1px solid rgba(60, 199, 198, 0.75);
+    padding: 14px;
+}
+
+/* ------------------------------------------------------ */
+
+#ar_development {
+    background-image: url("images/ar-development.jpg");
+    background-size: cover;
+    padding: 150px 0;
+    color: white;
+}
+#ar_development p.text {
+    color: #e6eaf1;
+}
 /* ------------------------------------------------------ */
 
 @media (min-width: 768px) {
@@ -100,7 +147,14 @@ a.blue_btn:hover {
         margin-top: -61px;
         padding: 211px 0 150px;
     }
-
+    #mobile_factory h1 {
+        font-size: 60px;
+    }
+    #mobile_factory p.text {
+        margin: 80px 0;
+        font-size: 30px;
+        line-height: 40px;
+    }
     #mobile_factory .images {
         height: auto;
     }
@@ -115,5 +169,22 @@ a.blue_btn:hover {
         bottom: -115px;
         right: 65px;
         width: 240px;
+    }
+    #mobile_factory img.watch {
+        bottom: -105px;
+        right: 200px;
+        width: 400px;
+    }
+
+    #ux_design h1,
+    #app_develop h1,
+    #ar_development h1 {
+        margin-bottom: 30px;
+    }
+
+    #ux_design a,
+    #app_develop a,
+    #ar_development a {
+        margin-top: 30px;
     }
 }
