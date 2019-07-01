@@ -26,8 +26,8 @@ a.blue_btn {
     padding: 15px;
 }
 a.blue_btn:hover {
-    color: black;
     background-color: white;
+    color: black!important;
 }
 
 a.white_btn {
@@ -39,15 +39,27 @@ a.white_btn {
 }
 a.white_btn:hover {
     background-color: white;
-    color: black;
+    color: black!important;
 }
 
 /* ------------------------------------------------------ */
 
-section .images {
+.details {
+    background-size: cover;
+    background-position-x: 100%;
+    padding: 150px 0;
+}
+
+.products {
+    background-size: cover;
+    background-position-x: 100%;
+    padding: 150px 0 0;
+    color: white;
+}
+.products .images {
     align-self: flex-end;
 }
-section .images img {
+.products .images img {
     width: 100%;
 }
 
@@ -98,25 +110,22 @@ section .images img {
     right: 20%;
     width: 200px;
 }
-
 #mobile_factory .devices img.phone {
     position: absolute;
     bottom: -45px;
     right: 55%;
     width: 120px;
 }
-
 #mobile_factory .devices img.watch {
     position: absolute;
     right: 29%;
     width: 170px;
 }
+
 /* ------------------------------------------------------ */
 
 #ux_design {
     background-image: url("images/ux-design.jpg");
-    background-size: cover;
-    padding: 150px 0;
     color: white;
 }
 #ux_design p.text {
@@ -127,8 +136,6 @@ section .images img {
 
 #app_develop {
     background-image: url(images/apps_develop.jpg);
-    background-size: cover;
-    padding: 150px 0;
 }
 #app_develop a.blue_btn {
     border-radius: 0;
@@ -142,20 +149,16 @@ section .images img {
 
 #ar_development {
     background-image: url("images/ar-development.jpg");
-    background-size: cover;
-    padding: 150px 0;
     color: white;
 }
 #ar_development p.text {
     color: #e6eaf1;
 }
+
 /* ------------------------------------------------------ */
 
 #work_with_us {
     background-image: url("images/work_with_us.jpg");
-    background-position-x: 100%;
-    background-size: cover;
-    padding: 150px 0;
 }
 #work_with_us h1 {
     margin-bottom: 30px;
@@ -172,7 +175,6 @@ section .images img {
 
 #prices {
     background-color: #fffcfc;
-    padding: 150px 0;
 }
 #prices .blue_column {
     padding: 10px;
@@ -216,6 +218,7 @@ section .images img {
 
 #our_latest_work {
     padding: 50px 0 0;
+    color: black;
 }
 #our_latest_work .title_our_works {
     margin-bottom: 100px;
@@ -226,38 +229,25 @@ section .images img {
 
 #tasi_predicts {
     background-image: url("images/tasi_bg.png");
-    background-position-x: 100%;
-    background-size: cover;
-    padding: 150px 0 0;
-    color: white;
 }
 
 /* ------------------------------------------------------ */
 
 #brain_online {
-    padding: 150px 0 0;
+    color: black;
 }
 
 /* ------------------------------------------------------ */
 
 #danfoss_products {
     background-image: url("images/danfoss_bg.jpg");
-    background-position-x: 100%;
-    background-size: cover;
-    padding: 150px 0 0;
-    color: white;
 }
 
 /* ------------------------------------------------------ */
 
 #world_fans {
     background-image: url("images/world_fans_bg.jpg");
-    background-position-x: 100%;
-    background-size: cover;
-    padding: 150px 0 0;
-    color: white;
 }
-
 #world_fans a.white_btn {
     margin-bottom: 15px;
 }
@@ -266,12 +256,7 @@ section .images img {
 
 #swiper_3d {
     background-image: url("images/swiper_bg.jpg");
-    background-position-x: 100%;
-    background-size: cover;
-    padding: 150px 0 0;
-    color: white;
 }
-
 #swiper_3d a.white_btn {
     margin-bottom: 15px;
 }
