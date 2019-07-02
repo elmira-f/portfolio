@@ -311,6 +311,89 @@ a.white_btn:hover {
     margin-bottom: 20px;
 }
 
+/* ------------------------------------------------------ */
+
+#working_together {
+    background: url("images/work_with_us.jpg") left;
+    text-align: center;
+}
+#working_together p {
+    padding: 20px 0;
+}
+#working_together a.blue_btn {
+    border-radius: 0;
+    background: rgba(25,166,184, 1);
+}
+
+/* ------------------------------------------------------ */
+
+#message_us {
+    background-color: #f6f6f6;
+    margin-top: 150px;
+}
+#message_us .message_form {
+    background-color: white;
+    padding: 50px 30px;
+}
+#message_us .message_form h2 {
+    font-size: 20px;
+    font-weight: 400;
+    padding-bottom: 20px;
+}
+#message_us .message_form form input,
+#message_us .message_form form textarea {
+    height: 50px;
+    background-color: #f6f6f6;
+    border: 1px solid #aaaaaa;
+    margin-bottom: 20px;
+    padding-left: 10px;
+    width: 100%;
+}
+#message_us .message_form form textarea {
+    height: 200px;
+}
+#message_us .message_form form button {
+    font-size: 15px;
+    font-weight: 700;
+    color: #ffffff;
+    background: rgba(25,166,184, 1);
+    box-shadow: none;
+    border: none;
+    padding: 15px 50px;
+}
+
+/* ------------------------------------------------------ */
+
+footer {
+    padding: 50px 0;
+}
+footer a.blue_btn {
+    background: rgba(25,166,184, 1);
+    border-radius: 0;
+    margin-right: 10px;
+    padding: 5px 15px;
+}
+footer a.blue_btn i {
+    font-size: 15px;
+}
+
+/* ------------------------------------------------------ */
+
+#our_team {
+    color: black;
+    padding: 100px 0;
+}
+#our_team .title_our_team {
+    margin-bottom: 50px;
+}
+#our_team h5 span {
+    color: #19a6b8;
+}
+#our_team img {
+    width: 380px;
+    height: 380px;
+    margin: 10px;
+}
 
 /* ------------------------------------------------------ */
 
@@ -359,6 +442,10 @@ a.white_btn:hover {
     #app_develop a,
     #ar_development a {
         margin-top: 30px;
+    }
+
+    #working_together {
+        background-position: top;
     }
 
 }
