@@ -263,7 +263,61 @@ a.white_btn:hover {
 
 /* ------------------------------------------------------ */
 
+#digital_immersion {
+    background-image: url("images/digital_bg.png");
+}
+#digital_immersion a.white_btn {
+    margin-bottom: 15px;
+}
+
+/* ------------------------------------------------------ */
+
+#art_history {
+    background-image: url("images/art_bg.png");
+}
+
+/* ------------------------------------------------------ */
+
+#about_team {
+    background-image: url("images/team-final.jpg");
+    color: white;
+}
+
+/* ------------------------------------------------------ */
+
+#clients_about_us {
+    margin-bottom: 30px;
+}
+#clients_about_us .review {
+    padding: 10px;
+}
+#clients_about_us .review .inner {
+    border: 1px solid #e7e7e7;
+    text-align: center;
+    padding: 20px;
+}
+#clients_about_us .review p.text {
+    font-style: italic;
+}
+#clients_about_us .review h6 {
+    text-transform: uppercase;
+    font-weight: 700;
+}
+#clients_about_us .review h6 span {
+    color: #00b7ea;
+}
+#clients_about_us .review img {
+    border-radius: 100px;
+    margin-bottom: 20px;
+}
+
+
+/* ------------------------------------------------------ */
+
 @media (min-width: 768px) {
+    h1{
+        font-size: 54px;
+    }
     #mobile_factory {
         margin-top: -61px;
         padding: 211px 0 150px;
@@ -307,13 +361,4 @@ a.white_btn:hover {
         margin-top: 30px;
     }
 
-    #prices h1,
-    #our_latest_work h1,
-    #tasi_predicts h1,
-    #brain_online h1,
-    #danfoss_products h1,
-    #world_fans h1,
-    #swiper_3d h1{
-        font-size: 54px;
-    }
 }
