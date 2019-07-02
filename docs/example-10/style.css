@@ -338,6 +338,7 @@ form.contact_form button {
 
 #working_together {
     background: url("images/work_with_us.jpg") left;
+    background-size: cover;
     text-align: center;
 }
 #working_together p {
