@@ -364,16 +364,16 @@ a.white_btn:hover {
 
 /* ------------------------------------------------------ */
 
-footer {
+footer.details {
     padding: 50px 0;
 }
-footer a.blue_btn {
+footer.details a.blue_btn {
     background: rgba(25,166,184, 1);
     border-radius: 0;
     margin-right: 10px;
     padding: 5px 15px;
 }
-footer a.blue_btn i {
+footer.details a.blue_btn i {
     font-size: 15px;
 }
 
@@ -386,13 +386,16 @@ footer a.blue_btn i {
 #our_team .title_our_team {
     margin-bottom: 50px;
 }
-#our_team h5 span {
+#our_team .team_member {
+    text-align: center;
+    padding: 10px;
+}
+#our_team .team_member h5 span {
     color: #19a6b8;
 }
-#our_team img {
-    width: 380px;
-    height: 380px;
-    margin: 10px;
+#our_team .team_member img {
+    margin-bottom: 10px;
+    width: 100%;
 }
 
 /* ------------------------------------------------------ */
@@ -447,5 +450,4 @@ footer a.blue_btn i {
     #working_together {
         background-position: top;
     }
-
 }
