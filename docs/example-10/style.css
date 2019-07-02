@@ -44,6 +44,29 @@ a.white_btn:hover {
 
 /* ------------------------------------------------------ */
 
+form.contact_form input,
+form.contact_form textarea {
+    height: 50px;
+    background-color: #f6f6f6;
+    border: 1px solid #aaaaaa;
+    margin-bottom: 20px;
+    padding-left: 10px;
+    width: 100%;
+}
+form.contact_form textarea {
+    height: 200px;
+}
+form.contact_form button {
+    font-size: 15px;
+    font-weight: 700;
+    color: #ffffff;
+    background: rgba(25,166,184, 1);
+    box-shadow: none;
+    border: none;
+    padding: 15px 50px;
+}
+
+/* ------------------------------------------------------ */
 .details {
     background-size: cover;
     background-position-x: 100%;
@@ -340,40 +363,25 @@ a.white_btn:hover {
     font-weight: 400;
     padding-bottom: 20px;
 }
-#message_us .message_form form input,
-#message_us .message_form form textarea {
-    height: 50px;
-    background-color: #f6f6f6;
-    border: 1px solid #aaaaaa;
-    margin-bottom: 20px;
-    padding-left: 10px;
-    width: 100%;
-}
-#message_us .message_form form textarea {
-    height: 200px;
-}
-#message_us .message_form form button {
-    font-size: 15px;
-    font-weight: 700;
-    color: #ffffff;
-    background: rgba(25,166,184, 1);
-    box-shadow: none;
-    border: none;
-    padding: 15px 50px;
-}
 
 /* ------------------------------------------------------ */
 
 footer.details {
     padding: 50px 0;
 }
-footer.details a.blue_btn {
+footer.details .social_links a.blue_btn {
     background: rgba(25,166,184, 1);
     border-radius: 0;
     margin-right: 10px;
     padding: 5px 15px;
 }
-footer.details a.blue_btn i {
+footer.details .social_links {
+    padding-right: 0;
+}
+footer.details .social_links a.blue_btn:last-child {
+    margin-right: 0;
+}
+footer.details .social_links a.blue_btn i {
     font-size: 15px;
 }
 
@@ -399,6 +407,34 @@ footer.details a.blue_btn i {
 }
 
 /* ------------------------------------------------------ */
+
+#contact_us {
+    padding-bottom: 50px;
+}
+#contact_us h2 {
+    font-size: 48px;
+}
+#contact_us .message_form p {
+    font-size: 24px;
+    line-height: 24px;
+    padding: 20px 0;
+}
+#contact_us .message_form {
+    margin-bottom: 50px;
+}
+#contact_us .contact_details h2 {
+    padding-bottom: 20px;
+}
+#contact_us iframe {
+    width: 100%;
+    height: 450px;
+    margin-top: 50px;
+    padding: 0 30px;
+    border: none;
+}
+
+/* ------------------------------------------------------ */
+
 
 @media (min-width: 768px) {
     h1{
@@ -449,5 +485,9 @@ footer.details a.blue_btn i {
 
     #working_together {
         background-position: top;
+    }
+
+    #contact_us iframe {
+        padding: 0;
     }
 }
