@@ -36,15 +36,25 @@
 
 ## Example 7 (responsive)
 
+![Image](https://elmira-f.github.io/portfolio/example-7/image.png)
+
 [Link](https://elmira-f.github.io/portfolio/example-7/)
 
 ## Example 8 (custom inputs)
+
+![Image](https://elmira-f.github.io/portfolio/example-8/image.png)
 
 [Link](https://elmira-f.github.io/portfolio/example-8/)
 
 ## Example 9 (responsive products list)
 
 [Link](https://elmira-f.github.io/portfolio/example-9/)
+
+## Example 10 (responsive)
+
+![Image](https://elmira-f.github.io/portfolio/example-10/image.png)
+
+[Link](https://elmira-f.github.io/portfolio/example-10/)
 
 ## Sephora (responsive)
 
