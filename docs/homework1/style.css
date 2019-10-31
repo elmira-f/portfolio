@@ -49,7 +49,7 @@ body {
     color: black;
     background-color: #fafafc;
 }
-div {
+.container {
     max-width: 1200px;
     margin: auto;
 }
@@ -91,4 +91,102 @@ a.look_more:hover {
 .example {
     border-bottom: 1px dashed gray;
     padding: 50px 0;
+}
+/* Inline-block------------------------------------------------------ */
+.short_info .example,
+.about_us .example,
+.contacts .example {
+    padding: 10px 0;
+}
+.navbar {
+    background-color: black;
+}
+.navbar a {
+    text-decoration: none;
+    color: white;
+}
+.navbar a:hover {
+    color: #005cbf;
+}
+.navbar .menu a {
+    padding: 0 10px;
+}
+.navbar .container,
+.short_info .container,
+.about_us .container,
+.contacts .container{
+    padding: 20px 0;
+    text-align: center;
+}
+.navbar.inline_block .container,
+.short_info.inline_block .container,
+.about_us.inline_block .container,
+.contacts.inline_block .container{
+    font-size: 0;
+}
+.navbar.inline_block .container div,
+.short_info.inline_block .container div,
+.about_us.inline_block .container div,
+.contacts.inline_block .container div {
+    display: inline-block;
+    font-size: 16px;
+    vertical-align: bottom;
+}
+.navbar .container .logo,
+.navbar .container .menu,
+.navbar .container .search {
+    width: 400px;
+}
+.short_info .container .left,
+.contacts .container .left {
+    width: 60%;
+}
+.short_info .container .right,
+.contacts .container .right {
+    width: 40%;
+}
+.about_us .container .left{
+    width: 40%;
+}
+.about_us .container .right{
+    width: 60%;
+}
+.about_us .container .right .example_down .left,
+.about_us .container .right .example_down .right,
+.contacts .container .left .example_down .right,
+.contacts .container .left .example_down .left,
+.contacts .container .right .example_down .left,
+.contacts .container .right .example_down .right {
+    width: 49%;
+}
+/* Table-cell------------------------------------------------------ */
+
+.navbar.table_cell .container div,
+.short_info.table_cell .container .left,
+.short_info.table_cell .container .right,
+.about_us.table_cell .container .left,
+.about_us.table_cell .container .right,
+.contacts.table_cell .container .left,
+.contacts.table_cell .container .right,
+.about_us.table_cell .container .right .example_down,
+.contacts.table_cell .container .left .example_down,
+.contacts.table_cell .container .right .example_down{
+    display: table-cell;
+    vertical-align: bottom;
+}
+/* Float-cell------------------------------------------------------ */
+
+.navbar.float .container .logo,
+.navbar.float .container .menu,
+.navbar.float .container .search,
+.short_info.float .container .left,
+.about_us.float .container .left,
+.contacts.float .container .left,
+.short_info.float .container .right,
+.about_us.float .container .right,
+.contacts.float .container .right{
+    float: left;
+}
+.clear {
+    clear: left;
 }
