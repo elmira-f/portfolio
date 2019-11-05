@@ -41,7 +41,9 @@ table {
     border-collapse: collapse;
     border-spacing: 0;
 }
+
 /* ------------------------------------------------------ */
+
 body {
     margin: 0;
     font-size: 16px;
@@ -51,7 +53,7 @@ body {
 }
 .container {
     max-width: 1200px;
-    margin: auto;
+    margin: 0 auto;
 }
 h1, h2, h3 {
     text-align: center;
@@ -87,12 +89,16 @@ a.look_more:hover {
     text-decoration: underline;
     color: #0c5460;
 }
+
 /* ------------------------------------------------------ */
+
 .example {
     border-bottom: 1px dashed gray;
     padding: 50px 0;
 }
+
 /* Inline-block------------------------------------------------------ */
+
 .short_info .example,
 .about_us .example,
 .contacts .example {
@@ -130,7 +136,7 @@ a.look_more:hover {
 .contacts.inline_block .container div {
     display: inline-block;
     font-size: 16px;
-    vertical-align: bottom;
+    vertical-align: top;
 }
 .navbar .container .logo,
 .navbar .container .menu,
@@ -159,6 +165,7 @@ a.look_more:hover {
 .contacts .container .right .example_down .right {
     width: 49%;
 }
+
 /* Table-cell------------------------------------------------------ */
 
 .navbar.table_cell .container div,
@@ -172,9 +179,16 @@ a.look_more:hover {
 .contacts.table_cell .container .left .example_down,
 .contacts.table_cell .container .right .example_down{
     display: table-cell;
-    vertical-align: bottom;
+    vertical-align: top;
 }
+
 /* Float-cell------------------------------------------------------ */
+
+.float .container:after {
+    content: "";
+    clear: both;
+    display: block;
+}
 
 .navbar.float .container .logo,
 .navbar.float .container .menu,
@@ -187,6 +201,15 @@ a.look_more:hover {
 .contacts.float .container .right{
     float: left;
 }
-.clear {
-    clear: left;
+
+/* Flex------------------------------------------------------ */
+
+.navbar.flex .container,
+.short_info.flex .container,
+.about_us.flex .container,
+.about_us.flex .container .right .example_down,
+.contacts.flex .container,
+.contacts.flex .container .left .example_down,
+.contacts.flex .container .right .example_down {
+    display: flex;
 }
