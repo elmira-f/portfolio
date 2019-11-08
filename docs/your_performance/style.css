@@ -1,0 +1,298 @@
+body {
+    margin: 30px 0;
+    font-family: "Open Sans Light", sans-serif;
+    font-size: 13pt;
+    background-image: url("images/bg.png");
+    background-repeat: no-repeat;
+    background-position: right top;
+    background-size: 100% auto;
+    color: #4c505c;
+}
+.container {
+    max-width: 1300px;
+    margin: 0 auto;
+}
+
+/* ------------------------------------------------------ */
+
+h1 {
+    font-weight: bold;
+    font-size: 20pt;
+    margin-bottom: 20px;
+}
+h2 {
+    font-weight: bold;
+    font-size: 16pt;
+    margin-bottom: 15px;
+}
+p.group {
+    font-size: 15pt;
+    color: #2b2b2b;
+    margin-bottom: 15px;
+}
+p.count {
+    max-width: 175px;
+    font-family: "Futura Std Light", sans-serif;
+    font-size: 15pt;
+    text-align: right;
+}
+p.count span {
+    font-size: 40pt;
+}
+a.close {
+    text-decoration: none;
+    color: white;
+}
+a.close:hover,
+a.orange_link:hover {
+    color: #b9d0dd;
+}
+a.orange_link {
+    text-decoration: none;
+    color: #f78f1e;
+    font-size: 13pt;
+}
+a.photo_link {
+    margin-bottom: 5px;
+}
+a.photo_link img {
+    width: 75px;
+    margin: 5px;
+}
+a.photo_link:hover img {
+    border: 5px solid #b9d0dd;
+    margin: 0;
+}
+a.light_blue_btn {
+    font-size: 13pt;
+    text-decoration: none;
+    background-color: #b9d0dd;
+    padding: 7px 10px;
+    color: white;
+    min-width: 150px;
+    box-sizing: border-box;
+    text-align: center;
+}
+p.recognize,
+p.recognize a.orange_link{
+    font-size: 13pt;
+    margin: 15px 0;
+}
+p.message {
+    padding: 20px;
+    background-color: #5e6a77;
+    color: white;
+    margin-bottom: 40px;
+}
+p.type_of_msg,
+p.autor,
+p.date {
+    color: #648190;
+}
+p.autors_msg {
+    color: white;
+}
+/* ------------------------------------------------------ */
+
+.header .navbar,
+.header .menu,
+.content,
+.content .left_navigation .item,
+.content .right_section .multi-select,
+.content .right_section .review,
+.content .right_section .about_review,
+.content .right_section .review .links,
+.content .right_section .mailing {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.content,
+.content .right_section .review,
+.content .right_section .review .about_review,
+.content .right_section .review .links {
+    align-items: flex-start;
+}
+
+.header .navbar {
+    margin: 0 0 50px;
+}
+
+.header .menu,
+.header .search {
+    margin-bottom: 35px;
+}
+
+/* ------------------------------------------------------ */
+
+.header .navbar a.logo img {
+    max-width: 160px;
+}
+.header .icons a {
+    vertical-align: middle;
+    padding: 0 0 0 30px;
+}
+.header .icons a img {
+    width: 25px;
+}
+.header .menu a {
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 22pt;
+    color: #4c505c;
+}
+.header .menu a:hover {
+    color: #b9d0dd;
+}
+.header .search p {
+    text-align: center;
+}
+.header .search label {
+    vertical-align: middle;
+    font-size: 15pt;
+    line-height: 10px;
+    margin-right: 15px;
+}
+.header .search input {
+    font-size: 13pt;
+    background-color: rgba(71, 76, 89, 0.3);
+    padding: 5px;
+    color: black;
+    border: none;
+    width: 50%;
+}
+
+/* Content left-navigation------------------------------------------------------ */
+
+.content .left_navigation {
+    max-width: 300px;
+    width: 100%;
+    color: white;
+}
+.content .left_navigation .item {
+    margin: 15px 0;
+    align-items: flex-start;
+    padding: 10px;
+}
+.content .left_navigation .item img {
+    width: 80px;
+    margin-right: 10px;
+}
+.content .left_navigation .item.person_info {
+    justify-content: normal;
+    margin-top: 0;
+    background-color: #b9d0dd;
+}
+.content .left_navigation .item.person_info .name {
+    font-size: 16pt;
+}
+.content .left_navigation .item.person_info .profession {
+    font-size: 10pt;
+}
+.content .left_navigation .go_shopping {
+    background-image: url("images/bg_goshopping.png");
+}
+.content .left_navigation .my_budget {
+    background-image: url("images/bg_mybudget.png");
+}
+.content .left_navigation .my_badges {
+    background-image: url("images/bg_mybadges.png");
+}
+.content .left_navigation .my_awards {
+    background-image: url("images/bg_myawards.png");
+}
+.content .left_navigation .quizzes {
+    background-image: url("images/bg_quizzes.png");
+}
+.content .left_navigation .redeem {
+    background-image: url("images/bg_redeem.png");
+}
+.content .left_navigation .item.redeem form p input {
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.3);
+    margin-top: 10px;
+    font-size: 13pt;
+    padding: 5px;
+}
+
+/* Content right_section ------------------------------------------------------ */
+
+.content .right_section {
+    margin: 0 0 0 25px;
+}
+.content .right_section .multi-select,
+.content .right_section .review {
+    margin: 0 0 30px;
+}
+.content .right_section .multi-select {
+    background-color: rgba(255, 255, 255, 0.3);
+    padding: 5px;
+    justify-content: inherit;
+}
+.content .right_section .multi-select p {
+    background-color: #aeb4bb;
+    padding: 5px;
+    font-size: 13pt;
+    margin-right: 10px;
+    color: white;
+}
+.content .right_section form p {
+    margin: 20px 0;
+}
+.content .right_section form select {
+    width: 320px;
+    border: 1px solid lightgray;
+    padding: 5px;
+}
+.content .right_section form p.criteria label,
+.content .right_section form p.points label {
+    display: inline-block;
+    width: 120px;
+}
+.content .right_section .review {
+    justify-content: inherit;
+}
+.content .right_section .about_review {
+    background-color: #b1cbd9;
+    font-size: 13pt;
+    display: flex;
+    flex-flow: row nowrap;
+    height: 400px;
+}
+.content .right_section .about_review img {
+    height: 100%;
+}
+.content .right_section .review .about_review .description {
+    justify-content: space-between;
+    display: flex;
+    flex-flow: column;
+    padding: 20px;
+    height: 100%;
+    box-sizing: border-box;
+    max-width: 500px;
+}
+.content .right_section .review .about_review .description p.autors_msg {
+    margin: 15px 0;
+}
+.content .right_section .review .about_review .description p.date {
+    text-align: right;
+    vertical-align: bottom;
+}
+.content .right_section .review .links {
+    flex-wrap: wrap;
+    margin: 0 0 0 25px;
+    width: 200px;
+}
+.content .right_section .mailing form {
+    width: 100%;
+    padding: 20px;
+}
+.content .right_section .mailing form input {
+    border: 2px solid #f3f3f3;
+    width: 100%;
+    font-size: 13pt;
+    padding: 5px;
+    box-sizing: border-box;
+}
