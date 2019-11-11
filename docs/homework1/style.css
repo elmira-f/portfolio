@@ -89,6 +89,11 @@ a.look_more:hover {
     text-decoration: underline;
     color: #0c5460;
 }
+a.menu {
+    font-size: 16px;
+    padding: 10px 20px;
+    display: block;
+}
 
 /* ------------------------------------------------------ */
 
@@ -97,7 +102,7 @@ a.look_more:hover {
     padding: 50px 0;
 }
 
-/* Inline-block------------------------------------------------------ */
+/* Inline-block--------------------------------------------*/
 
 .short_info .example,
 .about_us .example,
@@ -114,9 +119,59 @@ a.look_more:hover {
 .navbar a:hover {
     color: #005cbf;
 }
+
+/* Menu------------------------------------------------------ */
+
+.navbar .menu {
+    padding: 0 100px;
+}
+.navbar .menu ul.navigation {
+    text-align: center;
+    font-size: 0;
+    z-index: 20;
+    position: relative;
+
+}
+.navbar .menu ul.navigation li {
+    display: inline-block;
+    font-size: 35px;
+    position: relative;
+}
+.navbar .menu ul.combo_box  {
+    background-color: black;
+    position: absolute;
+    top: 100%;
+    padding: 10px 0 0;
+    left: 0;
+    display: none;
+}
+.navbar .menu ul.navigation li:hover ul.combo_box,
+.navbar .menu ul.navigation ul.combo_box li:hover ul.second_combo_box {
+    display: block;
+}
+.navbar .menu ul.navigation ul.combo_box li{
+    margin: 0;
+    background-color: black;
+    border-bottom: 1px solid white;
+    padding: 10px;
+}
+.navbar .menu ul.navigation ul.combo_box li:last-child {
+    border-bottom: none;
+}
+.navbar .menu ul.combo_box ul.second_combo_box {
+    background-color: black;
+    position: absolute;
+    left: 100%;
+    top: -7px;
+    display: none;
+}
 .navbar .menu a {
+    width: 100px;
     padding: 0 10px;
 }
+
+/*------------------------------------------------------ */
+
 .navbar .container,
 .short_info .container,
 .about_us .container,
@@ -139,9 +194,8 @@ a.look_more:hover {
     vertical-align: top;
 }
 .navbar .container .logo,
-.navbar .container .menu,
 .navbar .container .search {
-    width: 400px;
+    width: 10%;
 }
 .short_info .container .left,
 .contacts .container .left {
@@ -238,4 +292,42 @@ a.look_more:hover {
     display: block;
 }
 
+/* Fixed_menu------------------------------------------------------ */
 
+a.fixed_link {
+    text-decoration: none;
+    color: white;
+}
+.fixed_menu {
+    position: fixed;
+    top: 50vh;
+    background-color: black;
+    margin-top: -84px;
+    width: 250px;
+}
+.fixed_menu ul.nav_panel {
+    text-align: left;
+}
+.fixed_menu ul.nav_panel li a:hover{
+    color: #005cbf;
+}
+.fixed_menu ul.nav_panel li a{
+    padding: 20px 50px;
+    display: block;
+}
+.fixed_menu ul.nav_panel ul.accord {
+    display: none;
+    padding: 0 0 0 10px;
+}
+.fixed_menu ul.nav_panel ul.accord a {
+    font-size: 14px;
+}
+.fixed_menu ul.nav_panel li:hover ul.accord {
+    display: block;
+}
+.fixed_menu ul.nav_panel li ul.accord li {
+    border-bottom: 1px dashed white;
+}
+.fixed_menu ul.nav_panel li ul.accord li:last-child {
+    border-bottom: none;
+}
