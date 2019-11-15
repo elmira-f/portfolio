@@ -153,7 +153,6 @@ a.menu {
     margin: 0;
     background-color: black;
     border-bottom: 1px solid white;
-    padding: 10px;
 }
 .navbar .menu ul.navigation ul.combo_box li:last-child {
     border-bottom: none;
@@ -168,6 +167,10 @@ a.menu {
 .navbar .menu a {
     width: 100px;
     padding: 0 10px;
+    display: block;
+}
+.navbar .menu .combo_box a {
+    margin: 10px;
 }
 
 /*------------------------------------------------------ */
@@ -330,4 +333,49 @@ a.fixed_link {
 }
 .fixed_menu ul.nav_panel li ul.accord li:last-child {
     border-bottom: none;
+}
+
+/* Sprite------------------------------------------------------ */
+
+.social_media {
+    position: fixed;
+    top: 50vh;
+    right: 0;
+    margin-top: -116px;
+    width: 75px;
+    background-color: white;
+    border-radius: 30px;
+}
+.social_media .social_menu {
+    margin: 10px;
+}
+.social_media .social_menu li a{
+    display: block;
+    width: 58px;
+    height: 58px;
+    background: url('images/social_media.png');
+}
+.social_media .social_menu li+li a{
+    background-position: -58px 0;
+}
+.social_media .social_menu li+li+li a{
+    background-position: -116px 0;
+}
+.social_media .social_menu li+li+li+li a{
+    background-position: -174px 0;
+}
+.social_media .social_menu li:hover a {
+    transform: scale(0.7);
+}
+.social_media .social_menu li:hover a{
+    background-position: 0 -58px;
+}
+.social_media .social_menu li+li:hover a{
+    background-position: -58px -58px;
+}
+.social_media .social_menu li+li+li:hover a{
+    background-position: -116px -58px;
+}
+.social_media .social_menu li+li+li+li:hover a{
+    background-position: -174px -58px;
 }
