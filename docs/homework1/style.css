@@ -192,7 +192,6 @@ a.menu {
     overflow: hidden;
     transition: height 600ms, opacity 600ms;
     transition-timing-function: ease-in-out;
-   /* transition: width 2s, height 2s, opacity 600ms, transform 0.5s;*/
     background-color: black;
     position: absolute;
     top: 100%;
@@ -203,13 +202,16 @@ a.menu {
 }
 .navbar .menu ul.combo_box ul.second_combo_box {
     padding: 0;
+    transition: width 2s, height 2s, opacity 600ms, transform 0.5s;
 }
 .navbar .menu ul.navigation li:hover ul.combo_box,
 .navbar .menu ul.navigation ul.combo_box li:hover ul.second_combo_box {
     overflow: visible;
     opacity: 1;
     height: 231px;
-    /*transform: rotate(360deg);*/
+}
+.navbar .menu ul.navigation ul.combo_box li:hover ul.second_combo_box {
+    transform: rotate(360deg)
 }
 .navbar .menu ul.navigation ul.combo_box li{
     margin: 0;
