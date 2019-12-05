@@ -482,8 +482,9 @@ a.fixed_link {
 /* Menu with links------------------------------------------------------ */
 
 .menu_with_links {
+    height: 190px;
     position: fixed;
-    margin-top: -115px;
+    margin-top: -95px;
     top: 50vh;
     right: -120px;
     border-radius: 10px 0 0 10px;
@@ -504,17 +505,25 @@ a.fixed_link {
     position: relative;
     right: 50px;
     transform: rotate(90deg);
-    margin: 10px;
 }
 .menu_with_links .link_click p{
     color: white;
     font-size: 30px;
-    padding: 20px;
 }
 .menu_with_links .links_panel {
-    position: relative;
+    max-width: 40px;
+    display: block;
     right: 60px;
-    transform: rotate(310deg);
+    transform: rotate(310deg)  translate(160px, 30px);
+}
+.menu_with_links ul li:nth-child(2) {
+    transform: translate(-40px, -30px)
+}
+.menu_with_links ul li:nth-child(3) {
+    transform: translate(-8px, -25px)
+}
+.menu_with_links ul li:last-child {
+    transform: translate(-50px, -55px)
 }
 .menu_with_links .links_panel li a{
     display: block;
@@ -534,6 +543,7 @@ a.fixed_link {
 .menu_with_links .links_panel li:hover a {
     transform: scale(0.8);
 }
+
 /*.menu_with_links:hover  {
     opacity: 1;
     transition: all 2s;
