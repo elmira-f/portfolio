@@ -622,13 +622,14 @@ a.fixed_link {
     border: 1px solid blue;
     background-color: #b0e0ff;
     padding: 0 15px;
-    caret-color: red;
 }
 .our_form .container form .your_name input {
     transform: translateX(20px);
+    caret-color: red;
 }
 .our_form .container form .mail input {
     transform: translateX(10px);
+    caret-color: green;
 }
 .our_form .container form .radio_box input {
     margin: 0 20px;
@@ -670,7 +671,6 @@ a.fixed_link {
     -moz-appearance: none;
     appearance: none;
 }
-
 .our_form .container form button {
     margin: 20px;
     border-radius: 5px;
@@ -679,7 +679,6 @@ a.fixed_link {
     padding: 10px 20px;
     transform: translateX(40px);
 }
-
 
 /*animation------------------------------------------------------ */
 
