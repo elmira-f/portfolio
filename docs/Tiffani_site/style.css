@@ -1,0 +1,273 @@
+/* https://www.web-font-generator.com/ */
+@import url('roboto_regular/styles.css');
+
+/* http://www.font2web.com/ */
+@import url('roboto_bold/fonts.css');
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body {
+    line-height: 1;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/* ------------------------------------------------------ */
+.body {
+    font-family: "PF Din Text Comp Pro Thin", "PF Din Text Comp Pro Medium", "PF Din Text Comp Pro Medium", "Flow Regular", "Flow Bold", "PF Din Text Comp Pro Light";
+    color: #959595;
+    font-size: 16px;
+}
+.container {
+    max-width: 980px;
+    margin: 0 auto;
+}
+p.thin {
+    font-family: "PF Din Text Comp Pro Thin";
+    font-size: 18px;
+}
+a.language_link {
+    font-family: "PF Din Text Comp Pro Medium";
+    color: #959595;
+    font-size: 14px;
+    text-decoration: none;
+}
+
+/* Change style!!!!!!!!!!!!!! */
+
+a.language_link:hover {
+    background-color: #65baaf;
+    color: white;
+}
+
+a.link_menu {
+    font-family: "PF Din Text Comp Pro Thin";
+    text-decoration: none;
+    color: black;
+    font-size: 16px;
+}
+a.link_menu:hover {
+    border-bottom: 1px solid #65baaf;
+}
+h1.title {
+    font-size: 72px;
+    padding: 20px 0;
+}
+
+/* HEADER------------------------------------------------------ */
+.header {
+    background-color: white;
+    height: 140px;
+    position: relative;
+    z-index: 10;
+}
+.header .container .contacts{
+    display: flex;
+    justify-content: space-between;
+}
+.header .container .contacts,
+.header .container ul.menu {
+    margin: 0 20px;
+}
+.header .container .contacts .our_contacts{
+    margin: 12px 0 0 0;
+}
+.header .container .contacts .search {
+    margin: 12px 0 0 0;
+}
+.header .container .contacts .our_contacts p.thin img {
+    margin: 0 10px 0 0;
+}
+.header .container .contacts .our_contacts p.thin {
+    margin: 0 0 10px 0;
+}
+.header .container .contacts .our_contacts p.thin:nth-child(2) {
+    transform: translate(-10px, 0px);
+}
+.header .container .contacts .search,
+.header .container .contacts ul.language {
+    display: flex;
+    align-items: baseline;
+}
+.header .container .search .searching {
+    margin: 0 30px 0 0;
+}
+.header .container .search form input {
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid #65baaf;
+}
+.header .container .search form button {
+    width: 37px;
+    height: 34px;
+    background-color: #65baaf;
+    color: white;
+    border-radius: 50px;
+    font-size: 17px;
+    border: none;
+    padding: 5px;
+}
+.header .container .contacts .search ul.language li {
+    padding: 0 5px;
+}
+.header .container .contacts .search ul.language li:last-child {
+    padding: 0;
+}
+.header ul.menu {
+    transform: translate(0px, -60px);
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header ul.menu li {
+    margin: 0 25px 0 0;
+    vertical-align: middle;
+    font-family: "PF Din Text Comp Pro Thin";
+    font-size: 16px;
+}
+.header ul.menu li:last-child {
+    margin: 0;
+}
+.header ul.menu .logotype {
+    background-color: white;
+    border-radius: 100px;
+    padding: 20px;
+    transform: translate(0px,-25px);
+}
+/* BANNER------------------------------------------------------ */
+.banner {
+    background-image: url("image/banner.png");
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: 100%;
+    color: white;
+    position: relative;
+}
+.banner:before {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    content: "";
+}
+.banner .container {
+    text-align: center;
+    position: relative;
+}
+.banner .container p {
+    padding: 60px 0;
+}
+.banner .container h2 {
+    font-size: 32px;
+    padding: 20px 0;
+}
+.banner .container ul.slider {
+    padding: 170px 0 50px 0;
+}
+.banner .container ul.slider li {
+    display: inline-block;
+}
+.banner .container ul.slider a{
+    background-image: url("image/slider.png");
+    display: block;
+    width: 25px;
+    height: 25px;
+    margin: 6px;
+}
+.banner .container ul.slider a:hover{
+    background-image: url("image/slider_hover.png");
+    width: 37px;
+    height: 37px;
+    margin: 0;
+}
+/* blog welcome------------------------------------------------------ */
+
+.welcome {
+    border-bottom: 1px solid  #959595;
+    max-height: 420px;
+}
+
+.welcome .container h2 {
+    font-size: 36px;
+    text-align: center;
+    max-width: 600px;
+    color: #959595;
+    padding: 30px 0 0 0;
+    margin: 0 auto;
+}
+
+.welcome .container img {
+    vertical-align: middle;
+}
+.welcome .container img:nth-child(3) {
+    transform: translate(0px, -30px);
+}
+.welcome .container .donut {
+
+    background-image: url("image/maffin.png");
+    background-repeat: no-repeat;
+    background-position: center;
+
+    width: 30px;
+    height: 30px;
+    background-color: white;
+    border-radius: 50px;
+
+    transform: translate(500px, -60px);
+    text-align: center;
+    padding: 15px;
+}
+
+/* Production------------------------------------------------------ */
+.production {
+
+}
+
+.production .container h2 {
+    font-family: "Flow Bold";
+    padding: 50px 0;
+    color: #65baaf;
+    font-size: 40px;
+    font-style: italic;
+    text-transform: uppercase;
+    text-align: center;
+}
