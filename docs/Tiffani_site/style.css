@@ -189,10 +189,8 @@ a.read_news:hover {
 }
 /* BANNER------------------------------------------------------ */
 .banner {
-    background-image: url("image/banner.png");
-    background-repeat: no-repeat;
-    background-position: bottom;
-    background-size: 100%;
+    background: url("image/banner.png") no-repeat bottom;
+    background-size: cover;
     color: white;
     position: relative;
 }
