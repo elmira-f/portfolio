@@ -107,25 +107,21 @@ a.read_news:hover {
 /* HEADER------------------------------------------------------ */
 .header {
     background-color: white;
-    height: 140px;
     position: relative;
     z-index: 10;
 }
 .header .container .contacts{
     display: flex;
     justify-content: space-between;
-    position: relative;
-    z-index: 15;
 }
-.header .container .contacts,
-.header .container ul.menu {
+.header .container .contacts {
     margin: 0 20px;
 }
-.header .container .contacts .our_contacts{
+.header .container .contacts {
     margin: 12px 0 0 0;
 }
-.header .container .contacts .search {
-    margin: 12px 0 0 0;
+.header .container .contacts .our_contacts {
+    width: 37%;
 }
 .header .container .contacts .our_contacts p.thin img {
     margin: 0 10px 0 0;
@@ -136,20 +132,20 @@ a.read_news:hover {
 .header .container .contacts .our_contacts p.thin:nth-child(2) {
     transform: translate(-10px, 0px);
 }
-.header .container .contacts .search,
+.header .container .contacts a.logo img {
+    background-color: white;
+    border-radius: 100px;
+    padding: 20px;
+}
 .header .container .contacts ul.language {
     display: flex;
-    align-items: baseline;
 }
-.header .container .search .searching {
-    margin: 0 30px 0 0;
-}
-.header .container .search form input {
+.header .container .contacts form input {
     background-color: transparent;
     border: none;
     border-bottom: 1px solid #65baaf;
 }
-.header .container .search form button {
+.header .container .contacts form button {
     width: 37px;
     height: 34px;
     background-color: #65baaf;
@@ -159,14 +155,16 @@ a.read_news:hover {
     border: none;
     padding: 5px;
 }
-.header .container .contacts .search ul.language li {
+.header .container .contacts ul.language li {
     padding: 0 5px;
 }
-.header .container .contacts .search ul.language li:last-child {
+.header .container .contacts ul.language li:last-child {
     padding: 0;
 }
 .header ul.menu {
-    transform: translate(0px, -60px);
+    position: relative;
+    z-index: 20;
+    margin: -80px 0 20px 0;
     text-align: center;
     display: flex;
     justify-content: space-between;
@@ -178,15 +176,16 @@ a.read_news:hover {
     font-family: "PF Din Text Comp Pro Thin";
     font-size: 16px;
 }
+.header ul.menu li:nth-child(4) {
+    margin: 0 90px 0 0;
+}
+.header ul.menu li:nth-child(5) {
+    margin: 0 0 0 90px;
+}
 .header ul.menu li:last-child {
     margin: 0;
 }
-.header ul.menu .logotype {
-    background-color: white;
-    border-radius: 100px;
-    padding: 20px;
-    transform: translate(0px,-25px);
-}
+
 /* BANNER------------------------------------------------------ */
 .banner {
     background: url("image/banner.png") no-repeat bottom;
