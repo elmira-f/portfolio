@@ -1,3 +1,11 @@
+@import url('PF_ Medium/fonts.css');
+@import url('PF_Bold/fonts.css');
+@import url('PF_Light/fonts.css');
+@import url('PF_Thin/fonts.css');
+@import url('PF_Regular/fonts.css');
+@import url('flow_regular/fonts.css');
+@import url('flow_bold/fonts.css');
+
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -44,12 +52,12 @@ table {
 
 /* ------------------------------------------------------ */
 .body {
-    font-family: "PF Din Text Comp Pro Thin", "PF Din Text Comp Pro Medium", "PF Din Text Comp Pro Medium", "Flow Regular", "Flow Bold", "PF Din Text Comp Pro Light";
+    font-family: "Conv_PF Din Text Comp Pro Regular", 'Open Sans', sans-serif;;
     color: #959595;
     font-size: 16px;
 }
 .container {
-    max-width: 980px;
+    max-width: 940px;
     margin: 0 auto;
 }
 p.thin {
@@ -69,7 +77,6 @@ a.language_link:hover {
     background-color: #65baaf;
     color: white;
 }
-
 a.link_menu {
     font-family: "PF Din Text Comp Pro Thin";
     text-decoration: none;
@@ -80,6 +87,8 @@ a.link_menu:hover {
     border-bottom: 1px solid #65baaf;
 }
 h1.title {
+    font-family: "PF Din Text Comp Pro Medium";
+    letter-spacing: 7px;
     font-size: 72px;
     padding: 20px 0;
 }
@@ -91,7 +100,6 @@ a.book_links {
 a.book_links:hover {
     color: #65baaf;
 }
-
 a.read_news {
     text-decoration: none;
     color: #7d7d7d;
@@ -103,6 +111,18 @@ a.read_news {
 a.read_news:hover {
     background-color: #65baaf;
 }
+a.logo {
+    margin: 0 20px 20px 0;
+}
+a.link_footer {
+    text-decoration: none;
+    font-size: 20px;
+    font-family: "PF Din Text Comp Pro Thin";
+    color: #7d7d7d;
+}
+a.link_footer:hover {
+    border-bottom: 1px solid #65baaf;
+}
 
 /* HEADER------------------------------------------------------ */
 .header {
@@ -113,9 +133,6 @@ a.read_news:hover {
 .header .container .contacts{
     display: flex;
     justify-content: space-between;
-}
-.header .container .contacts {
-    margin: 0 20px;
 }
 .header .container .contacts {
     margin: 12px 0 0 0;
@@ -162,25 +179,29 @@ a.read_news:hover {
     padding: 0;
 }
 .header ul.menu {
+    letter-spacing: 1px;
     position: relative;
     z-index: 20;
-    margin: -80px 0 20px 0;
+    margin: -112px 0 20px 0;
     text-align: center;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
+.header ul.menu li:last-child {
+    margin: 0 17px 0 0;
+}
 .header ul.menu li {
-    margin: 0 25px 0 0;
+    margin: 0 17px 0 0;
     vertical-align: middle;
     font-family: "PF Din Text Comp Pro Thin";
     font-size: 16px;
 }
 .header ul.menu li:nth-child(4) {
-    margin: 0 90px 0 0;
+    margin: 0 80px 0 0;
 }
 .header ul.menu li:nth-child(5) {
-    margin: 0 0 0 90px;
+    margin: 0 20px 0 160px;
 }
 .header ul.menu li:last-child {
     margin: 0;
@@ -208,9 +229,13 @@ a.read_news:hover {
     position: relative;
 }
 .banner .container p {
+    font-size: 20px;
+    font-family: "PF Din Text Comp Pro Thin";
+    letter-spacing: 2px;
     padding: 60px 0;
 }
 .banner .container h2 {
+    font-family: "Flow Regular";
     font-size: 32px;
     padding: 20px 0;
 }
@@ -239,7 +264,6 @@ a.read_news:hover {
     border-bottom: 1px solid  #959595;
     max-height: 360px;
 }
-
 .welcome .container h2 {
     font-size: 36px;
     text-align: center;
@@ -253,15 +277,14 @@ a.read_news:hover {
     vertical-align: middle;
 }
 .welcome .container .pictures img:nth-child(1) {
-    transform: translate(-105px, -40px);
+    transform: translate(-125px, -40px);
 }
 .welcome .container .pictures img:nth-child(2) {
-    transform: translate(-40px, -50px);
+    transform: translate(-70px, -60px);
 }
 .welcome .container .pictures img:nth-child(3) {
-    transform: translate(50px, -90px);
+    transform: translate(790px, -425px);
 }
-
 
 /* Production------------------------------------------------------ */
 
@@ -269,8 +292,8 @@ a.read_news:hover {
 .our_pluses .container h2,
 .our_values .container h2,
 .fairy_life .container h2 {
-    font-family: "Flow Bold";
-    padding: 50px 0;
+    font-family: "FlowBold";
+    padding: 30px 0 80px 0;
     color: #65baaf;
     font-size: 40px;
     font-style: italic;
@@ -279,17 +302,18 @@ a.read_news:hover {
 }
 
 /* before for donut------------------------------------------------------*/
-
-
+.production .container {
+    max-width: 1030px;
+}
 .production .container:before {
     position: relative;
     left: 500px;
-    top: 0;
+    top: -10px;
     content: "";
     background: white url("image/maffin.png") no-repeat;
     background-size: 100%;
     background-position: center;
-    width: 40px;
+    width: 37px;
     height: 35px;
     border-radius: 50px;
     padding: 25px;
@@ -300,9 +324,7 @@ a.read_news:hover {
     align-items: center;
 }
 .production .container .two_sliders .book_slider {
-
     position: relative;
-
     background: url("image/book.png") no-repeat;
     width: 724px;
     height: 427px;
@@ -324,9 +346,6 @@ a.read_news:hover {
     width: 181px;
     height: 100px;
     background-size: 100%;
-}
-.production .container .two_sliders .book_slider ul.product_mark li:nth-child(1) a{
-/*REplace links inside book slider!!!!!!!!!!!!!!!!!!!!!*/
 }
 .production .container .two_sliders .book_slider ul.product_mark li:nth-child(2){
     top: -65px;
@@ -362,24 +381,33 @@ a.read_news:hover {
     margin: 60px 0 0px 80px;
 }
 .production .container .two_sliders .book_slider .about_product .name_of_product {
-    margin: 0 60px 0 0;
+    margin: 30px 60px 0 0;
 }
 .production .container .two_sliders .book_slider .about_product .name_of_product h3 {
     font-size: 36px;
     font-weight: bold;
     text-transform: uppercase;
     color:  #8f5926;
+    font-family: "PF Din Text Comp Pro Medium";
+    margin: 25px 0 0 0;
 }
 .production .container .two_sliders .book_slider .about_product .name_of_product p {
+    font-family: "PF Din Text Comp Pro Thin";
+    font-size: 20px;
     padding: 0 0 10px 0;
-    font-size: 16px;
     color: #7d7d7d;
+    margin: 10px 0;
+}
+.production .container .two_sliders .book_slider .about_product .name_of_product p:last-child {
+    margin: 0 0 40px 0;
 }
 .production .container .two_sliders .book_slider .about_product .name_of_product img.underline {
     margin: 25px 0;
 }
-.production .container .two_sliders .book_slider .about_product .name_of_product .product_angles li {
+.production .container .two_sliders .book_slider .about_product .name_of_product .product_angles {
     margin: 40px 0 0 0;
+}
+.production .container .two_sliders .book_slider .about_product .name_of_product .product_angles li {
     display: inline-block;
 }
 .production .container .two_sliders .book_slider .about_product .name_of_product .product_angles li a.book_links_right {
@@ -412,8 +440,8 @@ a.read_news:hover {
 
 .our_pluses  .container:before {
     position: relative;
-    left: 500px;
-    top: 0;
+    left: 440px;
+    top: -10px;
     content: "";
     background: white url("image/cherry.png") no-repeat;
     background-size: 60%;
@@ -422,30 +450,38 @@ a.read_news:hover {
     padding: 25px 35px;
 }
 .our_pluses {
-    margin: 129px 0 20px 0;
+    margin: 90px 0 20px 0;
     background-color: rgba(115, 212, 216, 0.25);
+}
+.our_pluses .container h2 {
+    margin: 50px 0;
+    padding: 0;
 }
 .our_pluses .container .four_pluses {
     display: flex;
     justify-content: space-around;
     color: #915b27;
-    padding: 20px 0 70px 0;
+    padding: 0 0 70px 0;
 }
 .our_pluses .container .four_pluses .plus {
+    font-family: "PF Din Text Comp Pro Thin";
+    font-size: 20px;
     width: 25%;
     text-align: center;
+}
+.our_pluses .container .four_pluses .plus p {
+    padding: 20px 0 0 0;
 }
 
 /* Our_values------------------------------------------------------ */
 
 .our_values {
-
     border-bottom: 1px solid #959595;
 }
 .our_values  .container {
     position: relative;
     text-align: center;
-    margin: 0 auto 100px;
+    margin: 0 auto 90px;
 
 }
 .our_values  .container:before {
@@ -470,7 +506,6 @@ a.read_news:hover {
     right: -460px;
     z-index: 5;
 }
-
 .our_values  .container h2:before {
     content: "";
     background: url("image/cup.png") no-repeat;
@@ -498,7 +533,10 @@ a.read_news:hover {
     padding-top: 35px;
     box-sizing: border-box;
 }
-
+.our_values  .container .video video {
+    width: 495px;
+    height: 345px;
+}
 
 /* fairy_life------------------------------------------------------ */
 
@@ -510,7 +548,7 @@ a.read_news:hover {
 .fairy_life .container:before {
     content: "";
     position: absolute;
-    left: 500px;
+    left: 450px;
     top: -80px;
     background: white url("image/candy.png") no-repeat;
     background-size: 60%;
@@ -518,18 +556,24 @@ a.read_news:hover {
     border-radius: 50px;
     padding: 25px 35px;
 }
+.fairy_life .container h2 {
+     margin: 10px 0 70px 0;
+     padding: 0;
+}
 .fairy_life .container .our_meeting {
-    margin: 0 0 50px 0;
+    margin: 0 0 60px 0;
 }
 .fairy_life .container .our_meeting,
 .fairy_life .container .our_meeting .meet {
-    margin-right: 50px;
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
+.fairy_life .container .our_meeting .meet {
+    margin-right: 50px;
+}
 .fairy_life .container .our_meeting .meet:last-child {
-    margin-right: 0;
+    margin: 0;
 }
 .fairy_life .container .our_meeting .meet .about_meet {
     margin: 0 0 0 20px;
@@ -540,14 +584,17 @@ a.read_news:hover {
     color: #caa977;
     font-size: 22px;
 }
+
 .fairy_life .container .our_meeting .meet p {
     color: #7d7d7d;
-    font-size: 16px;
+    font-size: 20px;
+    font-family: "PF Din Text Comp Pro Thin";
 }
 
 /* map------------------------------------------------------ */
+
 .map {
-    /*background-image: url("https://www.google.com/maps/@49.9515392,36.3257856,12z");
+   /* background-image: url("https://www.google.com/maps/@49.9515392,36.3257856,12z");
    width: 100%;
     height: 510px;
     background-repeat: no-repeat;
@@ -605,4 +652,95 @@ a.read_news:hover {
 }
 .map .container form button:hover {
     background-color: rgba(255, 255, 255, 0.5);
+}
+/* map------------------------------------------------------ */
+
+.footer .container {
+    margin: 30px auto;
+    position: relative;
+}
+.footer .container .footer_nav,
+.footer .container .footer_social_links {
+    font-size: 20px;
+    font-family: "PF Din Text Comp Pro Thin";
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0;
+}
+.footer .container .footer_nav ul.menu_footer {
+    max-width: 150px;
+}
+.footer .container .footer_nav ul.contacts_footer {
+    color: #7d7d7d;
+    max-width: 220px;
+    margin: 0 0 0 40px;
+}
+.footer .container .footer_nav ul.contacts_footer li {
+    padding: 10px 0;
+}
+.footer .container .footer_nav ul.contacts_footer li:nth-child(1):before {
+    position: absolute;
+    top: 60px;
+    right: 610px;
+    content: "";
+    background-image: url("image/location.png");
+    width: 19px;
+    height: 32px;
+    background-repeat: no-repeat;
+}
+.footer .container .footer_nav ul.contacts_footer li:nth-child(2):before {
+    position: absolute;
+    top: 90px;
+    right: 610px;
+    content: "";
+    background-image: url("image/phone.png");
+    width: 20px;
+    height: 27px;
+    background-repeat: no-repeat;
+}
+.footer .container .footer_nav ul.contacts_footer li:nth-child(3):before {
+    position: absolute;
+    top: 155px;
+    right: 610px;
+    content: "";
+    background-image: url("image/mail.png");
+    width: 28px;
+    height: 12px;
+    background-repeat: no-repeat;
+
+}
+.footer .container .footer_nav form {
+    background: url("image/border_in_footer.png") no-repeat;
+    width: 324px;
+    height: 212px;
+}
+.footer .container .footer_nav form label {
+    font-family: "PF Din Text Comp Pro Medium";
+    font-size: 20px;
+    color: #00A19E;
+    margin-left: 80px;
+
+}
+.footer .container .footer_nav form input,
+.footer .container .footer_nav form a {
+    display: block;
+    text-align: center;
+    margin-left: 80px;
+}
+.footer .container .footer_nav form a {
+    margin: 10px auto;
+    max-width: 120px;
+}
+.footer .container .footer_nav form input {
+    border: none;
+    border-bottom: 1px solid black;
+    background-color: transparent;
+}
+.footer .container .footer_social_links .shop_mark a {
+    background: url("image/bg_soc_link.png") no-repeat;
+    width: 49px;
+    height: 48px;
+    background-position: center;
+
+    padding: 20px;
 }
