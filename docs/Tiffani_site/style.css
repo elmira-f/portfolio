@@ -322,6 +322,7 @@ a.link_footer:hover {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    position: relative;
 }
 .production .container .two_sliders .book_slider {
     position: relative;
@@ -330,38 +331,49 @@ a.link_footer:hover {
     height: 427px;
     background-size: 100%;
 }
-.production .container .two_sliders .book_slider ul.product_mark li {
-    z-index: -5;
+.production .container .two_sliders .product_mark {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.production .container .two_sliders .product_mark li {
     position: absolute;
     display: inline-block;
+    box-sizing: border-box;
 }
-.production .container .two_sliders .book_slider ul.product_mark li a.shop_mark {
+.production .container .two_sliders .product_mark li a.shop_mark {
     color: white;
     text-decoration: none;
 }
-.production .container .two_sliders .book_slider ul.product_mark li:nth-child(1){
+.production .container .two_sliders .product_mark li:nth-child(1){
     top: -35px;
     left: 100px;
     background: url("image/bg_link_book1.png") no-repeat;
     width: 181px;
     height: 100px;
     background-size: 100%;
+    padding-left: 10px;
+    padding-top: 10px;
 }
-.production .container .two_sliders .book_slider ul.product_mark li:nth-child(2){
+.production .container .two_sliders .product_mark li:nth-child(2){
     top: -65px;
     left: 290px;
     background: url("image/bg_link_book2.png") no-repeat;
     width: 157px;
     height: 100px;
     background-size: 100%;
+    padding-left: 40px;
+    padding-top: 45px;
 }
-.production .container .two_sliders .book_slider ul.product_mark li:nth-child(3){
+.production .container .two_sliders .product_mark li:nth-child(3){
     top: -35px;
     left: 450px;
     background: url("image/bg_link_book3.png") no-repeat;
     width: 208px;
     height: 57px;
     background-size: 100%;
+    padding-left: 20px;
+    padding-top: 15px;
 }
 .production .container .two_sliders .book_slider .about_product {
     display: flex;
@@ -678,9 +690,9 @@ a.link_footer:hover {
 .footer .container .footer_nav ul.contacts_footer li {
     padding: 10px 0;
 }
-.footer .container .footer_nav ul.contacts_footer li:nth-child(1):before {
+.footer .container .footer_nav ul.contacts_footer li:nth-child(2):before {
     position: absolute;
-    top: 60px;
+    top: 50px;
     right: 610px;
     content: "";
     background-image: url("image/location.png");
@@ -688,9 +700,9 @@ a.link_footer:hover {
     height: 32px;
     background-repeat: no-repeat;
 }
-.footer .container .footer_nav ul.contacts_footer li:nth-child(2):before {
+.footer .container .footer_nav ul.contacts_footer li:nth-child(3):before {
     position: absolute;
-    top: 90px;
+    top: 110px;
     right: 610px;
     content: "";
     background-image: url("image/phone.png");
@@ -698,37 +710,39 @@ a.link_footer:hover {
     height: 27px;
     background-repeat: no-repeat;
 }
-.footer .container .footer_nav ul.contacts_footer li:nth-child(3):before {
+.footer .container .footer_nav ul.contacts_footer li:nth-child(4):before {
     position: absolute;
-    top: 155px;
+    top: 175px;
     right: 610px;
     content: "";
     background-image: url("image/mail.png");
     width: 28px;
     height: 12px;
     background-repeat: no-repeat;
-
 }
 .footer .container .footer_nav form {
     background: url("image/border_in_footer.png") no-repeat;
     width: 324px;
     height: 212px;
+    padding: 20px 35px;
+    box-sizing: border-box;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    flex-flow: column;
+    justify-content: space-around;
 }
 .footer .container .footer_nav form label {
     font-family: "PF Din Text Comp Pro Medium";
     font-size: 20px;
     color: #00A19E;
-    margin-left: 80px;
-
 }
 .footer .container .footer_nav form input,
 .footer .container .footer_nav form a {
-    display: block;
     text-align: center;
-    margin-left: 80px;
 }
 .footer .container .footer_nav form a {
-    margin: 10px auto;
+    display: inline-block;
     max-width: 120px;
 }
 .footer .container .footer_nav form input {
@@ -741,6 +755,5 @@ a.link_footer:hover {
     width: 49px;
     height: 48px;
     background-position: center;
-
     padding: 20px;
 }
