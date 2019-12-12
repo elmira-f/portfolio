@@ -49,10 +49,10 @@
                 украшена дробленым орехом</h2>
 
             <ul class="slider">
-                <li><a href="#"></a></li>
-                <li><a href="#"></a></li>
-                <li><a href="#"></a></li>
-                <li><a href="#"></a></li>
+                <li class="active_link"><a href="#"></a></li>
+                <li class="active_link"><a href="#"></a></li>
+                <li class="active_link"><a href="#"></a></li>
+                <li class="active_link"><a href="#"></a></li>
             </ul>
 
         </div>
@@ -67,7 +67,6 @@
                    <img src="image/fairy_text_img.png" alt="fairy_text">
                    <img src="image/girl.png" alt="girl">
                </div>
-               <div class="donut"></div>
            </div>
        </div>
 
@@ -75,13 +74,13 @@
         <div class="container">
             <h2>ПРОДУКЦИЯ</h2>
             <div class="two_sliders">
+
                 <div class="book_slider">
                     <ul class="product_mark">
-                        <li>ТМ «Чарівна мозаїка»</li>
-                        <li>ТМ «Домашка»</li>
-                        <li>ТМ «Private Label»</li>
+                        <li><a class="shop_mark" href="#">ТМ «Чарівна мозаїка»</a></li>
+                        <li><a class="shop_mark" href="#">ТМ «Домашка»</a></li>
+                        <li><a class="shop_mark" href="#">ТМ «Private Label»</a></li>
                     </ul>
-                    <img class="photo_book" src="image/book.png" alt="book"/>
 
                     <div class="about_product">
                         <div class="picture_of_product">
@@ -102,7 +101,6 @@
                             </ul>
                         </div>
                     </div>
-
                 </div>
 
                 <div class="cookie_slider">
@@ -123,44 +121,41 @@
     <div class="our_pluses">
         <div class="container">
             <h2>Наши преимущества</h2>
-            <div class="four_pluses">
+            <ul class="four_pluses">
 
-            <div class="plus">
+            <li class="plus">
                 <img src="image/plus1.png" alt="plus">
                 <p> Особенный  подход
                     к выпеканию печенья</p>
-            </div>
-            <div class="plus">
+            </li>
+            <li class="plus">
                 <img src="image/plus2.png" alt="plus">
                 <p>Строгий отбор
                     сырья</p>
-            </div>
-            <div class="plus">
+            </li>
+            <li class="plus">
                 <img src="image/plus3.png" alt="plus">
                 <p>Выгодные условия сотрудничества
                     и программы лояльности</p>
-            </div>
-            <div class="plus">
+            </li>
+            <li class="plus">
                 <img src="image/plus4.png" alt="plus">
                 <p>Контроль качества
                     продукции</p>
-            </div>
+            </li>
 
-        </div>
+            </ul>
+
         </div>
     </div>
 
     <div class="our_values">
         <div class="container">
             <h2>Наши ценности</h2>
-            <img src="image/cup.png" alt="cup">
             <p>Сегодня кондитерские изделия ТМ «Чарівна Мозаїка» представлены нашими партнерами во многих городах Украины, и все знают – кондитерськая фабрика «Чарівна Мозаїка» гарантирует высокое качество и отличный вкус</p>
             <div class="video">
-                <img src="image/video.png" alt="video"/>
+                <iframe width="495" height="345" src="https://www.youtube.com/watch?v=PmYypVozQb4" frameborder="0" allowfullscreen></iframe>
             </div>
-            <div class="candy"></div>
-            <div class="dough"></div>
-            <div class="flour"></div>
         </div>
     </div>
 
@@ -194,6 +189,9 @@
     </div>
 
     <div class="map">
+
+        <iframe src="https://goo.gl/maps/HuUKeEfeLxDFDbzT8" width="100%" height="510"></iframe>
+
             <div class="container">
                 <form class="form_on_map" action="form.php">
                     <p>СВЯЗАТЬСЯ</p>
@@ -207,7 +205,7 @@
                         <input type="tel" name="phone" placeholder="Телефон" required>
                     </div>
                     <div class="text">
-                        <textarea name="comment" cols="40" rows="3" placeholder="Сообщение"></textarea>
+                        <textarea type="commentary" name="comment" cols="40" rows="3" placeholder="Сообщение"></textarea>
                     </div>
                     <button type="submit">Отправить</button>
                 </form>

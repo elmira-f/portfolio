@@ -187,6 +187,7 @@ a.read_news:hover {
 }
 
 /* BANNER------------------------------------------------------ */
+
 .banner {
     background: url("image/banner.png") no-repeat bottom;
     background-size: cover;
@@ -226,7 +227,7 @@ a.read_news:hover {
     height: 25px;
     margin: 6px;
 }
-.banner .container ul.slider a:hover{
+.banner .container ul.slider li:hover{
     background-image: url("image/slider_hover.png");
     width: 37px;
     height: 37px;
@@ -260,21 +261,7 @@ a.read_news:hover {
 .welcome .container .pictures img:nth-child(3) {
     transform: translate(50px, -90px);
 }
-.welcome .container .donut {
 
-    background-image: url("image/maffin.png");
-    background-repeat: no-repeat;
-    background-position: center;
-
-    width: 30px;
-    height: 30px;
-    background-color: white;
-    border-radius: 50px;
-
-    transform: translate(465px, -100px);
-    text-align: center;
-    padding: 15px;
-}
 
 /* Production------------------------------------------------------ */
 
@@ -290,59 +277,92 @@ a.read_news:hover {
     text-transform: uppercase;
     text-align: center;
 }
+
+/* before for donut------------------------------------------------------*/
+
+
+.production .container:before {
+    position: relative;
+    left: 500px;
+    top: 0;
+    content: "";
+    background: white url("image/maffin.png") no-repeat;
+    background-size: 100%;
+    background-position: center;
+    width: 40px;
+    height: 35px;
+    border-radius: 50px;
+    padding: 25px;
+}
 .production .container .two_sliders {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 .production .container .two_sliders .book_slider {
-    max-width: 70%;
+
     position: relative;
+
+    background: url("image/book.png") no-repeat;
+    width: 724px;
+    height: 427px;
+    background-size: 100%;
 }
-.production .container .two_sliders .book_slider img.photo_book {
-    position: absolute;
-    bottom: -270px;
-    left: -40px;
+.production .container .two_sliders .book_slider ul.product_mark li {
     z-index: -5;
-}
-.production .container .two_sliders .book_slider .product_mark li {
-    color: white;
+    position: absolute;
     display: inline-block;
 }
-.production .container .two_sliders .book_slider .product_mark li:nth-child(1) {
-    font-family: "PF Din Text Comp Pro";
-    font-size: 17px;
-    transform: translate(110px, -170px);
+.production .container .two_sliders .book_slider ul.product_mark li a.shop_mark {
+    color: white;
+    text-decoration: none;
 }
-.production .container .two_sliders .book_slider .product_mark li:nth-child(2) {
-    font-family: "PF Din Text Comp Pro Thin";
-    font-size: 20px;
-    transform: translate(185px, -160px);
+.production .container .two_sliders .book_slider ul.product_mark li:nth-child(1){
+    top: -35px;
+    left: 100px;
+    background: url("image/bg_link_book1.png") no-repeat;
+    width: 181px;
+    height: 100px;
+    background-size: 100%;
 }
-.production .container .two_sliders .book_slider .product_mark li:nth-child(3) {
-    font-family: "PF Din Text Comp Pro Thin";
-    font-size: 20px;
-    transform: translate(225px, -165px);
+.production .container .two_sliders .book_slider ul.product_mark li:nth-child(1) a{
+/*REplace links inside book slider!!!!!!!!!!!!!!!!!!!!!*/
+}
+.production .container .two_sliders .book_slider ul.product_mark li:nth-child(2){
+    top: -65px;
+    left: 290px;
+    background: url("image/bg_link_book2.png") no-repeat;
+    width: 157px;
+    height: 100px;
+    background-size: 100%;
+}
+.production .container .two_sliders .book_slider ul.product_mark li:nth-child(3){
+    top: -35px;
+    left: 450px;
+    background: url("image/bg_link_book3.png") no-repeat;
+    width: 208px;
+    height: 57px;
+    background-size: 100%;
 }
 .production .container .two_sliders .book_slider .about_product {
-    position: absolute;
-    bottom: -210px;
-    left: 90px;
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
-    width: 530px;
 }
 .production .container .two_sliders .book_slider .about_product .picture_of_product,
 .production .container .two_sliders .book_slider .about_product .name_of_product {
+    width: 40%;
     text-align: center;
 }
-.production .container .two_sliders .book_slider .about_product .picture_of_product a{
+.production .container .two_sliders .book_slider .about_product .picture_of_product a {
+    margin: 20px 0 0 0;
     display: block;
-    margin-top: 30px;
+}
+.production .container .two_sliders .book_slider .about_product .picture_of_product {
+    margin: 60px 0 0px 80px;
 }
 .production .container .two_sliders .book_slider .about_product .name_of_product {
-    margin-left: 35px;
+    margin: 0 60px 0 0;
 }
 .production .container .two_sliders .book_slider .about_product .name_of_product h3 {
     font-size: 36px;
@@ -368,7 +388,6 @@ a.read_news:hover {
 }
 .production .container .two_sliders .cookie_slider {
     text-align: center;
-    transform: translate(0px, 30px);
 }
 .production .container .two_sliders .cookie_slider a {
     display: inline-block;
@@ -388,21 +407,20 @@ a.read_news:hover {
     color: #7d7d7d;
     font-size: 12px;
 }
-.production  .container .cherry {
-    background-image: url("image/cherry.png");
-    background-repeat: no-repeat;
-    background-position: center;
-    width: 40px;
-    height: 35px;
-    background-color: white;
-    border-radius: 50px;
-    transform: translate(465px, 160px);
-    text-align: center;
-    padding: 20px;
 
-}
 /* Our_pluses------------------------------------------------------ */
 
+.our_pluses  .container:before {
+    position: relative;
+    left: 500px;
+    top: 0;
+    content: "";
+    background: white url("image/cherry.png") no-repeat;
+    background-size: 60%;
+    background-position: center;
+    border-radius: 50px;
+    padding: 25px 35px;
+}
 .our_pluses {
     margin: 129px 0 20px 0;
     background-color: rgba(115, 212, 216, 0.25);
@@ -421,11 +439,47 @@ a.read_news:hover {
 /* Our_values------------------------------------------------------ */
 
 .our_values {
+
     border-bottom: 1px solid #959595;
 }
 .our_values  .container {
     position: relative;
     text-align: center;
+    margin: 0 auto 100px;
+
+}
+.our_values  .container:before {
+    content: "";
+    background-image: url("image/flour.png");
+    background-repeat: no-repeat;
+    width: 655px;
+    height: 844px;
+    position: absolute;
+    z-index: -5;
+    top: -160px;
+    left: -500px;
+}
+.our_values  .container::after {
+    content: "";
+    background-image: url("image/dough.png");
+    background-repeat: no-repeat;
+    width:559px;
+    height: 637px;
+    position: absolute;
+    top: 300px;
+    right: -460px;
+    z-index: 5;
+}
+
+.our_values  .container h2:before {
+    content: "";
+    background: url("image/cup.png") no-repeat;
+    width: 206px;
+    height: 20px;
+    background-size: 100%;
+    position: absolute;
+    top: 120px;
+    left: 380px;
 }
 .our_values  .container p {
     font-size: 24px;
@@ -444,43 +498,25 @@ a.read_news:hover {
     padding-top: 35px;
     box-sizing: border-box;
 }
-.our_values .container .flour {
-    background-image: url("image/flour.png");
-    background-repeat: no-repeat;
-    width: 655px;
-    height: 844px;
-    position: absolute;
-    top: -150px;
-    left: -500px;
-    z-index: -5;
-}
-.our_values .container .dough {
-    background-image: url("image/dough.png");
-    background-repeat: no-repeat;
-    width:559px;
-    height: 637px;
-    position: absolute;
-    top: 220px;
-    right: -490px;
-    z-index: 5;
-}
-.our_values .container .candy{
-    background-image: url("image/candy.png");
-    background-repeat: no-repeat;
-    background-position: center;
-    width: 45px;
-    height: 35px;
-    background-color: white;
-    transform: translate(465px, 40px);
-    border-radius: 50px;
-    text-align: center;
-    padding: 20px;
-}
+
+
 /* fairy_life------------------------------------------------------ */
 
 .fairy_life .container {
+    position: relative;
     text-align: center;
     margin: 50px auto;
+}
+.fairy_life .container:before {
+    content: "";
+    position: absolute;
+    left: 500px;
+    top: -80px;
+    background: white url("image/candy.png") no-repeat;
+    background-size: 60%;
+    background-position: center;
+    border-radius: 50px;
+    padding: 25px 35px;
 }
 .fairy_life .container .our_meeting {
     margin: 0 0 50px 0;
@@ -511,9 +547,11 @@ a.read_news:hover {
 
 /* map------------------------------------------------------ */
 .map {
-    background-image: url("image/map.png");
+    /*background-image: url("https://www.google.com/maps/@49.9515392,36.3257856,12z");
+   width: 100%;
+    height: 510px;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: cover;*/
 }
 .map .container form {
     background-color:  #65baaf;
@@ -530,6 +568,7 @@ a.read_news:hover {
     text-align: center;
 }
 .map .container form input {
+    caret-color: white;
     margin: 10px 0;
     width: 300px;
     height: 45px;
@@ -538,10 +577,17 @@ a.read_news:hover {
 }
 .map .container form input::placeholder,
 .map .container form textarea::placeholder {
-    padding: 0 0 0 10px;
+    color: white;
+}
+.map .container form input[type='text'],
+.map .container form input[type='email'],
+.map .container form input[type='tel'] {
     color: white;
 }
 .map .container form textarea {
+    color: white;
+    resize: none;
+    caret-color: white;
     width: 297px;
     height: 108px;
     border: 1px solid white;
@@ -556,4 +602,7 @@ a.read_news:hover {
     background-color: transparent;
     padding: 10px 20px;
     border-radius: 30px;
+}
+.map .container form button:hover {
+    background-color: rgba(255, 255, 255, 0.5);
 }
