@@ -129,6 +129,10 @@ a.link_footer {
 a.link_footer:hover {
     border-bottom: 1px solid #65baaf;
 }
+a.shop_mark {
+    font-family: "Conv_PFDinTextCompPro-Medium";
+    font-size: 17px;
+}
 
 /* HEADER------------------------------------------------------ */
 .header {
