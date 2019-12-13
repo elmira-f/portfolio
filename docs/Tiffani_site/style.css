@@ -61,24 +61,30 @@ table {
     margin: 0 auto;
 }
 p.thin {
-    font-family: "PF Din Text Comp Pro Thin";
+    font-family: "Conv_pfdintextcomppro-thin";
     font-size: 18px;
 }
 a.language_link {
-    font-family: "PF Din Text Comp Pro Medium";
+    font-family: "Conv_PFDinTextCompPro-Medium";
     color: #959595;
     font-size: 14px;
     text-decoration: none;
 }
 
-/* Change style!!!!!!!!!!!!!! */
+/* Change style!!!!!!!!!!!!!!
 
-a.language_link:hover {
-    background-color: #65baaf;
-    color: white;
+li a.language_link:before:hover {
+    content: "";
+    width: 0;
+    height: 0;
+    border-width: 50px 30px 20px;
+    border-style: solid;
+    border-color: #65baaf #65baaf transparent;
+
 }
+*/
 a.link_menu {
-    font-family: "PF Din Text Comp Pro Thin";
+    font-family: "Conv_pfdintextcomppro-thin";
     text-decoration: none;
     color: black;
     font-size: 16px;
@@ -87,7 +93,7 @@ a.link_menu:hover {
     border-bottom: 1px solid #65baaf;
 }
 h1.title {
-    font-family: "PF Din Text Comp Pro Medium";
+    font-family: "Conv_PFDinTextCompPro-Medium";
     letter-spacing: 7px;
     font-size: 72px;
     padding: 20px 0;
@@ -117,7 +123,7 @@ a.logo {
 a.link_footer {
     text-decoration: none;
     font-size: 20px;
-    font-family: "PF Din Text Comp Pro Thin";
+    font-family: "Conv_pfdintextcomppro-thin";
     color: #7d7d7d;
 }
 a.link_footer:hover {
@@ -178,6 +184,14 @@ a.link_footer:hover {
 .header .container .contacts ul.language li:last-child {
     padding: 0;
 }
+.header .container .contacts ul.language li:hover::before{
+    content: "";
+    width: 0;
+    height: 0;
+    border-width: 50px 30px 20px;
+    border-style: solid;
+    border-color: #65baaf #65baaf transparent;
+}
 .header ul.menu {
     letter-spacing: 1px;
     position: relative;
@@ -194,7 +208,7 @@ a.link_footer:hover {
 .header ul.menu li {
     margin: 0 17px 0 0;
     vertical-align: middle;
-    font-family: "PF Din Text Comp Pro Thin";
+    font-family: "Conv_pfdintextcomppro-thin";
     font-size: 16px;
 }
 .header ul.menu li:nth-child(4) {
@@ -230,12 +244,12 @@ a.link_footer:hover {
 }
 .banner .container p {
     font-size: 20px;
-    font-family: "PF Din Text Comp Pro Thin";
+    font-family: "Conv_pfdintextcomppro-thin";
     letter-spacing: 2px;
     padding: 60px 0;
 }
 .banner .container h2 {
-    font-family: "Flow Regular";
+    font-family: "Conv_FlowRegular";
     font-size: 32px;
     padding: 20px 0;
 }
@@ -271,7 +285,7 @@ a.link_footer:hover {
     color: #959595;
     padding: 10px 0 0 0;
     margin: 0 auto;
-    font-family: "PF Din Text Comp Pro Thin";
+    font-family: "Conv_pfdintextcomppro-thin";
 }
 .welcome .container .pictures img {
     vertical-align: middle;
@@ -292,7 +306,7 @@ a.link_footer:hover {
 .our_pluses .container h2,
 .our_values .container h2,
 .fairy_life .container h2 {
-    font-family: "FlowBold";
+    font-family: "Conv_FlowBold";
     padding: 30px 0 80px 0;
     color: #65baaf;
     font-size: 40px;
@@ -400,11 +414,11 @@ a.link_footer:hover {
     font-weight: bold;
     text-transform: uppercase;
     color:  #8f5926;
-    font-family: "PF Din Text Comp Pro Medium";
+    font-family: "Conv_PFDinTextCompPro-Medium";
     margin: 25px 0 0 0;
 }
 .production .container .two_sliders .book_slider .about_product .name_of_product p {
-    font-family: "PF Din Text Comp Pro Thin";
+    font-family: "Conv_pfdintextcomppro-thin";
     font-size: 20px;
     padding: 0 0 10px 0;
     color: #7d7d7d;
@@ -476,7 +490,7 @@ a.link_footer:hover {
     padding: 0 0 70px 0;
 }
 .our_pluses .container .four_pluses .plus {
-    font-family: "PF Din Text Comp Pro Thin";
+    font-family: "Conv_pfdintextcomppro-thin";
     font-size: 20px;
     width: 25%;
     text-align: center;
@@ -596,7 +610,7 @@ a.link_footer:hover {
 .fairy_life .container .our_meeting .meet p {
     color: #7d7d7d;
     font-size: 20px;
-    font-family: "PF Din Text Comp Pro Thin";
+    font-family: "Conv_pfdintextcomppro-thin";
 }
 
 /* map------------------------------------------------------ */
@@ -673,7 +687,7 @@ a.link_footer:hover {
 .footer .container .footer_nav,
 .footer .container .footer_social_links {
     font-size: 20px;
-    font-family: "PF Din Text Comp Pro Thin";
+    font-family: "Conv_pfdintextcomppro-thin";
     display: flex;
     justify-content: space-between;
     margin: 20px 0;
@@ -732,7 +746,7 @@ a.link_footer:hover {
     justify-content: space-around;
 }
 .footer .container .footer_nav form label {
-    font-family: "PF Din Text Comp Pro Medium";
+    font-family: "Conv_PFDinTextCompPro-Medium";
     font-size: 20px;
     color: #00A19E;
 }
