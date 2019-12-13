@@ -154,9 +154,8 @@
             <h2>Наши ценности</h2>
             <p>Сегодня кондитерские изделия ТМ «Чарівна Мозаїка» представлены нашими партнерами во многих городах Украины, и все знают – кондитерськая фабрика «Чарівна Мозаїка» гарантирует высокое качество и отличный вкус</p>
             <div class="video">
-                <video controls>
-                    <source  src="https://www.youtube.com/watch?v=PmYypVozQb4"  type="video/webm">
-                </video>
+                <iframe allowFullScreen="allowFullScreen" src="https://www.youtube.com/embed/NQGzXRZWcOA?ecver=1&amp;iv_load_policy=3&amp;rel=0&amp;yt:stretch=16:9&amp;autohide=1&amp;color=red&amp;width=495&amp;height=345" width="495" height="345" allowtransparency="true" frameborder="0">
+                </iframe>
             </div>
         </div>
     </div>
@@ -192,26 +191,27 @@
 
     <div class="map">
 
-        <iframe src="https://goo.gl/maps/HuUKeEfeLxDFDbzT8" width="100%" height="510"></iframe>
+        <iframe frameborder="0" src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJAQDQA_CgJ0ERRW5JmTamzVg&key=AIzaSyAOVjiyd9M_dBaaEf_UCPL465j_DFX3z3w" allowfullscreen width="100%" height="494"></iframe>
 
-            <div class="container">
-                <form class="form_on_map" action="form.php">
-                    <p>СВЯЗАТЬСЯ</p>
-                    <div class="your_name">
-                        <input type="text" name="name" required placeholder="Имя">
-                    </div>
-                    <div class="mail">
-                        <input type="email" name="email" placeholder="E-mail" required>
-                    </div>
-                    <div class="phone_number">
-                        <input type="tel" name="phone" placeholder="Телефон" required>
-                    </div>
-                    <div class="text">
-                        <textarea type="commentary" name="comment" cols="40" rows="3" placeholder="Сообщение"></textarea>
-                    </div>
-                    <button type="submit">Отправить</button>
-                </form>
-            </div>
+        <div class="container">
+            <form class="form_on_map" action="form.php">
+                <p>СВЯЗАТЬСЯ</p>
+                <div class="your_name">
+                    <input type="text" name="name" required placeholder="Имя">
+                </div>
+                <div class="mail">
+                    <input type="email" name="email" placeholder="E-mail" required>
+                </div>
+                <div class="phone_number">
+                    <input type="tel" name="phone" placeholder="Телефон" required>
+                </div>
+                <div class="text">
+                    <textarea type="commentary" name="comment" cols="40" rows="3" placeholder="Сообщение"></textarea>
+                </div>
+                <button type="submit">Отправить</button>
+            </form>
+        </div>
+
     </div>
 
     <div class="footer">
@@ -240,8 +240,8 @@
                </ul>
 
                 <form class="searching">
-                   <label for="name">Подписаться на рассылку</label>
-                    <input type="email" name="emailaddress" placeholder="Введите Ваш E-mail">
+                    <label for="email">Подписаться на рассылку</label>
+                    <input type="email" id="email" name="email" placeholder="Введите Ваш E-mail" />
                     <a class="read_news" href="#">ПОДПИСАТЬСЯ</a>
                 </form>
 

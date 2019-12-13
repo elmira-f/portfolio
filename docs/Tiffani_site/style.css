@@ -489,14 +489,13 @@ a.link_footer:hover {
 
 .our_values {
     border-bottom: 1px solid #959595;
+    position: relative;
 }
 .our_values  .container {
-    position: relative;
     text-align: center;
     margin: 0 auto 90px;
-
 }
-.our_values  .container:before {
+.our_values:before {
     content: "";
     background-image: url("image/flour.png");
     background-repeat: no-repeat;
@@ -505,9 +504,9 @@ a.link_footer:hover {
     position: absolute;
     z-index: -5;
     top: -160px;
-    left: -500px;
+    left: 0;
 }
-.our_values  .container::after {
+.our_values::after {
     content: "";
     background-image: url("image/dough.png");
     background-repeat: no-repeat;
@@ -515,18 +514,19 @@ a.link_footer:hover {
     height: 637px;
     position: absolute;
     top: 300px;
-    right: -460px;
+    right: 0;
     z-index: 5;
 }
 .our_values  .container h2:before {
     content: "";
     background: url("image/cup.png") no-repeat;
-    width: 206px;
+    width: 200px;
     height: 20px;
     background-size: 100%;
     position: absolute;
     top: 120px;
-    left: 380px;
+    left: 50%;
+    margin-left: -100px;
 }
 .our_values  .container p {
     font-size: 24px;
@@ -544,10 +544,6 @@ a.link_footer:hover {
     display: inline-block;
     padding-top: 35px;
     box-sizing: border-box;
-}
-.our_values  .container .video video {
-    width: 495px;
-    height: 345px;
 }
 
 /* fairy_life------------------------------------------------------ */
@@ -606,20 +602,20 @@ a.link_footer:hover {
 /* map------------------------------------------------------ */
 
 .map {
-   /* background-image: url("https://www.google.com/maps/@49.9515392,36.3257856,12z");
-   width: 100%;
-    height: 510px;
-    background-repeat: no-repeat;
-    background-size: cover;*/
 }
-.map .container form {
+.map .container {
+    position: relative;
+}
+.map .container form.form_on_map {
+    position: absolute;
+    top: -497px;
     background-color:  #65baaf;
     max-width: 340px;
     padding: 20px 0;
     font-size: 22px;
 }
-.map .container form>div {
-    margin-left: 20px;
+.map .container form div {
+    margin: 0 20px;
 }
 .map .container form p {
     color: white;
@@ -633,6 +629,9 @@ a.link_footer:hover {
     height: 45px;
     border: 1px solid white;
     background-color: rgba(255, 255, 255, 0.5);
+}
+.map .container form textarea {
+    margin: 10px 0;
 }
 .map .container form input::placeholder,
 .map .container form textarea::placeholder {
