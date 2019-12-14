@@ -70,19 +70,6 @@ a.language_link {
     font-size: 14px;
     text-decoration: none;
 }
-
-/* Change style!!!!!!!!!!!!!!
-
-li a.language_link:before:hover {
-    content: "";
-    width: 0;
-    height: 0;
-    border-width: 50px 30px 20px;
-    border-style: solid;
-    border-color: #65baaf #65baaf transparent;
-
-}
-*/
 a.link_menu {
     font-family: "Conv_pfdintextcomppro-thin";
     text-decoration: none;
@@ -94,7 +81,7 @@ a.link_menu:hover {
 }
 h1.title {
     font-family: "Conv_PFDinTextCompPro-Medium";
-    letter-spacing: 7px;
+    letter-spacing: 7.8px;
     font-size: 72px;
     padding: 20px 0;
 }
@@ -118,7 +105,9 @@ a.read_news:hover {
     background-color: #65baaf;
 }
 a.logo {
-    margin: 0 20px 20px 0;
+    position: relative;
+    top: -16px;
+    left: 20px;
 }
 a.link_footer {
     text-decoration: none;
@@ -135,6 +124,7 @@ a.shop_mark {
 }
 
 /* HEADER------------------------------------------------------ */
+
 .header {
     background-color: white;
     position: relative;
@@ -167,13 +157,16 @@ a.shop_mark {
 .header .container .contacts ul.language {
     display: flex;
 }
+.header .container .contacts form {
+    margin: 0 0 0 70px;
+}
 .header .container .contacts form input {
     background-color: transparent;
     border: none;
     border-bottom: 1px solid #65baaf;
 }
 .header .container .contacts form button {
-    width: 37px;
+    width: 35px;
     height: 34px;
     background-color: #65baaf;
     color: white;
@@ -182,17 +175,25 @@ a.shop_mark {
     border: none;
     padding: 5px;
 }
-.header .container .contacts ul.language li {
-    padding: 0 5px;
+.header .container .contacts form button i {
+    font-size: 15px;
 }
-.header .container .contacts ul.language li:last-child {
-    padding: 0;
+.header .container .contacts ul.language {
+    margin: 10px 0 0 0;
+}
+.header .container .contacts ul.language li {
+    position: relative;
+    margin: 0 0 0 17px;
 }
 .header .container .contacts ul.language li:hover::before{
+    z-index: -5;
+    position: absolute;
+    top: -22px;
+    left: -8px;
     content: "";
     width: 0;
     height: 0;
-    border-width: 50px 30px 20px;
+    border-width: 40px 16px 10px;
     border-style: solid;
     border-color: #65baaf #65baaf transparent;
 }
@@ -200,7 +201,7 @@ a.shop_mark {
     letter-spacing: 1px;
     position: relative;
     z-index: 20;
-    margin: -112px 0 20px 0;
+    margin: -90px 0 20px 0;
     text-align: center;
     display: flex;
     justify-content: space-between;
@@ -250,28 +251,33 @@ a.shop_mark {
     font-size: 20px;
     font-family: "Conv_pfdintextcomppro-thin";
     letter-spacing: 2px;
-    padding: 60px 0;
+    padding: 55px 0;
+}
+.banner .container h1 {
+    padding: 25px 0 0 0;
 }
 .banner .container h2 {
     font-family: "Conv_FlowRegular";
     font-size: 32px;
-    padding: 20px 0;
+    padding: 50px 0 0 0;
 }
 .banner .container ul.slider {
-    padding: 170px 0 50px 0;
+    padding: 180px 0 30px 0;
 }
 .banner .container ul.slider li {
     display: inline-block;
 }
 .banner .container ul.slider a{
-    background-image: url("image/slider.png");
+    background-image: url("image/sprites.png");
+    background-position: -359px -2px;
     display: block;
     width: 25px;
     height: 25px;
     margin: 6px;
 }
 .banner .container ul.slider li:hover{
-    background-image: url("image/slider_hover.png");
+    background-image: url("image/sprites.png");
+    background-position: -348px -49px;
     width: 37px;
     height: 37px;
     margin: 0;
