@@ -85,21 +85,26 @@ h1.title {
     font-size: 72px;
     padding: 20px 0;
 }
-a.book_links {
+a.book_links,
+a.book_links_right {
+    padding: 10px 20px 0 0;
     text-decoration: none;
     color: #8f5926;
-    font-size: 16px;
+    font-size: 18px;
+    font-family: "Conv_PFDinTextCompPro-Medium";
 }
-a.book_links:hover {
+a.book_links:hover,
+a.book_links_right:hover{
     color: #65baaf;
 }
 a.read_news {
     text-decoration: none;
     color: #7d7d7d;
     font-size: 16px;
-    padding: 10px 15px;
+    padding: 10px 20px;
     border: 1px solid #7d7d7d;
     border-radius: 30px;
+    font-family: "Conv_PFDinTextCompPro-Medium";
 }
 a.read_news:hover {
     background-color: #65baaf;
@@ -286,14 +291,14 @@ a.shop_mark {
 
 .welcome {
     border-bottom: 1px solid  #959595;
-    max-height: 360px;
+    max-height: 380px;
 }
 .welcome .container h2 {
     font-size: 36px;
     text-align: center;
     max-width: 400px;
     color: #959595;
-    padding: 10px 0 0 0;
+    padding: 30px 0 0 0;
     margin: 0 auto;
     font-family: "Conv_pfdintextcomppro-thin";
 }
@@ -301,13 +306,13 @@ a.shop_mark {
     vertical-align: middle;
 }
 .welcome .container .pictures img:nth-child(1) {
-    transform: translate(-125px, -40px);
+    transform: translate(-135px, -40px);
 }
 .welcome .container .pictures img:nth-child(2) {
-    transform: translate(-70px, -60px);
+    transform: translate(-70px, -55px);
 }
 .welcome .container .pictures img:nth-child(3) {
-    transform: translate(790px, -425px);
+    transform: translate(785px, -425px);
 }
 
 /* Production------------------------------------------------------ */
@@ -317,42 +322,42 @@ a.shop_mark {
 .our_values .container h2,
 .fairy_life .container h2 {
     font-family: "Conv_FlowBold";
-    padding: 30px 0 80px 0;
+    padding: 0 0 80px 0;
+    margin: -40px 0 0 0;
     color: #65baaf;
     font-size: 40px;
-    font-style: italic;
     text-transform: uppercase;
     text-align: center;
 }
 
 /* before for donut------------------------------------------------------*/
+
 .production .container {
     max-width: 1030px;
 }
 .production .container:before {
     position: relative;
-    left: 500px;
-    top: -10px;
-    content: "";
-    background: white url("image/maffin.png") no-repeat;
-    background-size: 100%;
-    background-position: center;
-    width: 37px;
-    height: 35px;
+    background: white url(image/sprites.png) no-repeat -311px -2px;
+    border: 24px solid white;
     border-radius: 50px;
-    padding: 25px;
+    left: 461px;
+    top: -47px;
+    content: "";
+    display: inline-block;
+    width: 44px;
+    height: 43px;
 }
 .production .container .two_sliders {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
     position: relative;
 }
 .production .container .two_sliders .book_slider {
     position: relative;
+    top: 5px;
+    left: -30px;
     background: url("image/book.png") no-repeat;
-    width: 724px;
-    height: 427px;
+    width: 734px;
+    height: 437px;
     background-size: 100%;
 }
 .production .container .two_sliders .product_mark {
@@ -370,54 +375,56 @@ a.shop_mark {
     text-decoration: none;
 }
 .production .container .two_sliders .product_mark li:nth-child(1){
-    top: -35px;
-    left: 100px;
+    top: -40px;
+    left: 95px;
     background: url("image/bg_link_book1.png") no-repeat;
     width: 181px;
     height: 100px;
     background-size: 100%;
-    padding-left: 10px;
-    padding-top: 10px;
+    padding-left: 20px;
+    padding-top: 15px;
 }
 .production .container .two_sliders .product_mark li:nth-child(2){
     top: -65px;
-    left: 290px;
+    left: 270px;
     background: url("image/bg_link_book2.png") no-repeat;
     width: 157px;
     height: 100px;
     background-size: 100%;
-    padding-left: 40px;
-    padding-top: 45px;
+    padding-left: 45px;
+    padding-top: 50px;
 }
 .production .container .two_sliders .product_mark li:nth-child(3){
     top: -35px;
-    left: 450px;
+    left: 420px;
     background: url("image/bg_link_book3.png") no-repeat;
     width: 208px;
     height: 57px;
     background-size: 100%;
-    padding-left: 20px;
+    padding-left: 25px;
     padding-top: 15px;
 }
 .production .container .two_sliders .book_slider .about_product {
     display: flex;
     justify-content: space-around;
-    align-items: center;
 }
 .production .container .two_sliders .book_slider .about_product .picture_of_product,
 .production .container .two_sliders .book_slider .about_product .name_of_product {
     width: 40%;
     text-align: center;
 }
+.production .container .two_sliders .book_slider .about_product .name_of_product {
+    position: relative;
+}
 .production .container .two_sliders .book_slider .about_product .picture_of_product a {
     margin: 20px 0 0 0;
     display: block;
 }
 .production .container .two_sliders .book_slider .about_product .picture_of_product {
-    margin: 60px 0 0px 80px;
+    margin: 60px 0 0px 110px;
 }
 .production .container .two_sliders .book_slider .about_product .name_of_product {
-    margin: 30px 60px 0 0;
+    margin: 46px 60px 0 0;
 }
 .production .container .two_sliders .book_slider .about_product .name_of_product h3 {
     font-size: 36px;
@@ -425,51 +432,118 @@ a.shop_mark {
     text-transform: uppercase;
     color:  #8f5926;
     font-family: "Conv_PFDinTextCompPro-Medium";
-    margin: 25px 0 0 0;
+    margin: 0 10px 65px 0;
+}
+.production .container .two_sliders .book_slider .about_product .name_of_product h3:before {
+    content: "";
+    position: absolute;
+    top: 70px;
+    left: 110px;
+    background: url(image/zip_line.png) no-repeat;
+    background-size: 100%;
+    width: 45px;
+    height: 8px;
 }
 .production .container .two_sliders .book_slider .about_product .name_of_product p {
     font-family: "Conv_pfdintextcomppro-thin";
     font-size: 20px;
-    padding: 0 0 10px 0;
+    padding: 0 0 15px 0;
     color: #7d7d7d;
     margin: 10px 0;
 }
 .production .container .two_sliders .book_slider .about_product .name_of_product p:last-child {
     margin: 0 0 40px 0;
 }
-.production .container .two_sliders .book_slider .about_product .name_of_product img.underline {
-    margin: 25px 0;
-}
 .production .container .two_sliders .book_slider .about_product .name_of_product .product_angles {
-    margin: 40px 0 0 0;
+    margin: 60px 0 0 0;
 }
 .production .container .two_sliders .book_slider .about_product .name_of_product .product_angles li {
     display: inline-block;
 }
-.production .container .two_sliders .book_slider .about_product .name_of_product .product_angles li a.book_links_right {
-    text-decoration: none;
-    color: #65baaf;
+.production .container .two_sliders .book_slider .about_product .name_of_product .product_angles li a.book_links_right img{
+    transform: rotate(180deg);
+}
+.production .container .two_sliders .book_slider .about_product .name_of_product .product_angles li a.book_links_right:hover img{
+    transform: rotate(180deg);
+}
+.production .container .two_sliders .book_slider .about_product .name_of_product .product_angles {
+    position: relative;
+}
+.production .container .two_sliders .book_slider .about_product .name_of_product .product_angles a.book_links {
+    margin: 10px 10px 0 0;
+}
+.production .container .two_sliders .book_slider .about_product .name_of_product .product_angles li a.book_links:before {
+    content: "";
+    background: url("image/sprites.png") no-repeat;
+    width:32px;
+    height:31px;
+    background-position: -389px -2px;
+    position: absolute;
+    top: -10px;
+    left: 100px;
+}
+.production .container .two_sliders .book_slider .about_product .name_of_product .product_angles li a.book_links:hover:before {
+    background: url("image/sprites.png") no-repeat;
+    width:32px;
+    height:31px;
+    background-position: -389px -37px;
+    transform: scaleX(-1);
+}
+.production .container .two_sliders .book_slider .about_product .name_of_product .product_angles a.book_links_right {
+    padding: 10px 0 0 60px;
+}
+.production .container .two_sliders .book_slider .about_product .name_of_product .product_angles li a.book_links_right:before {
+    content: "";
+    background: url("image/sprites.png") no-repeat;
+    width:32px;
+    height:31px;
+    background-position: -389px -2px;
+    position: absolute;
+    top: -10px;
+    left: 145px;
+    transform: scaleX(-1);
+}
+.production .container .two_sliders .book_slider .about_product .name_of_product .product_angles li a.book_links_right:hover:before {
+    background: url("image/sprites.png") no-repeat;
+    width: 32px;
+    height: 31px;
+    background-position: -389px -37px;
+    transform: scaleX(1);
 }
 .production .container .two_sliders .cookie_slider {
     text-align: center;
+    margin: 0 0 0 20px;
 }
 .production .container .two_sliders .cookie_slider a {
     display: inline-block;
     margin-top: 250px;
     vertical-align: top;
 }
+.production .container .two_sliders .cookie_slider .cookies {
+    position: relative;
+}
+.production .container .two_sliders .cookie_slider .cookies a:before {
+    content: "";
+    background: url("image/shadow.png") no-repeat;
+    position: absolute;
+    bottom: -30px;
+    left: 60px;
+    width: 137px;
+    height: 23px;
+}
 .production .container .two_sliders .cookie_slider .cookies a img{
     vertical-align: middle;
 }
 .production .container .two_sliders .cookie_slider p.new_cookie {
-    padding: 20px 0 0 0;
+    padding: 35px 0 0 5px;
     color: #65baaf;
-    font-size: 18px;
-    text-transform: uppercase;
+    font-size: 24px;
+    font-family: "Conv_PFDinTextCompPro-Medium";
 }
 .production .container .two_sliders .cookie_slider p.new_cookie span {
     color: #7d7d7d;
-    font-size: 12px;
+    font-size: 18px;
+    font-family: "Conv_pfdintextcomppro-thin";
 }
 
 /* Our_pluses------------------------------------------------------ */
@@ -477,36 +551,53 @@ a.shop_mark {
 .our_pluses  .container:before {
     position: relative;
     left: 440px;
-    top: -10px;
+    top: -25px;
     content: "";
     background: white url("image/cherry.png") no-repeat;
     background-size: 60%;
     background-position: center;
     border-radius: 50px;
-    padding: 25px 35px;
+    padding: 30px 40px;
 }
 .our_pluses {
     margin: 90px 0 20px 0;
     background-color: rgba(115, 212, 216, 0.25);
 }
 .our_pluses .container h2 {
-    margin: 50px 0;
+    margin: 40px 0;
     padding: 0;
 }
 .our_pluses .container .four_pluses {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     color: #915b27;
     padding: 0 0 70px 0;
 }
 .our_pluses .container .four_pluses .plus {
+    margin: 30px 0 0 0;
+    position: relative;
     font-family: "Conv_pfdintextcomppro-thin";
     font-size: 20px;
     width: 25%;
     text-align: center;
 }
+.our_pluses .container .four_pluses .plus img {
+    position: relative;
+    z-index: 10;
+}
+.our_pluses .container .four_pluses .plus p:before{
+    content: "";
+    position: absolute;
+    top: -30px;
+    left: 60px;
+    background: url("image/sprites.png");
+    background-repeat: no-repeat;
+    width:118px;
+    height:118px;
+    background-position: -2px -2px;
+}
 .our_pluses .container .four_pluses .plus p {
-    padding: 20px 0 0 0;
+    padding: 50px 0 0 0;
 }
 
 /* Our_values------------------------------------------------------ */
@@ -517,7 +608,7 @@ a.shop_mark {
 }
 .our_values  .container {
     text-align: center;
-    margin: 0 auto 90px;
+    margin: 100px auto 90px;
 }
 .our_values:before {
     content: "";
@@ -527,7 +618,7 @@ a.shop_mark {
     height: 844px;
     position: absolute;
     z-index: -5;
-    top: -160px;
+    top: -220px;
     left: 0;
 }
 .our_values::after {
@@ -537,7 +628,7 @@ a.shop_mark {
     width:559px;
     height: 637px;
     position: absolute;
-    top: 300px;
+    top: 260px;
     right: 0;
     z-index: 5;
 }
@@ -548,7 +639,7 @@ a.shop_mark {
     height: 20px;
     background-size: 100%;
     position: absolute;
-    top: 120px;
+    top: 79px;
     left: 50%;
     margin-left: -100px;
 }
@@ -561,7 +652,7 @@ a.shop_mark {
     margin: 0 auto;
 }
 .our_values  .container .video {
-    margin: 20px 0;
+    margin: 15px 0 15px 15px;
     background-image: url("image/border_for_video.png");
     width: 593px;
     height: 413px;
@@ -575,12 +666,13 @@ a.shop_mark {
 .fairy_life .container {
     position: relative;
     text-align: center;
-    margin: 50px auto;
+    margin: 50px auto 70px;
+    max-width: 980px;
 }
 .fairy_life .container:before {
     content: "";
     position: absolute;
-    left: 450px;
+    left: 440px;
     top: -80px;
     background: white url("image/candy.png") no-repeat;
     background-size: 60%;
@@ -589,7 +681,7 @@ a.shop_mark {
     padding: 25px 35px;
 }
 .fairy_life .container h2 {
-     margin: 10px 0 70px 0;
+     margin: 60px 0 70px 0;
      padding: 0;
 }
 .fairy_life .container .our_meeting {
@@ -598,14 +690,12 @@ a.shop_mark {
 .fairy_life .container .our_meeting,
 .fairy_life .container .our_meeting .meet {
     display: flex;
-    align-items: center;
-    justify-content: space-between;
 }
 .fairy_life .container .our_meeting .meet {
     margin-right: 50px;
 }
 .fairy_life .container .our_meeting .meet:last-child {
-    margin: 0;
+    margin: 0 0 0 70px;
 }
 .fairy_life .container .our_meeting .meet .about_meet {
     margin: 0 0 0 20px;
@@ -625,37 +715,37 @@ a.shop_mark {
 
 /* map------------------------------------------------------ */
 
-.map {
-}
 .map .container {
     position: relative;
+    max-width: 980px;
 }
 .map .container form.form_on_map {
     position: absolute;
-    top: -497px;
+    top: -505px;
     background-color:  #65baaf;
     max-width: 340px;
-    padding: 20px 0;
+    padding: 44px 0;
     font-size: 22px;
 }
 .map .container form div {
     margin: 0 20px;
 }
 .map .container form p {
+    font-family: 'Conv_pfdintextcomppro-light';
     color: white;
     font-size: 42px;
     text-align: center;
 }
 .map .container form input {
     caret-color: white;
-    margin: 10px 0;
+    margin: 5px 0;
     width: 300px;
     height: 45px;
     border: 1px solid white;
     background-color: rgba(255, 255, 255, 0.5);
 }
 .map .container form textarea {
-    margin: 10px 0;
+    margin: 5px 0;
 }
 .map .container form input::placeholder,
 .map .container form textarea::placeholder {
@@ -691,8 +781,9 @@ a.shop_mark {
 /* map------------------------------------------------------ */
 
 .footer .container {
-    margin: 30px auto;
+    margin: 45px auto 30px;
     position: relative;
+    max-width: 980px;
 }
 .footer .container .footer_nav,
 .footer .container .footer_social_links {
@@ -702,8 +793,11 @@ a.shop_mark {
     justify-content: space-between;
     margin: 20px 0;
 }
-.footer .container .footer_nav ul.menu_footer {
-    max-width: 150px;
+.footer .container .footer_nav ul.menu_footer:nth-child(2) {
+    margin-right: 40px;
+}
+.footer .container .footer_nav ul.menu_footer li {
+    padding: 7px 0;
 }
 .footer .container .footer_nav ul.contacts_footer {
     color: #7d7d7d;
@@ -712,6 +806,11 @@ a.shop_mark {
 }
 .footer .container .footer_nav ul.contacts_footer li {
     padding: 10px 0;
+}
+.footer .container .footer_nav ul.contacts_footer li p {
+    font-size: 22px;
+    font-family: 'Conv_PFDinTextCompPro-Medium';
+    color: #caa977;
 }
 .footer .container .footer_nav ul.contacts_footer li:nth-child(2):before {
     position: absolute;
@@ -759,6 +858,7 @@ a.shop_mark {
     font-family: "Conv_PFDinTextCompPro-Medium";
     font-size: 20px;
     color: #00A19E;
+    text-transform: uppercase;
 }
 .footer .container .footer_nav form input,
 .footer .container .footer_nav form a {
@@ -769,9 +869,20 @@ a.shop_mark {
     max-width: 120px;
 }
 .footer .container .footer_nav form input {
+    font-family: 'Conv_pfdintextcomppro-thin';
+    font-size: 20px;
+    margin: 15px 0 0 0;
     border: none;
     border-bottom: 1px solid black;
     background-color: transparent;
+}
+.footer .container .footer_social_links {
+    margin: 35px 0 0 0;
+}
+.footer .container .footer_social_links p {
+    font-size: 16px;
+    font-family: 'Conv_pfdintextcomppro-thin';
+    color: #7d7d7d;
 }
 .footer .container .footer_social_links .shop_mark a {
     background: url("image/bg_soc_link.png") no-repeat;
