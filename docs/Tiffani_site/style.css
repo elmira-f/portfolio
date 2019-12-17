@@ -293,6 +293,10 @@ a.shop_mark {
     border-bottom: 1px solid  #959595;
     max-height: 380px;
 }
+.welcome .container {
+    position: relative;
+}
+
 .welcome .container h2 {
     font-size: 36px;
     text-align: center;
@@ -302,17 +306,23 @@ a.shop_mark {
     margin: 0 auto;
     font-family: "Conv_pfdintextcomppro-thin";
 }
-.welcome .container .pictures img {
-    vertical-align: middle;
+.welcome .container .pictures {
+    margin: 300px 0;
 }
 .welcome .container .pictures img:nth-child(1) {
-    transform: translate(-135px, -40px);
+    position: absolute;
+    top: 60px;
+    left: -130px;
 }
 .welcome .container .pictures img:nth-child(2) {
-    transform: translate(-70px, -55px);
+    position: absolute;
+    top: 160px;
+    left: 240px;
 }
 .welcome .container .pictures img:nth-child(3) {
-    transform: translate(785px, -425px);
+    position: absolute;
+    top: 25px;
+    left: 785px;
 }
 
 /* Production------------------------------------------------------ */
@@ -890,4 +900,181 @@ a.shop_mark {
     height: 48px;
     background-position: center;
     padding: 20px;
+}
+
+/*------------------------------------------------------ */
+
+@media (max-width: 768px) {
+    p.thin {
+        font-size: 14px;
+    }
+    .header .container .contacts .our_contacts p.thin img {
+        margin: 0;
+    }
+    a.logo {
+        top: 20px;
+        left: 40px;
+    }
+    .header .container .contacts form {
+        position: relative;
+        left: -100px;
+    }
+    .header .container .contacts a.logo img {
+        max-width: 90px;
+    }
+    .header ul.menu {
+        margin: -70px 0 20px 0;
+    }
+    .header .container .contacts form {
+        margin: 0;
+    }
+    a.link_menu {
+        font-size: 14px;
+    }
+    .header ul.menu li:nth-child(5) {
+       margin: 0 20px 0 0;
+    }
+    .welcome .container .pictures img:nth-child(1) {
+        display: none;
+    }
+    .welcome .container .pictures img:nth-child(3) {
+        display: none;
+    }
+    .welcome .container .pictures img:nth-child(2) {
+        left: 160px;
+    }
+    .production .container:before {
+        left: 50%;
+        margin-left: -30px;
+    }
+    .production .container .two_sliders {
+        display: inline;
+    }
+    .production .container .two_sliders .book_slider {
+        max-width: 580px;
+        position: relative;
+        top: 5px;
+        left: 20px;
+    }
+    .production .container .two_sliders .book_slider .about_product .picture_of_product img {
+        max-width: 190px;
+    }
+    .production .container .two_sliders .book_slider .about_product .picture_of_product {
+        margin: 50px 0 0px 90px;
+    }
+    .production .container .two_sliders .book_slider .about_product .name_of_product h3 {
+        font-size: 26px;
+    }
+    .production .container .two_sliders .book_slider .about_product .name_of_product p {
+        font-family: "Conv_pfdintextcomppro-thin";
+        font-size: 16px;
+    }
+    .production .container .two_sliders .book_slider .about_product .name_of_product .product_angles {
+        margin: 30px 0 0 0;
+    }
+    .production .container .two_sliders .book_slider .about_product .name_of_product .product_angles li a.book_links:before {
+        left: 70px;
+    }
+    .production .container .two_sliders .book_slider .about_product .name_of_product .product_angles li a.book_links_right:before {
+        left: 110px;
+    }
+    .production .container .two_sliders .book_slider .about_product .name_of_product h3:before {
+        top: 50px;
+        left: 80px;
+    }
+    .production .container .two_sliders .product_mark {
+        position: absolute;
+        top: 2px;
+        left: 0;
+    }
+    .production .container .two_sliders .product_mark li:nth-child(1) {
+        top: -30px;
+        left: 95px;
+        width: 151px;
+        height: 50px;
+        padding-left: 10px;
+        padding-top: 10px;
+    }
+    .production .container .two_sliders .product_mark li:nth-child(2) {
+        top: -55px;
+        left: 250px;
+        width: 140px;
+        height: 100px;
+        padding-left: 35px;
+        padding-top: 40px;
+    }
+    .production .container .two_sliders .product_mark li:nth-child(3) {
+        top: -27px;
+        left: 385px;
+        width: 168px;
+        height: 57px;
+        padding-left: 10px;
+        padding-top: 10px;
+    }
+
+
+
+
+
+
+
+
+
+
+    .production .container .two_sliders .cookie_slider .cookies a:before {
+        left: 305px;
+    }
+    .our_pluses .container:before {
+        left: 340px;
+    }
+    .our_pluses .container .four_pluses .plus p:before {
+        left: 40px;
+    }
+    .our_values:before {
+        background-size: cover;
+        width: 300px;
+        height: 390px;
+    }
+    .our_values::after {
+        background-size: cover;
+        width: 200px;
+        height: 240px;
+        top: 620px;
+    }
+    .fairy_life .container:before {
+        left: 340px;
+    }
+    .fairy_life .container .our_meeting, .fairy_life .container .our_meeting .meet {
+        display: inline;
+    }
+    .fairy_life .container .our_meeting .meet .about_meet {
+        margin: 20px 0;
+        text-align: center;
+    }
+    .footer .container .footer_nav ul.contacts_footer li:nth-child(2):before,
+    .footer .container .footer_nav ul.contacts_footer li:nth-child(3):before,
+    .footer .container .footer_nav ul.contacts_footer li:nth-child(4):before {
+        display: none;
+    }
+    .footer .container .footer_nav, .footer .container .footer_social_links {
+        display: inline;
+        text-align: center;
+    }
+    .footer .container .footer_nav ul.contacts_footer li:nth-child(2):before,
+    .footer .container .footer_nav ul.contacts_footer li:nth-child(3):before,
+    .footer .container .footer_nav ul.contacts_footer li:nth-child(4):before {
+        display: none;
+    }
+    .footer .container .footer_nav ul.contacts_footer {
+        margin: 0 auto;
+    }
+    .footer .container .footer_nav ul.menu_footer:nth-child(2) {
+        margin-right: 0;
+    }
+    .footer .container .footer_nav form {
+        margin: 0 auto;
+    }
+    .footer .container .footer_social_links .shop_mark {
+        margin: 20px 0;
+    }
 }
