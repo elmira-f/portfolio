@@ -569,10 +569,10 @@ a.read_news:hover {
 .our_pluses  .container:before {
     position: relative;
     left: 440px;
-    top: -25px;
+    top: -20px;
     content: "";
     background: white url("image/cherry.png") no-repeat;
-    background-size: 60%;
+    background-size: 55%;
     background-position: center;
     border-radius: 50px;
     padding: 30px 40px;
