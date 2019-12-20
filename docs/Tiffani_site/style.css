@@ -64,12 +64,6 @@ p.thin {
     font-family: "Conv_pfdintextcomppro-thin";
     font-size: 18px;
 }
-a.language_link {
-    font-family: "Conv_PFDinTextCompPro-Medium";
-    color: #959595;
-    font-size: 14px;
-    text-decoration: none;
-}
 a.link_menu {
     font-family: "Conv_pfdintextcomppro-thin";
     text-decoration: none;
@@ -194,6 +188,15 @@ a.read_news:hover {
 .header .container .contacts ul.language {
     margin: 10px 0 0 0;
 }
+.header .container .contacts ul.language li a.language_link {
+    font-family: "Conv_PFDinTextCompPro-Medium";
+    color: #959595;
+    font-size: 14px;
+    text-decoration: none;
+}
+.header .container .contacts ul.language li.active_language a.language_link {
+    color: white;
+}
 .header .container .contacts ul.language li.active_language::before{
     z-index: -5;
     position: absolute;
@@ -221,6 +224,9 @@ a.read_news:hover {
     border-width: 40px 16px 10px;
     border-style: solid;
     border-color: #65baaf #65baaf transparent;
+}
+.header .container .contacts ul.language li:hover a.language_link  {
+    color: white;
 }
 .header ul.menu {
     letter-spacing: 1px;
@@ -313,6 +319,9 @@ a.read_news:hover {
     width: 37px;
     height: 37px;
     margin: 0;
+}
+.banner .container ul.slider li.active_link a.language_link {
+    color: white;
 }
 /* blog welcome------------------------------------------------------ */
 
