@@ -578,11 +578,11 @@ a.read_news:hover {
     padding: 30px 40px;
 }
 .our_pluses {
-    margin: 90px 0 20px 0;
+    margin: 60px 0 20px 0;
     background-color: rgba(115, 212, 216, 0.25);
 }
 .our_pluses .container h2 {
-    margin: 40px 0;
+    margin: 35px 0;
     padding: 0;
 }
 .our_pluses .container .four_pluses {
@@ -592,7 +592,6 @@ a.read_news:hover {
     padding: 0 0 150px 0;
 }
 .our_pluses .container .four_pluses .plus {
-    margin: 30px 0 0 0;
     position: relative;
     font-family: "Conv_pfdintextcomppro-thin";
     font-size: 20px;
@@ -664,7 +663,7 @@ a.read_news:hover {
 }
 .our_values  .container {
     text-align: center;
-    margin: 100px auto 90px;
+    margin: 90px auto 90px;
 }
 .our_values:before {
     content: "";
