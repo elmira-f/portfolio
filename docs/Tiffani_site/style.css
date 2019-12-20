@@ -194,6 +194,18 @@ a.read_news:hover {
 .header .container .contacts ul.language {
     margin: 10px 0 0 0;
 }
+.header .container .contacts ul.language li.active_language::before{
+    z-index: -5;
+    position: absolute;
+    top: -22px;
+    left: -8px;
+    content: "";
+    width: 0;
+    height: 0;
+    border-width: 40px 16px 10px;
+    border-style: solid;
+    border-color: #65baaf #65baaf transparent;
+}
 .header .container .contacts ul.language li {
     position: relative;
     margin: 0 0 0 17px;
@@ -295,7 +307,7 @@ a.read_news:hover {
     height: 37px;
     margin: 0;
 }
-.banner .container ul.slider li.active_link:active {
+.banner .container ul.slider li.active_link {
     background-image: url("image/sprites.png");
     background-position: -348px -49px;
     width: 37px;
