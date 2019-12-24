@@ -1,0 +1,568 @@
+@import url('Gobold_light/fonts.css');
+
+/* ------------------------------------------------------ */
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body {
+    line-height: 1;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/* ------------------------------------------------------ */
+
+body {
+    background-color: #101010;
+    color: #959595;
+    font-size: 16px;
+}
+
+/* ------------------------------------------------------ */
+
+.menu .container .logo {
+    max-width: 100%;
+}
+
+/* ------------------------------------------------------ */
+
+.banner .container {
+    padding: 20px 0;
+    position: relative;
+}
+.banner .container:before  {
+    position: absolute;
+    top: 20px;
+    right: 0;
+    content: "";
+    width: 370px;
+    height: 256px;
+    background: #3a3a3a;
+}
+
+.banner .container .about_car h1 {
+    position: relative;
+    font-size: 18px;
+    font-family: 'Conv_GoboldCYR LAT';
+    color: #4a4c4c;
+}
+.banner .container .about_car h1:before {
+    content: "";
+    height: 1px;
+    width: 20px;
+    background-color: #4a4c4c;
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+}
+.banner .container .picture_car img {
+    max-width: 100%;
+}
+.banner .container .about_car h1 span,
+.banner .container .about_car p {
+    color: #82878a;
+}
+.banner .container .about_car p {
+    padding: 30px 0;
+    font-size: 14px;
+}
+.banner .container .about_car ul.slider {
+    display: none;
+}
+.banner .container .about_car ul.slider li {
+    display: inline-block;
+}
+.banner .container .about_car ul.slider li a {
+    text-decoration: none;
+    color: #4a4c4c;
+    font-size: 16px;
+    font-family: 'Conv_GoboldCYR LAT';
+}
+.banner .container .about_car ul.slider li a:hover {
+    color: #82878a;
+}
+.banner .container .about_car ul.slider li.active a {
+    color: #82878a;
+}
+/* service------------------------------------------------------ */
+
+.our_services {
+    background-color: #6e0b0e;
+}
+.our_services .container-fluid {
+    position: relative;
+    padding: 40px 15px;
+}
+.our_services .container-fluid .service,
+.our_services .container-fluid .wedding {
+    margin: 0 0 30px 0;
+}
+.our_services .container-fluid h1 {
+    position: relative;
+    font-size: 18px;
+    font-family: 'Conv_GoboldCYR LAT';
+    color: white;
+}
+.our_services .container-fluid h1:before {
+    content: "";
+    height: 2px;
+    width: 30px;
+    background-color: white;
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+}
+.our_services .container-fluid h1 span {
+    color: black;
+}
+.our_services .container-fluid p {
+    position: relative;
+    font-size: 14px;
+    color: white;
+    padding: 20px 0;
+}
+.our_services .container-fluid .service a,
+.our_services .container-fluid .wedding a,
+.our_services .container-fluid .tours a {
+    position: relative;
+    text-decoration: none;
+    color: white;
+    border: 1px solid white;
+    padding: 5px;
+}
+
+/* Our-fleet------------------------------------------------------ */
+
+.our_fleet {
+    background-color: white;
+}
+.our_fleet .container {
+    padding: 50px 15px;
+}
+.our_fleet h1 {
+    font-family: 'Conv_GoboldCYR LAT', sans-serif;
+    font-size: 30px;
+    color: #9e171d;
+}
+.our_fleet h1 span {
+    color: black;
+}
+.our_fleet p {
+    color: #82878a;
+    font-size: 10px;
+}
+.our_fleet .container-fluid .slider {
+  padding: 100px 0;
+}
+.our_fleet p.name_car {
+    font-family: 'Conv_GoboldCYR LAT', sans-serif;
+    color: black;
+    font-size: 20px;
+    padding: 10px 0 0 0;
+}
+.our_fleet p.hover_btn {
+    position: relative;
+    z-index: 10;
+    margin-top: -80px;
+    padding: 15px 0;
+    background: rgba(158, 23, 29, 0.7);
+    font-size: 13px;
+    color: white;
+    text-decoration: none;
+}
+.our_fleet a.img_link:hover a.hover_btn {
+
+}
+/* contacts------------------------------------------------------ */
+
+.our_contacts .container .contact_us {
+    margin: 50px 0;
+}
+.our_contacts .container .contact_us .contact {
+    margin: 0 0 30px 0;
+}
+.our_contacts .container h1,
+.our_contacts .container h3 {
+    position: relative;
+    font-family: 'Conv_GoboldCYR LAT', sans-serif;
+    font-size: 30px;
+    color: white;
+    margin: 0 0 20px 0;
+}
+.our_contacts .container h1 span {
+    color: #9e171d;
+}
+.our_contacts .container .contact h1:before {
+    content: "";
+    height: 2px;
+    width: 30px;
+    background-color: #9e171d;
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+}
+.our_contacts .container .contact p {
+    font-size: 10px;
+}
+.our_contacts .container .your_estimate h1:before {
+    content: "";
+    height: 2px;
+    width: 30px;
+    background-color: white;
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+}
+.our_contacts .container .your_estimate p {
+    color: white;
+    font-size: 13px;
+    margin: 30px 0;
+}
+.our_contacts .container .your_estimate a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: white;
+}
+.our_contacts .container .contact .our_form {
+    margin: 20px 0;
+}
+.our_contacts .container .contact form label {
+    font-size: 13px;
+}
+.our_contacts .container .contact form label span {
+    color: #9e171d;
+}
+.our_contacts .container .contact form .seat_place,
+.our_contacts .container .contact form .laggage_place,
+.our_contacts .container .contact form .your_name,
+.our_contacts .container .contact form .mail {
+    display: inline-block;
+    margin: 20px 0;
+}
+.our_contacts .container .contact form select {
+    display: block;
+    width: 370px;
+    height: 25px;
+    background-color: transparent;
+    border: 1px solid #9e171d;
+    color: white;
+}
+
+
+
+.our_contacts .container .contact form input[type="checkbox"]{
+    border: 1px solid #9e171d;
+    background-color: transparent;
+    width: 25px;
+    height: 25px;
+}
+
+
+.our_contacts .container .contact form input[type="text"],
+.our_contacts .container .contact form input[type="email"] {
+    height: 25px;
+    border: none;
+    text-decoration: none;
+}
+.our_contacts .container .contact form button {
+    margin: 10px 0 0 0;
+    padding: 15px 35px;
+    background-color: transparent;
+    color: white;
+    border: 1px solid white;
+}
+
+/* testimonials------------------------------------------------------ */
+
+.testimonials {
+    background-color: #0e0e0e;
+}
+.testimonials .container {
+    padding: 100px 15px;
+}
+.testimonials .container h1,
+.testimonials .container h3 {
+    position: relative;
+    font-family: 'Conv_GoboldCYR LAT', sans-serif;
+    font-size: 30px;
+    color: white;
+    margin: 0 0 20px 0;
+}
+.testimonials .container h1 span {
+    color: #9e171d;
+}
+.testimonials .container h1:before {
+    content: "";
+    height: 2px;
+    width: 50px;
+    background-color: #9e171d;
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+}
+.testimonials .container .contact p {
+    font-size: 10px;
+}
+.testimonials .container .client_slider {
+    margin: 100px 0 0 0;
+}
+.testimonials .container .client_slider p.people_say {
+    font-size: 14px;
+    padding: 30px 0;
+}
+.testimonials .container .client_slider p.name_clients {
+    font-family: 'Conv_GoboldCYR LAT', sans-serif;
+    color:  #9e171d;
+    font-size: 14px;
+}
+
+/* footer------------------------------------------------------ */
+
+.footer {
+    background-color: white;
+}
+.footer .container .footer_menu {
+    padding: 50px 0;
+}
+.footer .container h1 {
+    position: relative;
+    font-family: 'Conv_GoboldCYR LAT', sans-serif;
+    font-size: 30px;
+    color: black;
+    margin: 0 0 20px 0;
+}
+.footer .container h1 span {
+    color: #9e171d;
+}
+.footer .container h1:before {
+    content: "";
+    height: 2px;
+    width: 50px;
+    background-color: #9e171d;
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+}
+.footer .container .footer_menu ul li {
+    display: inline-block;
+    padding: 30px 10px 0 0;
+}
+.footer .container .footer_menu ul li a {
+    text-decoration: none;
+    font-size: 14px;
+    color: #82878a;
+}
+.footer .container .footer_menu ul li a:hover {
+    border-bottom: 1px solid #82878a;
+}
+
+/* privacy------------------------------------------------------ */
+
+.privacy_police {
+    background-color: #e6e6e6;
+}
+.privacy_police .container .our_rights {
+    padding: 30px 0;
+}
+.privacy_police .container .private ul li {
+    display: inline-block;
+}
+.privacy_police .container .private ul li a {
+    text-decoration: none;
+    font-size: 14px;
+    color: #82878a;
+}
+.privacy_police .container .private ul li:nth-child(2) {
+    color: #9e171d;
+}
+.privacy_police .container .rights_reserved ul li {
+    display: inline-block;
+}
+.privacy_police .container .rights_reserved ul li a {
+    color: white;
+    padding: 10px 15px;
+    background-color: #82878a;
+    border-radius: 30px;
+}
+
+
+
+
+
+/* media------------------------------------------------------ */
+
+
+@media (min-width: 576px) {
+
+}
+
+@media (min-width: 768px) {
+    .banner .container .picture_car img {
+        width: 450px;
+    }
+    .banner .container {
+        padding: 50px 0;
+    }
+    .banner .container:before {
+        height: 300px;
+    }
+}
+
+
+@media (min-width: 992px) {
+    .banner .container .picture_car img {
+        width: 620px;
+    }
+    .banner .container {
+        padding: 100px 0;
+    }
+    .banner .container:before {
+        top: 70px;
+        right: 0;
+        width: 570px;
+        height: 406px;
+    }
+    .banner .container .about_car p {
+        padding: 80px 0;
+        font-size: 16px;
+    }
+    .banner .container .about_car h1 {
+        font-size: 25px;
+    }
+    .banner .container .about_car ul.slider {
+        display: block;
+    }
+
+
+    .our_services {
+        background-color:  #101010;;
+        position: relative;
+        overflow: hidden;
+    }
+    .our_services .container-fluid {
+        max-width: 1140px;
+        padding: 0 15px;
+    }
+    .our_services .container-fluid h1 {
+        font-size: 25px;
+        padding: 30px 0 0 0;
+    }
+    .our_services .container-fluid p {
+        font-size: 16px;
+        padding: 40px 0 70px 0;
+        line-height: 20px;
+        margin: 0 0 180px 0;
+    }
+    .our_services .container-fluid .service, .our_services .container .wedding {
+        position: relative;
+        margin: 0;
+    }
+    .our_services .container-fluid .service:before {
+        position: absolute;
+        display: block;
+        content: "";
+        background: url("images/car_service.png") no-repeat 50%;
+        background-size: cover;
+        height: 600px;
+        width: 1000px;
+        top: 0;
+        right: 0;
+    }
+    .our_services .container-fluid .wedding{
+        height: 600px;
+        background-size: 100%;
+        background: url("images/car_service2.png") no-repeat;
+    }
+    .our_services .container-fluid .tours:before {
+        position: absolute;
+        display: block;
+        content: "";
+        background: url("images/car_service3.png") no-repeat 50%;
+        background-size: cover;
+        height: 600px;
+        width: 1000px;
+        top: 0;
+        left: 0;
+    }
+
+
+    .our_fleet h1 {
+        font-size: 40px;
+    }
+    .our_fleet p {
+        font-size: 13px;
+    }
+    a.red_btn {
+        text-decoration: none;
+        color: #9e171d;
+        border: 1px solid #9e171d;
+        font-size: 30px;
+        padding: 5px 10px;
+    }
+    .our_fleet p.name_car {
+        font-size: 25px;
+    }
+
+
+
+    .our_contacts .container .contact_us .contact {
+        margin: 0;
+    }
+    .our_contacts .container h1,
+    .our_contacts .container h3,
+    .testimonials .container h1,
+    .footer .container h1 {
+        font-size: 40px;
+    }
+    .our_contacts .container .contact p,
+    .testimonials .container p {
+        font-size: 13px;
+    }
+    .our_contacts .container h3 {
+        padding: 30px 0;
+    }
+
+}
+
+
+@media (min-width: 1200px) {
+    .banner .container .picture_car img {
+        width: 740px;
+    }
+}
