@@ -411,7 +411,9 @@ body {
 .privacy_police .container .private ul li:nth-child(2) {
     color: #9e171d;
 }
-.privacy_police .container .rights_reserved ul li {
+.privacy_police .container .rights_reserved ul li,
+.privacy_police .container .rights_reserved ul,
+.privacy_police .container .rights_reserved p {
     display: inline-block;
 }
 .privacy_police .container .rights_reserved ul li a {
