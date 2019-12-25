@@ -53,13 +53,44 @@ body {
     color: #959595;
     font-size: 16px;
 }
+.container {
+    max-width: 1170px;
+    margin: 0 auto;
+}
 
 /* ------------------------------------------------------ */
 
-.menu .container .logo {
+.header .container .navbar a img {
     max-width: 100%;
 }
-
+.nav-item:hover .menu{
+    display: block;
+    transition: all 2s;
+}
+.menu {
+    display: none;
+    position: relative;
+    top: -90px;
+    background-color: #9e171d;
+}
+.menu .container .navbar-purple {
+    padding: 0 0 100px 0;
+}
+.menu .container .hover_menu {
+    padding: 30px 0;
+}
+.menu .container .hover_menu ul li {
+    display: inline-block;
+}
+.menu .container .hover_menu ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 13px;
+    text-transform: uppercase;
+}
+.menu .container .hover_menu ul li a:hover {
+    border-bottom: 1px solid white;
+}
 /* ------------------------------------------------------ */
 
 .banner .container {
@@ -75,7 +106,6 @@ body {
     height: 256px;
     background: #3a3a3a;
 }
-
 .banner .container .about_car h1 {
     position: relative;
     font-size: 18px;
@@ -102,22 +132,32 @@ body {
     padding: 30px 0;
     font-size: 14px;
 }
-.banner .container .about_car ul.slider {
-    display: none;
+.banner .container .slick-next:before {
+   font-family: ' ';
 }
-.banner .container .about_car ul.slider li {
+.banner .container .slick-next {
+    position: absolute;
+    top: 290px;
+    left: 100px;
+}
+.banner .container .about_car {
+    position: relative;
+}
+.banner .container .about_car ul.about_car_dots li {
     display: inline-block;
 }
-.banner .container .about_car ul.slider li a {
+.banner .container .about_car ul.about_car_dots li button {
+    background-color: transparent;
+    border: none;
     text-decoration: none;
     color: #4a4c4c;
     font-size: 16px;
     font-family: 'Conv_GoboldCYR LAT';
 }
-.banner .container .about_car ul.slider li a:hover {
+.banner .container .about_car ul.about_car_dots li button:hover {
     color: #82878a;
 }
-.banner .container .about_car ul.slider li.active a {
+.banner .container .about_car ul.about_car_dots li.slick-active button {
     color: #82878a;
 }
 /* service------------------------------------------------------ */
@@ -164,7 +204,12 @@ body {
     text-decoration: none;
     color: white;
     border: 1px solid white;
-    padding: 5px;
+    padding: 7px 8px;
+}
+.our_services .container-fluid .service a:hover,
+.our_services .container-fluid .wedding a:hover,
+.our_services .container-fluid .tours a:hover {
+    background-color: #9e171d;
 }
 
 /* Our-fleet------------------------------------------------------ */
@@ -176,19 +221,33 @@ body {
     padding: 50px 15px;
 }
 .our_fleet h1 {
+    position: relative;
     font-family: 'Conv_GoboldCYR LAT', sans-serif;
     font-size: 30px;
     color: #9e171d;
+}
+.our_fleet .container h1:before {
+    content: "";
+    height: 2px;
+    width: 40px;
+    background-color: #9e171d;
+    position: absolute;
+    bottom: -10px;
+    left: 0;
 }
 .our_fleet h1 span {
     color: black;
 }
 .our_fleet p {
+    padding: 20px 0;
     color: #82878a;
     font-size: 10px;
 }
 .our_fleet .container-fluid .slider {
   padding: 100px 0;
+}
+.our_fleet li {
+    position: relative;
 }
 .our_fleet p.name_car {
     font-family: 'Conv_GoboldCYR LAT', sans-serif;
@@ -197,18 +256,37 @@ body {
     padding: 10px 0 0 0;
 }
 .our_fleet p.hover_btn {
-    position: relative;
+    display: none;
+    position: absolute;
     z-index: 10;
-    margin-top: -80px;
-    padding: 15px 0;
+    top: 50%;
+    margin-top: -35px;
     background: rgba(158, 23, 29, 0.7);
     font-size: 13px;
     color: white;
     text-decoration: none;
+    padding: 15px 0;
+    width: 100%;
 }
-.our_fleet a.img_link:hover a.hover_btn {
+.our_fleet li:hover p.hover_btn {
+    display: block;
+}
+.our_fleet .container .slider_with_cars {
+    position: relative;
+    padding: 80px 0;
+}
+.our_fleet .container .slick-next i,
+.our_fleet .container .slick-prev i{
+    color: #9e171d;
+    font-size: 17px;
+    padding: 7px 8px;
+    border: 1px solid #9e171d;
+}
+.our_fleet .container .slick-next:before,
+.our_fleet .container .slick-prev:before{
+    font-family: ' ';
+}
 
-}
 /* contacts------------------------------------------------------ */
 
 .our_contacts .container .contact_us {
@@ -350,6 +428,25 @@ body {
     font-family: 'Conv_GoboldCYR LAT', sans-serif;
     color:  #9e171d;
     font-size: 14px;
+}
+.testimonials .container .client_slider {
+    position: relative;
+}
+.testimonials .container .client_slider .slick-prev {
+    position: absolute;
+    top: -130px;
+    left: 1100px;
+}
+.testimonials .container .client_slider .slick-next {
+    position: absolute;
+    top: -130px;
+}
+.testimonials .container .client_slider .slick-prev:before,
+.testimonials .container .client_slider .slick-next:before {
+    font-family: none;
+    border: 1px solid  #9e171d;
+    padding: 7px 8px;
+    color: #9e171d;
 }
 
 /* footer------------------------------------------------------ */
@@ -507,10 +604,12 @@ body {
         right: 0;
     }
     .our_services .container-fluid .wedding{
+        margin: 0;
         height: 600px;
         background-size: 100%;
         background: url("images/car_service2.png") no-repeat;
     }
+
     .our_services .container-fluid .tours:before {
         position: absolute;
         display: block;
