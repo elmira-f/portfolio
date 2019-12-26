@@ -165,14 +165,23 @@
                 <h1>CONTACT</h1>
                 <p>Tick boxes on short form</p>
 
-                <form class="our_form" action="form.php">
-                    <div class="seat_place">
-                        <label for="seat">Baby Seat Required  </label>
-                        <input type="checkbox" id="seat" name="scales" checked>
+                <form class="our_form" action="#">
+                    <div class="selector">
+                        <input type="checkbox" id="seat" />
+
+                        <label for="seat">
+                            Baby Seat Required
+                            <span class="checkmark"></span>
+                        </label>
                     </div>
-                    <div class="laggage_place">
-                        <label for="luggage">Extra Luggage  </label>
-                        <input type="checkbox" id="luggage" name="scales" checked>
+
+                    <div class="selector selector_second">
+                        <input type="checkbox" id="other" />
+
+                        <label for="other">
+                            Extra Luggage
+                            <span class="checkmark"></span>
+                        </label>
                     </div>
 
                     <select name="select">

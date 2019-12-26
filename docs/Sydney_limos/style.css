@@ -69,9 +69,12 @@ body {
 }
 .menu {
     display: none;
-    position: relative;
-    top: -90px;
+    position: absolute;
+    top: 0;
     background-color: #9e171d;
+    left: 0;
+    width: 100%;
+    z-index: 10;
 }
 .menu .container .navbar-purple {
     padding: 0 0 100px 0;
@@ -96,6 +99,7 @@ body {
 .banner .container {
     padding: 20px 0;
     position: relative;
+    overflow: hidden;
 }
 .banner .container:before  {
     position: absolute;
@@ -153,6 +157,7 @@ body {
     color: #4a4c4c;
     font-size: 16px;
     font-family: 'Conv_GoboldCYR LAT';
+    padding: 0 2px;
 }
 .banner .container .about_car ul.about_car_dots li button:hover {
     color: #82878a;
@@ -275,6 +280,9 @@ body {
     position: relative;
     padding: 80px 0;
 }
+.our_fleet .container .slider_with_cars img {
+    width: 100%;
+}
 .our_fleet .container .slick-next i,
 .our_fleet .container .slick-prev i{
     color: #9e171d;
@@ -342,12 +350,12 @@ body {
 }
 .our_contacts .container .contact form label {
     font-size: 13px;
+    display: block;
 }
 .our_contacts .container .contact form label span {
     color: #9e171d;
 }
-.our_contacts .container .contact form .seat_place,
-.our_contacts .container .contact form .laggage_place,
+.our_contacts .container .contact form .selector,
 .our_contacts .container .contact form .your_name,
 .our_contacts .container .contact form .mail {
     display: inline-block;
@@ -358,18 +366,119 @@ body {
     width: 370px;
     height: 25px;
     background-color: transparent;
-    border: 1px solid #9e171d;
-    color: white;
+    border: 1px solid  #82878a;
+    color:  #82878a;
 }
-
-
-
+.our_contacts .container .contact form .your_name input[type="text"] {
+    width: 270px;
+}
+.our_contacts .container .contact form .your_name {
+    margin: 0 25px 0 0;
+}
+.our_contacts .container .contact form .mail input[type="email"] {
+    width: 370px;
+}
 .our_contacts .container .contact form input[type="checkbox"]{
     border: 1px solid #9e171d;
     background-color: transparent;
-    width: 25px;
-    height: 25px;
+    width: 30px;
+    height: 30px;
 }
+
+
+
+
+
+
+
+
+
+.our_contacts .container .contact .selector {
+    display: block;
+    position: relative;
+    padding-left: 0;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 22px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+.our_contacts .container .contact .selector_second {
+    left: 60px;
+}
+/* Hide the browser's default checkbox */
+.our_contacts .container .contact .selector input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+
+/* Create a custom checkbox */
+.our_contacts .container .contact .selector .checkmark {
+    position: absolute;
+    top: 0;
+    left: 120px;
+    height: 25px;
+    width: 25px;
+    background-color: transparent;
+    border: 1px solid #9e171d;
+}
+.our_contacts .container .contact .selector_second .checkmark {
+    left: 90px;
+}
+/* On mouse-over, add a grey background color */
+.our_contacts .container .contact .selector:hover input ~ label .checkmark {
+    background-color: #575757;
+}
+
+/* When the checkbox is checked, add a blue background */
+.our_contacts .container .contact .selector input:checked ~ label .checkmark {
+    background-color: white;
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.our_contacts .container .contact .selector .checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+/* Show the checkmark when checked */
+.our_contacts .container .contact .selector input:checked ~ label .checkmark:after {
+    display: block;
+}
+
+/* Style the checkmark/indicator */
+.our_contacts .container .contact .selector .checkmark:after {
+    left: 9px;
+    top: 5px;
+    width: 5px;
+    height: 10px;
+    border: solid #9e171d;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 .our_contacts .container .contact form input[type="text"],
@@ -385,6 +494,37 @@ body {
     color: white;
     border: 1px solid white;
 }
+
+
+
+.our_contacts .container .contact form select {
+    height: 25px;
+    width: 370px;
+    overflow: hidden;
+    background: url("images/down_arrow.png") no-repeat right;
+    background-size: 20px;
+    background-position-x: 340px;
+    box-shadow: none;
+}
+.our_contacts .container .contact form select {
+    padding: 0 15px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+
+a:active, a:focus { outline: none; }
+
+.our_contacts .container .contact form input, textarea {outline:none;}
+.our_contacts .container .contact form input:active, textarea:active {outline:none;}
+.our_contacts .container .contact form :focus {outline:none;}
+.our_contacts .container .contact form .text textarea {
+    resize:none;
+    width: 670px;
+    height: 100px;
+}
+
 
 /* testimonials------------------------------------------------------ */
 
@@ -435,11 +575,14 @@ body {
 .testimonials .container .client_slider .slick-prev {
     position: absolute;
     top: -130px;
-    left: 1100px;
+    left: auto;
+    right: 38px;
 }
 .testimonials .container .client_slider .slick-next {
     position: absolute;
     top: -130px;
+    left: auto;
+    right: 0;
 }
 .testimonials .container .client_slider .slick-prev:before,
 .testimonials .container .client_slider .slick-next:before {
