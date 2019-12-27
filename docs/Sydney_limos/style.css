@@ -584,7 +584,7 @@ a:active, a:focus { outline: none; }
     bottom: -10px;
     left: 0;
 }
-.testimonials .container .contact p {
+.testimonials .container p {
     font-size: 10px;
 }
 .testimonials .container .client_slider {
@@ -698,10 +698,16 @@ a:active, a:focus { outline: none; }
 }
 .privacy_police .container .rights_reserved ul li a {
     color: white;
-    padding: 6px 13px;
+    padding: 6px 12px;
     background-color: #82878a;
     border-radius: 50px;
-    font-size: 14px;
+    font-size: 12px;
+}
+.privacy_police .container .rights_reserved ul li:nth-child(2) a {
+    padding: 6px 9px;
+}
+.privacy_police .container .rights_reserved ul li:nth-child(3) a {
+    padding: 6px 7px;
 }
 .privacy_police .container .rights_reserved ul li a:hover {
     background-color: #9e171d;
