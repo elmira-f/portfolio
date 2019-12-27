@@ -630,7 +630,7 @@ a:active, a:focus { outline: none; }
     padding: 20px 15px 0;
 }
 .footer .container .connect_with_us ul li:nth-child(2) {
-    border-bottom: 1px solid #82878a;
+    text-decoration: underline;
 }
 
 /* privacy------------------------------------------------------ */
