@@ -70,6 +70,12 @@ body {
     padding-left: 0px;
     padding-top: 80px;
 }
+.header .container .navbar .nav-item .nav-link {
+    background-image: url("images/menu.png");
+    width: 40px;
+    height: 16px;
+    background-size: 100%;
+}
 .nav-item:hover .menu{
     display: block;
     transition: all 2s;
@@ -85,6 +91,12 @@ body {
 }
 .menu .container .navbar-purple {
     padding: 80px 0 60px 0;
+}
+.menu .container .navbar-purple .navbar-nav .nav-item a {
+    background-image: url("images/close.png");
+    width: 40px;
+    height: 40px;
+    background-size: 100%;
 }
 .menu .container .hover_menu {
     padding: 30px 0;
@@ -152,11 +164,36 @@ body {
    font-family: ' ';
     font-size: 30px;
 }
+
+
+
+
 .banner .container .slick-next {
     position: absolute;
-    top: 340px;
-    left: 80px;
+    top: 345px;
+    left: 70px;
 }
+.banner .container .slick-next:before {
+    position: absolute;
+    top: 13px;
+    content: "";
+    width: 24px;
+    height: 2px;
+    background-color: #bcbcbc;
+}
+.banner .container .slick-next:after {
+    position: absolute;
+    left: 30px;
+    content: "";
+    width: 10px;
+    height: 10px;
+    border-top: 2px solid #bcbcbc;;
+    border-right: 2px solid #bcbcbc;
+    transform: rotate(45deg);
+}
+
+
+
 .banner .container .about_car {
     position: relative;
 }
@@ -169,14 +206,17 @@ body {
     text-decoration: none;
     color: #4a4c4c;
     font-size: 16px;
-    font-family: 'Conv_GoboldCYR LAT';
+    font-family: 'Conv_GoboldCYR LAT', sans-serif;
+    font-weight: bold;
     padding: 0 2px;
+    border-left: 2px solid #4a4c4c;
 }
 .banner .container .about_car ul.about_car_dots li button:hover {
     color: #82878a;
 }
 .banner .container .about_car ul.about_car_dots li.slick-active button {
     color: #82878a;
+    border-left: none;
 }
 .banner .container .about_car .slick-dotted.slick-slider {
     margin: 0 40px;
@@ -194,13 +234,13 @@ body {
 .our_services .container-fluid .wedding {
     margin: 0 0 30px 0;
 }
-.our_services .container-fluid h1 {
+.our_services .container-fluid h2 {
     position: relative;
     font-size: 18px;
     font-family: 'Conv_GoboldCYR LAT';
     color: white;
 }
-.our_services .container-fluid h1:before {
+.our_services .container-fluid h2:before {
     content: "";
     height: 2px;
     width: 30px;
@@ -209,7 +249,7 @@ body {
     bottom: -10px;
     left: 0;
 }
-.our_services .container-fluid h1 span {
+.our_services .container-fluid h2 span {
     color: black;
 }
 .our_services .container-fluid p {
@@ -226,8 +266,37 @@ body {
     text-decoration: none;
     color: white;
     border: 1px solid white;
-    padding: 9px 14px;
+    padding: 15px 25px;
 }
+
+.our_services .container-fluid .service a:before,
+.our_services .container-fluid .wedding a:before,
+.our_services .container-fluid .tours a:before {
+    position: absolute;
+    top: 25px;
+    left: 10px;
+    content: "";
+    width: 24px;
+    height: 2px;
+    background-color:  white;
+}
+.our_services .container-fluid .service a:after,
+.our_services .container-fluid .wedding a:after,
+.our_services .container-fluid .tours a:after {
+    position: absolute;
+    left: 30px;
+    top: 21px;
+    content: "";
+    width: 10px;
+    height: 10px;
+    border-top: 2px solid  white;
+    border-right: 2px solid  white;
+    transform: rotate(45deg);
+}
+
+
+
+
 .our_services .container-fluid .service a:hover,
 .our_services .container-fluid .wedding a:hover,
 .our_services .container-fluid .tours a:hover {
@@ -242,13 +311,13 @@ body {
 .our_fleet .container {
     padding: 80px 15px 20px;
 }
-.our_fleet h1 {
+.our_fleet h2 {
     position: relative;
     font-family: 'Conv_GoboldCYR LAT', sans-serif;
     font-size: 30px;
     color: #9e171d;
 }
-.our_fleet .container h1:before {
+.our_fleet .container h2:before {
     content: "";
     height: 2px;
     width: 50px;
@@ -257,7 +326,7 @@ body {
     bottom: -10px;
     left: 0;
 }
-.our_fleet h1 span {
+.our_fleet h2 span {
     color: black;
 }
 .our_fleet p {
@@ -282,7 +351,6 @@ body {
     position: absolute;
     z-index: 10;
     top: 50%;
-    margin-top: -35px;
     background: rgba(158, 23, 29, 0.7);
     font-size: 13px;
     color: white;
@@ -300,13 +368,48 @@ body {
 .our_fleet .container .slider_with_cars img {
     width: 100%;
 }
-.our_fleet .container .slick-next i,
-.our_fleet .container .slick-prev i{
-    color: #9e171d;
-    font-size: 17px;
-    padding: 12px 15px;
+.our_fleet .container .slick-next,
+.our_fleet .container .slick-prev {
+    padding: 25px;
     border: 1px solid #9e171d;
 }
+.our_fleet .container .slick-next:hover,
+.our_fleet .container .slick-prev:hover {
+    background-color: rgba(0, 0, 0, 0.2);
+}
+.our_fleet .container .slick-next {
+    right: -45px;
+}
+.our_fleet .container .slick-next:before,
+.our_fleet .container .slick-prev:before {
+    position: absolute;
+    left: 10px;
+    content: "";
+    width: 24px;
+    height: 2px;
+    background-color:  #9e171d;
+}
+.our_fleet .container .slick-next:after,
+.our_fleet .container .slick-prev:after {
+    position: absolute;
+    left: 30px;
+    top: 21px;
+    content: "";
+    width: 10px;
+    height: 10px;
+    border-top: 2px solid  #9e171d;
+    border-right: 2px solid  #9e171d;
+    transform: rotate(45deg);
+}
+.our_fleet .container .slick-prev {
+    transform: rotate(180deg);
+}
+
+
+
+
+
+
 .our_fleet .container .slick-next:before,
 .our_fleet .container .slick-prev:before{
     font-family: ' ';
@@ -320,7 +423,7 @@ body {
 .our_contacts .container .contact_us .contact {
     margin: 0 0 30px 0;
 }
-.our_contacts .container h1,
+.our_contacts .container h2,
 .our_contacts .container h3 {
     position: relative;
     font-family: 'Conv_GoboldCYR LAT', sans-serif;
@@ -328,10 +431,10 @@ body {
     color: white;
     margin: 0 0 20px 0;
 }
-.our_contacts .container h1 span {
+.our_contacts .container h2 span {
     color: #9e171d;
 }
-.our_contacts .container .contact h1:before {
+.our_contacts .container .contact h2:before {
     content: "";
     height: 2px;
     width: 50px;
@@ -343,7 +446,7 @@ body {
 .our_contacts .container .contact p {
     font-size: 10px;
 }
-.our_contacts .container .your_estimate h1:before {
+.our_contacts .container .your_estimate h2:before {
     content: "";
     height: 2px;
     width: 50px;
@@ -395,7 +498,7 @@ body {
     background-color: #0e0e0e;
 }
 .our_contacts .container .contact form .your_name input[type="text"] {
-    width: 270px;
+    width: 370px;
 }
 .our_contacts .container .contact form .your_name {
     margin: 0 25px 0 0;
@@ -451,7 +554,7 @@ body {
 }
 /* When the checkbox is checked, add a blue background */
 .our_contacts .container .contact .selector input:checked ~ label .checkmark {
-    background-color: white;
+    background-color: transparent;
 }
 /* Create the checkmark/indicator (hidden when not checked) */
 .our_contacts .container .contact .selector .checkmark:after {
@@ -465,11 +568,11 @@ body {
 }
 /* Style the checkmark/indicator */
 .our_contacts .container .contact .selector .checkmark:after {
-    left: 9px;
-    top: 5px;
-    width: 5px;
-    height: 10px;
-    border: solid #9e171d;
+    left: 8px;
+    top: 0;
+    width: 10px;
+    height: 20px;
+    border: solid white;
     border-width: 0 3px 3px 0;
     -webkit-transform: rotate(45deg);
     -ms-transform: rotate(45deg);
@@ -528,7 +631,7 @@ a:active, a:focus { outline: none; }
 .testimonials .container {
     padding: 50px 15px 90px;
 }
-.testimonials .container h1,
+.testimonials .container h2,
 .testimonials .container h3 {
     position: relative;
     font-family: 'Conv_GoboldCYR LAT', sans-serif;
@@ -536,10 +639,10 @@ a:active, a:focus { outline: none; }
     color: white;
     margin: 0 0 20px 0;
 }
-.testimonials .container h1 span {
+.testimonials .container h2 span {
     color: #9e171d;
 }
-.testimonials .container h1:before {
+.testimonials .container h2:before {
     content: "";
     height: 2px;
     width: 50px;
@@ -569,22 +672,45 @@ a:active, a:focus { outline: none; }
 }
 .testimonials .container .client_slider .slick-prev {
     position: absolute;
-    top: -145px;
+    top: -171px;
     left: auto;
     right: 60px;
+    padding: 25px;
+    border: 1px solid #9e171d;
+    transform: rotate(180deg);
 }
 .testimonials .container .client_slider .slick-next {
     position: absolute;
     top: -145px;
     left: auto;
     right: 10px;
+    padding: 25px;
+    border: 1px solid #9e171d;
 }
+
+
 .testimonials .container .client_slider .slick-prev:before,
 .testimonials .container .client_slider .slick-next:before {
-    font-family: none;
-    border: 1px solid  #9e171d;
-    padding: 11px 13px;
-    color: #9e171d;
+    position: absolute;
+    top: 25px;
+    left: 10px;
+    content: "";
+    width: 24px;
+    height: 2px;
+    background-color: #9e171d;
+}
+
+.testimonials .container .client_slider .slick-prev:after,
+.testimonials .container .client_slider .slick-next:after {
+    position: absolute;
+    left: 30px;
+    top: 21px;
+    content: "";
+    width: 10px;
+    height: 10px;
+    border-top: 2px solid  #9e171d;
+    border-right: 2px solid  #9e171d;
+    transform: rotate(45deg);
 }
 
 /* footer------------------------------------------------------ */
@@ -595,17 +721,17 @@ a:active, a:focus { outline: none; }
 .footer .container .footer_menu {
     padding: 75px 0;
 }
-.footer .container h1 {
+.footer .container h2 {
     position: relative;
     font-family: 'Conv_GoboldCYR LAT', sans-serif;
     font-size: 30px;
     color: black;
     margin: 0 0 20px 0;
 }
-.footer .container h1 span {
+.footer .container h2 span {
     color: #9e171d;
 }
-.footer .container h1:before {
+.footer .container h2:before {
     content: "";
     height: 2px;
     width: 50px;
@@ -825,7 +951,7 @@ a:active, a:focus { outline: none; }
         font-size: 25px;
     }
     .our_fleet .container .slider_with_cars .slick-prev {
-        left: -40px;
+        left: -50px;
     }
     .our_contacts .container .contact_us .contact {
         margin: 0;
@@ -835,6 +961,7 @@ a:active, a:focus { outline: none; }
     .testimonials .container h1 {
         font-size: 40px;
     }
+
     .our_contacts .container .contact form .text textarea {
         width: 670px;
     }
@@ -859,7 +986,11 @@ a:active, a:focus { outline: none; }
         padding: 130px 0;
     }
 }
-
+@media (min-width: 1080px) {
+    .our_contacts .container .contact form .your_name input[type="text"] {
+        width: 270px;
+    }
+}
 @media (min-width: 1200px) {
     .banner .container .picture_car img {
         width: 740px;
