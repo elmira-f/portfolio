@@ -177,6 +177,9 @@ body {
 .banner .container .about_car ul.about_car_dots li.slick-active button {
     color: #82878a;
 }
+.banner .container .about_car .slick-dotted.slick-slider {
+    margin: 0 40px;
+}
 /* service------------------------------------------------------ */
 
 .our_services {
@@ -548,7 +551,7 @@ a:active, a:focus { outline: none; }
 }
 .our_contacts .container .contact form .text textarea {
     resize:none;
-    width: 670px;
+    width: 370px;
     height: 90px;
 }
 
@@ -659,6 +662,9 @@ a:active, a:focus { outline: none; }
 .footer .container .footer_menu ul li a:hover {
     border-bottom: 1px solid #82878a;
 }
+.footer .container .connect_with_us {
+    padding: 20px 15px 0;
+}
 .footer .container .connect_with_us ul li:nth-child(2) {
     border-bottom: 1px solid #82878a;
 }
@@ -670,6 +676,9 @@ a:active, a:focus { outline: none; }
 }
 .privacy_police .container .our_rights {
     padding: 30px 0;
+}
+.privacy_police .container .private {
+    padding: 0 15px 10px;
 }
 .privacy_police .container .private ul li {
     display: inline-block;
@@ -698,7 +707,8 @@ a:active, a:focus { outline: none; }
     background-color: #9e171d;
 }
 .privacy_police .container .rights_reserved p {
-    padding: 0 20px 0 0;
+    padding: 0 0 20px 0;
+    font-size: 13px;
 }
 
 
@@ -710,6 +720,11 @@ a:active, a:focus { outline: none; }
 @media (min-width: 576px) {
 
 }
+@media (min-width: 730px) {
+    .our_contacts .container .contact form .text textarea {
+        width: 670px;
+    }
+}
 
 @media (min-width: 768px) {
     .banner .container .picture_car img {
@@ -720,6 +735,24 @@ a:active, a:focus { outline: none; }
     }
     .banner .container:before {
         height: 300px;
+    }
+    .banner .container .about_car .slick-dotted.slick-slider {
+        margin: 0;
+    }
+    .banner .container .about_car {
+        padding: 0;
+    }
+    .footer .container .connect_with_us {
+        padding: 0 15px;
+    }
+    .our_contacts .container .contact form .text textarea {
+        width: 470px;
+    }
+
+}
+@media (min-width: 920px) {
+    .our_contacts .container .contact form .text textarea {
+        width: 570px;
     }
 }
 
@@ -747,11 +780,12 @@ a:active, a:focus { outline: none; }
     .banner .container .about_car ul.slider {
         display: block;
     }
-
     .banner .container .about_car_dots {
-        padding: 130px 0;
+        padding: 100px 0;
     }
-
+    .banner .container .about_car {
+        padding: 45px 0 0 0;
+    }
     .our_services {
         background-color:  #101010;;
         position: relative;
@@ -836,6 +870,9 @@ a:active, a:focus { outline: none; }
     .testimonials .container h1 {
         font-size: 40px;
     }
+    .our_contacts .container .contact form .text textarea {
+        width: 670px;
+    }
     .footer .container h1 {
         font-size: 25px;
     }
@@ -847,11 +884,20 @@ a:active, a:focus { outline: none; }
         padding: 50px 0 10px 0;
     }
 
-}
+    .privacy_police .container .rights_reserved p {
+        padding: 0 20px 0 0;
+    }
 
+}
+@media (min-width: 1046px) {
+    .banner .container .about_car_dots {
+        padding: 130px 0;
+    }
+}
 
 @media (min-width: 1200px) {
     .banner .container .picture_car img {
         width: 740px;
     }
+
 }

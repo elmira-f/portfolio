@@ -2,13 +2,16 @@ $(document).ready(function(){
     $('.picture_car_slider').slick({
         arrows: false,
         draggable: false,
-        dots: false
+        dots: false,
     });
 
     $('.about_car_slider').slick({
         asNavFor: '.picture_car_slider',
         draggable: false,
         arrows: true,
+        autoplay: true,
+        autoplaySpeed: 3200,
+        speed: 100,
         nextArrow: '<button type="button" class="slick-next">-></button>',
         prevArrow: '',
         dots: true,
@@ -26,6 +29,9 @@ $(document).ready(function(){
 
     $('.car_list_slider').slick({
         arrows: true,
+        autoplay: true,
+        autoplaySpeed: 3200,
+        speed: 400,
         nextArrow: '<button type="button" class="slick-next"><i class="fas fa-long-arrow-alt-right"></i></button>',
         prevArrow: '<button type="button" class="slick-prev"><i class="fas fa-long-arrow-alt-left"></i></button>',
         slidesToShow: 3,
@@ -60,6 +66,9 @@ $(document).ready(function(){
 
     $('.client_slider').slick({
         arrows: true,
+        autoplay: true,
+        autoplaySpeed: 3200,
+        speed: 400,
         nextArrow: '<button type="button" class="slick-next"><i class="fas fa-long-arrow-alt-right"></i></button>',
         prevArrow: '<button type="button" class="slick-prev"><i class="fas fa-long-arrow-alt-left"></i></button>',
         slidesToShow: 3,
@@ -74,7 +83,7 @@ $(document).ready(function(){
                 }
             },
             {
-                breakpoint: 600,
+                breakpoint: 768,
                 settings: {
                     slidesToShow: 2,
                     slidesToScroll: 1,
@@ -82,7 +91,7 @@ $(document).ready(function(){
                 }
             },
             {
-                breakpoint: 480,
+                breakpoint: 576,
                 settings: {
                     slidesToShow: 1,
                     slidesToScroll: 1,
