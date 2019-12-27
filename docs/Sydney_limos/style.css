@@ -52,6 +52,7 @@ body {
     background-color: #101010;
     color: #959595;
     font-size: 16px;
+    font-family: "Open Sans Light", sans-serif;
 }
 .container {
     max-width: 1170px;
@@ -62,6 +63,11 @@ body {
 
 .header .container .navbar a img {
     max-width: 100%;
+}
+.header .container .navbar {
+    padding-right: 0px;
+    padding-left: 0px;
+    padding-top: 80px;
 }
 .nav-item:hover .menu{
     display: block;
@@ -77,7 +83,7 @@ body {
     z-index: 10;
 }
 .menu .container .navbar-purple {
-    padding: 0 0 100px 0;
+    padding: 80px 0 100px 0;
 }
 .menu .container .hover_menu {
     padding: 30px 0;
@@ -118,8 +124,8 @@ body {
 }
 .banner .container .about_car h1:before {
     content: "";
-    height: 1px;
-    width: 20px;
+    height: 2px;
+    width: 50px;
     background-color: #4a4c4c;
     position: absolute;
     bottom: -10px;
@@ -128,21 +134,27 @@ body {
 .banner .container .picture_car img {
     max-width: 100%;
 }
+.banner .container .about_car {
+    padding: 45px 0 0 0;
+}
 .banner .container .about_car h1 span,
 .banner .container .about_car p {
     color: #82878a;
 }
 .banner .container .about_car p {
+    line-height: 25px;
     padding: 30px 0;
     font-size: 14px;
+    font-family: "Open Sans Light";
 }
 .banner .container .slick-next:before {
    font-family: ' ';
+    font-size: 30px;
 }
 .banner .container .slick-next {
     position: absolute;
-    top: 290px;
-    left: 100px;
+    top: 340px;
+    left: 80px;
 }
 .banner .container .about_car {
     position: relative;
@@ -209,7 +221,7 @@ body {
     text-decoration: none;
     color: white;
     border: 1px solid white;
-    padding: 7px 8px;
+    padding: 9px 14px;
 }
 .our_services .container-fluid .service a:hover,
 .our_services .container-fluid .wedding a:hover,
@@ -223,7 +235,7 @@ body {
     background-color: white;
 }
 .our_fleet .container {
-    padding: 50px 15px;
+    padding: 80px 15px 20px;
 }
 .our_fleet h1 {
     position: relative;
@@ -234,7 +246,7 @@ body {
 .our_fleet .container h1:before {
     content: "";
     height: 2px;
-    width: 40px;
+    width: 50px;
     background-color: #9e171d;
     position: absolute;
     bottom: -10px;
@@ -278,7 +290,7 @@ body {
 }
 .our_fleet .container .slider_with_cars {
     position: relative;
-    padding: 80px 0;
+    padding: 45px 0;
 }
 .our_fleet .container .slider_with_cars img {
     width: 100%;
@@ -287,7 +299,7 @@ body {
 .our_fleet .container .slick-prev i{
     color: #9e171d;
     font-size: 17px;
-    padding: 7px 8px;
+    padding: 12px 15px;
     border: 1px solid #9e171d;
 }
 .our_fleet .container .slick-next:before,
@@ -298,7 +310,7 @@ body {
 /* contacts------------------------------------------------------ */
 
 .our_contacts .container .contact_us {
-    margin: 50px 0;
+    margin: 80px 0;
 }
 .our_contacts .container .contact_us .contact {
     margin: 0 0 30px 0;
@@ -317,7 +329,7 @@ body {
 .our_contacts .container .contact h1:before {
     content: "";
     height: 2px;
-    width: 30px;
+    width: 50px;
     background-color: #9e171d;
     position: absolute;
     bottom: -10px;
@@ -329,7 +341,7 @@ body {
 .our_contacts .container .your_estimate h1:before {
     content: "";
     height: 2px;
-    width: 30px;
+    width: 50px;
     background-color: white;
     position: absolute;
     bottom: -10px;
@@ -339,17 +351,22 @@ body {
     color: white;
     font-size: 13px;
     margin: 30px 0;
+    line-height: 25px;
 }
 .our_contacts .container .your_estimate a {
     text-decoration: none;
     text-transform: uppercase;
     color: white;
 }
+.our_contacts .container .your_estimate a:hover {
+    border-bottom: 1px solid white;
+}
 .our_contacts .container .contact .our_form {
     margin: 20px 0;
 }
 .our_contacts .container .contact form label {
     font-size: 13px;
+    margin: 0 0 7px 0;
     display: block;
 }
 .our_contacts .container .contact form label span {
@@ -368,6 +385,9 @@ body {
     background-color: transparent;
     border: 1px solid  #82878a;
     color:  #82878a;
+}
+.our_contacts .container .contact form select option {
+    background-color: #0e0e0e;
 }
 .our_contacts .container .contact form .your_name input[type="text"] {
     width: 270px;
@@ -420,7 +440,7 @@ body {
 /* Create a custom checkbox */
 .our_contacts .container .contact .selector .checkmark {
     position: absolute;
-    top: 0;
+    top: -5px;
     left: 120px;
     height: 25px;
     width: 25px;
@@ -483,16 +503,19 @@ body {
 
 .our_contacts .container .contact form input[type="text"],
 .our_contacts .container .contact form input[type="email"] {
-    height: 25px;
+    height: 30px;
     border: none;
     text-decoration: none;
 }
 .our_contacts .container .contact form button {
     margin: 10px 0 0 0;
-    padding: 15px 35px;
+    padding: 15px 55px;
     background-color: transparent;
     color: white;
     border: 1px solid white;
+}
+.our_contacts .container .contact form button:hover {
+    background-color: rgba(255, 46, 51, 0.5);
 }
 
 
@@ -508,6 +531,7 @@ body {
 }
 .our_contacts .container .contact form select {
     padding: 0 15px;
+    margin: 0 0 15px 0;
     -webkit-appearance: none;
     -moz-appearance: none;
     appearance: none;
@@ -519,10 +543,13 @@ a:active, a:focus { outline: none; }
 .our_contacts .container .contact form input, textarea {outline:none;}
 .our_contacts .container .contact form input:active, textarea:active {outline:none;}
 .our_contacts .container .contact form :focus {outline:none;}
+.our_contacts .container .contact form .text {
+    margin: 20px 0 5px 0;
+}
 .our_contacts .container .contact form .text textarea {
     resize:none;
     width: 670px;
-    height: 100px;
+    height: 90px;
 }
 
 
@@ -532,7 +559,7 @@ a:active, a:focus { outline: none; }
     background-color: #0e0e0e;
 }
 .testimonials .container {
-    padding: 100px 15px;
+    padding: 50px 15px 90px;
 }
 .testimonials .container h1,
 .testimonials .container h3 {
@@ -563,6 +590,7 @@ a:active, a:focus { outline: none; }
 .testimonials .container .client_slider p.people_say {
     font-size: 14px;
     padding: 30px 0;
+    line-height: 25px;
 }
 .testimonials .container .client_slider p.name_clients {
     font-family: 'Conv_GoboldCYR LAT', sans-serif;
@@ -574,21 +602,21 @@ a:active, a:focus { outline: none; }
 }
 .testimonials .container .client_slider .slick-prev {
     position: absolute;
-    top: -130px;
+    top: -145px;
     left: auto;
-    right: 38px;
+    right: 60px;
 }
 .testimonials .container .client_slider .slick-next {
     position: absolute;
-    top: -130px;
+    top: -145px;
     left: auto;
-    right: 0;
+    right: 10px;
 }
 .testimonials .container .client_slider .slick-prev:before,
 .testimonials .container .client_slider .slick-next:before {
     font-family: none;
     border: 1px solid  #9e171d;
-    padding: 7px 8px;
+    padding: 11px 13px;
     color: #9e171d;
 }
 
@@ -598,7 +626,7 @@ a:active, a:focus { outline: none; }
     background-color: white;
 }
 .footer .container .footer_menu {
-    padding: 50px 0;
+    padding: 75px 0;
 }
 .footer .container h1 {
     position: relative;
@@ -631,6 +659,9 @@ a:active, a:focus { outline: none; }
 .footer .container .footer_menu ul li a:hover {
     border-bottom: 1px solid #82878a;
 }
+.footer .container .connect_with_us ul li:nth-child(2) {
+    border-bottom: 1px solid #82878a;
+}
 
 /* privacy------------------------------------------------------ */
 
@@ -648,7 +679,7 @@ a:active, a:focus { outline: none; }
     font-size: 14px;
     color: #82878a;
 }
-.privacy_police .container .private ul li:nth-child(2) {
+.privacy_police .container .private ul li:nth-child(2) a{
     color: #9e171d;
 }
 .privacy_police .container .rights_reserved ul li,
@@ -658,11 +689,17 @@ a:active, a:focus { outline: none; }
 }
 .privacy_police .container .rights_reserved ul li a {
     color: white;
-    padding: 10px 15px;
+    padding: 6px 13px;
     background-color: #82878a;
-    border-radius: 30px;
+    border-radius: 50px;
+    font-size: 14px;
 }
-
+.privacy_police .container .rights_reserved ul li a:hover {
+    background-color: #9e171d;
+}
+.privacy_police .container .rights_reserved p {
+    padding: 0 20px 0 0;
+}
 
 
 
@@ -692,7 +729,7 @@ a:active, a:focus { outline: none; }
         width: 620px;
     }
     .banner .container {
-        padding: 100px 0;
+        padding: 60px 0 10px 0;
     }
     .banner .container:before {
         top: 70px;
@@ -701,8 +738,8 @@ a:active, a:focus { outline: none; }
         height: 406px;
     }
     .banner .container .about_car p {
-        padding: 80px 0;
-        font-size: 16px;
+        padding: 30px 0;
+
     }
     .banner .container .about_car h1 {
         font-size: 25px;
@@ -711,6 +748,9 @@ a:active, a:focus { outline: none; }
         display: block;
     }
 
+    .banner .container .about_car_dots {
+        padding: 130px 0;
+    }
 
     .our_services {
         background-color:  #101010;;
@@ -723,11 +763,11 @@ a:active, a:focus { outline: none; }
     }
     .our_services .container-fluid h1 {
         font-size: 25px;
-        padding: 30px 0 0 0;
+        padding: 45px 0 0 0;
     }
     .our_services .container-fluid p {
         font-size: 16px;
-        padding: 40px 0 70px 0;
+        padding: 40px 0 50px 0;
         line-height: 20px;
         margin: 0 0 180px 0;
     }
@@ -783,6 +823,9 @@ a:active, a:focus { outline: none; }
         font-size: 25px;
     }
 
+    .our_fleet .container .slider_with_cars .slick-prev {
+        left: -40px;
+    }
 
 
     .our_contacts .container .contact_us .contact {
@@ -790,16 +833,18 @@ a:active, a:focus { outline: none; }
     }
     .our_contacts .container h1,
     .our_contacts .container h3,
-    .testimonials .container h1,
-    .footer .container h1 {
+    .testimonials .container h1 {
         font-size: 40px;
+    }
+    .footer .container h1 {
+        font-size: 25px;
     }
     .our_contacts .container .contact p,
     .testimonials .container p {
         font-size: 13px;
     }
     .our_contacts .container h3 {
-        padding: 30px 0;
+        padding: 50px 0 10px 0;
     }
 
 }
