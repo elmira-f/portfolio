@@ -94,6 +94,7 @@ $(document).ready(function(){
             {
                 breakpoint: 576,
                 settings: {
+                    dots: true,
                     slidesToShow: 1,
                     slidesToScroll: 1,
                     arrows: false
