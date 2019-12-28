@@ -370,7 +370,7 @@ body {
     position: relative;
     padding: 45px 0;
 }
-.our_fleet .container .slider_with_cars ul li a img{
+.our_fleet .container .slider_with_cars ul li a{
     height: 190px;
 }
 .our_fleet .container .slider_with_cars img {
@@ -418,7 +418,6 @@ body {
 }
 .our_fleet .container .slider_with_cars ul.slick-dots {
     left: 0;
-    top: 240px;
 }
 .our_fleet .container .slider_with_cars ul.slick-dots li button:before {
     background-color: black;
@@ -607,11 +606,11 @@ body {
 }
 .our_contacts .container .contact form select {
     height: 25px;
-    width: 370px;
+    width: 100%;
+    /*width: 370px;*/
     overflow: hidden;
     background: url("images/down_arrow.png") no-repeat right;
     background-size: 20px;
-    background-position-x: 340px;
     box-shadow: none;
 }
 .our_contacts .container .contact form select {
@@ -865,6 +864,9 @@ a:active, a:focus { outline: none; }
     }
     .our_contacts .container .contact form .text textarea {
         width: 470px;
+    }
+    .our_contacts .container .contact form select {
+        max-width: 370px;
     }
 
 }

@@ -15,6 +15,8 @@ $(document).ready(function(){
         nextArrow: '<button type="button" class="slick-next"></button>',
         prevArrow: '',
         dots: true,
+        slidesToShow: 1,
+        slidesToScroll: 1,
         dotsClass: 'about_car_dots',
         responsive: [
             {
@@ -39,6 +41,7 @@ $(document).ready(function(){
             {
                 breakpoint: 1240,
                 settings: {
+                    dots: true,
                     slidesToShow: 3,
                     slidesToScroll: 1,
                     arrows: false
@@ -87,6 +90,7 @@ $(document).ready(function(){
             {
                 breakpoint: 1240,
                 settings: {
+                    dots: true,
                     slidesToShow: 3,
                     slidesToScroll: 1,
                     arrows: false
