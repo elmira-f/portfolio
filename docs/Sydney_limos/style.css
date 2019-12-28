@@ -533,7 +533,8 @@ body {
     user-select: none;
 }
 .our_contacts .container .contact .selector_second {
-    left: 60px;
+    left: 160px;
+    top: -31px;
 }
 /* Hide the browser's default checkbox */
 .our_contacts .container .contact .selector input {
