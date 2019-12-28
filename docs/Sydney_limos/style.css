@@ -231,7 +231,7 @@ body {
 }
 .our_services .container-fluid {
     position: relative;
-    padding: 40px 15px;
+    padding: 20px 15px 40px 15px;
 }
 .our_services .container-fluid .service,
 .our_services .container-fluid .wedding {
@@ -242,6 +242,7 @@ body {
     font-size: 18px;
     font-family: 'Conv_GoboldCYR LAT';
     color: white;
+    padding: 45px 0 0 0;
 }
 .our_services .container-fluid h2:before {
     content: "";
