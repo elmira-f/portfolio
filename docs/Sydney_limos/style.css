@@ -117,7 +117,7 @@ body {
 /* ------------------------------------------------------ */
 
 .banner .container {
-    padding: 20px 0;
+    padding: 20px 15px;
     position: relative;
     overflow: hidden;
 }
@@ -354,7 +354,8 @@ body {
     display: none;
     position: absolute;
     z-index: 10;
-    top: 50%;
+    bottom: 15%;
+    left: 0;
     background: rgba(158, 23, 29, 0.7);
     font-size: 13px;
     color: white;
@@ -368,6 +369,9 @@ body {
 .our_fleet .container .slider_with_cars {
     position: relative;
     padding: 45px 0;
+}
+.our_fleet .container .slider_with_cars ul li a img{
+    height: 190px;
 }
 .our_fleet .container .slider_with_cars img {
     width: 100%;
@@ -408,18 +412,21 @@ body {
 .our_fleet .container .slick-prev {
     transform: rotate(180deg);
 }
-
-
-
-
-
-
 .our_fleet .container .slick-next:before,
 .our_fleet .container .slick-prev:before{
     font-family: ' ';
 }
+.our_fleet .container .slider_with_cars ul.slick-dots {
+    left: 0;
+    top: 240px;
+}
+.our_fleet .container .slider_with_cars ul.slick-dots li button:before {
+    background-color: black;
+    border-radius: 50px;
 
-/* contacts------------------------------------------------------ */
+}
+
+    /* contacts------------------------------------------------------ */
 
 .our_contacts .container .contact_us {
     margin: 80px 0;

@@ -61,6 +61,15 @@ $(document).ready(function(){
                     slidesToScroll: 1,
                     arrows: false
                 }
+            },
+            {
+                breakpoint: 200,
+                settings: {
+                    dots: true,
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                    arrows: false
+                }
             }
         ]
     });
@@ -94,6 +103,15 @@ $(document).ready(function(){
             },
             {
                 breakpoint: 576,
+                settings: {
+                    dots: true,
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                    arrows: false
+                }
+            },
+            {
+                breakpoint: 480,
                 settings: {
                     dots: true,
                     slidesToShow: 1,
