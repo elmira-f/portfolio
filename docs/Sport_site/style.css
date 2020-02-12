@@ -1,0 +1,469 @@
+/* ------------------------------------------------------ */
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body {
+    line-height: 1;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/* ------------------------------------------------------ */
+
+body {
+    background: white;
+    color: white;
+    font-size: 16px;
+    font-family: 'OpenSans-Light', sans-serif;
+}
+.container {
+    max-width: 1170px;
+    margin: 0 auto;
+}
+
+/* ------------------------------------------------------ */
+
+.header {
+    background: url("images/3.jpg") no-repeat 100%;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.header .nav {
+    padding: 30px 0 0 0;
+}
+.header .nav a {
+    color: white;
+}
+.header .nav a.active {
+    color: #f0ff00;
+}
+.header .nav a.nav-link:hover {
+    color: #f0ff00;
+}
+.header .about_trainor {
+    text-align: center;
+    padding: 170px 0;
+}
+.header h1 {
+
+
+    font-weight: bold;
+    font-size: 50px;
+    color: #f0ff00;
+}
+.header h2 {
+    margin: 40px 0;
+    font-size: 34px;
+    color: white;
+}
+.header a.yellow_btn {
+    font-size: 20px;
+    color: white;
+    padding: 10px 15px;
+    border: 1px solid white;
+}
+.header a.yellow_btn:hover {
+    text-decoration: none;
+    color: #f0ff00;
+    background: rgba(221, 255, 0, 0.2);
+    border: 1px solid #f0ff00;
+    opacity: 1;
+    -webkit-box-shadow: 0px 0px 20px rgba(221, 255, 0, 0.8);
+    -moz-box-shadow: 0px 0px 20px rgba(221, 255, 0, 0.8);
+    box-shadow: 0px 0px 20px rgba(221, 255, 0, 0.8);
+}
+/* ------------------------------------------------------ */
+
+.first_words {
+    background-color: #f0ff00;
+}
+.first_words p,
+.second_words p,
+.third_words p,
+.how_to_do p {
+    padding: 40px 0;
+    color: white;
+    font-size: 25px;
+    line-height: 35px;
+    font-style: italic;
+}
+.first_words p span {
+    color: black;
+    font-style: normal;
+}
+/* ------------------------------------------------------ */
+
+.about_me {
+    background: url("images/10.jpg") no-repeat 100%;
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+}
+.about_me:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+.about_me .about_myself {
+    padding: 120px 0 120px 20px;
+}
+.about_me .about_myself h2{
+    font-size: 35px;
+    font-weight: bold;
+}
+.about_me .about_myself h2 span {
+    color: #f0ff00;
+}
+.about_me .about_myself p {
+    padding: 25px 0;
+    font-size: 14px;
+    line-height: 25px;
+}
+.about_me .about_myself ul.social_links {
+    display: flex;
+    justify-content: center;
+}
+.about_me .about_myself ul.social_links a {
+    color: white;
+    font-size: 24px;
+    padding: 10px;
+}
+.about_me .about_myself ul.social_links a:hover {
+    color: #f0ff00;
+}
+/* ------------------------------------------------------ */
+
+.second_words {
+    background-color: black;
+}
+.second_words p span {
+    color: #f0ff00;
+    font-style: normal;
+}
+
+/* ------------------------------------------------------ */
+
+.my_achievements {
+    background: url("images/4.jpg") no-repeat 100%;
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+}
+.my_achievements:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+.my_achievements .my_experience {
+    padding: 150px 0 50px 0;
+}
+.my_achievements .my_experience p.title {
+    font-size: 35px;
+    font-weight: bold;
+    z-index: 5;
+}
+.my_achievements .three_columns{
+    padding: 50px 0 150px 0;
+}
+.my_achievements .three_columns .my_column {
+    padding: 10px;
+    margin: 10px;
+    opacity: 1;
+    -webkit-box-shadow: 0px 0px 20px rgba(221, 255, 0, 0.8);
+    -moz-box-shadow: 0px 0px 20px rgba(221, 255, 0, 0.8);
+    box-shadow: 0px 0px 20px rgba(221, 255, 0, 0.8);
+}
+.my_achievements .three_columns p.number {
+    padding: 0 0 20px 0;
+    color: #f0ff00;
+    font-weight: bold;
+    font-size: 40px;
+}
+.my_achievements .three_columns .my_column p.italy {
+    font-style: italic;
+    font-size: 18px;
+}
+/* ------------------------------------------------------ */
+
+.third_words {
+    background-color: black;
+}
+.third_words p span,
+.how_to_do p span {
+    color: #f0ff00;
+    font-style: normal;
+}
+.third_words form {
+    margin: 80px 0 100px 0;
+}
+.third_words form label {
+    font-size: 35px;
+    margin: 10px 10px 10px 0;
+}
+.third_words form input {
+    margin: 10px;
+    font-size: 30px;
+    color: white;
+    outline: none;
+    background-color: transparent;
+    border: none;
+    padding: 10px;
+    border-bottom: 2px solid white;
+    caret-color: white;
+}
+.third_words form input:hover {
+    border-bottom: 2px solid #f0ff00;
+}
+.third_words form button {
+    background-color: transparent;
+    color: white;
+    font-size: 30px;
+    padding: 10px;
+    margin: 30px 0 0;
+}
+
+.third_words form button:hover {
+    text-decoration: none;
+    color: #f0ff00;
+    background: rgba(221, 255, 0, 0.2);
+    border: 1px solid #f0ff00;
+    padding: 11px;
+    opacity: 1;
+    -webkit-box-shadow: 0px 0px 20px rgba(221, 255, 0, 0.8);
+    -moz-box-shadow: 0px 0px 20px rgba(221, 255, 0, 0.8);
+    box-shadow: 0px 0px 20px rgba(221, 255, 0, 0.8);
+}
+
+/* ------------------------------------------------------ */
+
+.how_to_do {
+    background-color: black;
+}
+
+.how_to_do .about_exercises p {
+    font-style: normal;
+    font-size: 18px;
+}
+.how_to_do .about_exercises p.name_exercise {
+    font-size: 24px;
+}
+
+/* ------------------------------------------------------ */
+
+.gallery .my_photo {
+    overflow: hidden;
+    padding: 0;
+    height: 300px;
+}
+
+.gallery .my_photo img {
+    width: 100%;
+    transition: 1s;
+}
+
+.gallery .my_photo:hover {
+    overflow: visible;
+}
+.gallery .my_photo:hover img {
+    position: relative;
+    z-index: 5;
+    transform: scale(1.5);
+}
+
+/* ------------------------------------------------------ */
+
+.contacts {
+    background: url("images/9.jpg") no-repeat 100%;
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+    color: black;
+}
+.contacts:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(221, 255, 0, 0.7);
+}
+.contacts .contact_here {
+    padding: 100px 0;
+}
+.contacts .my_contacts p {
+    padding: 30px 0;
+    font-size: 25px;
+    line-height: 35px;
+}
+.contacts .my_contacts p.short_info {
+    font-size: 24px;
+}
+.contacts .my_contacts p.name_contact {
+    font-weight: bold;
+}
+.contacts form label {
+    font-size: 30px;
+    margin: 10px 10px 10px 0;
+}
+.contacts form input,
+.contacts form textarea {
+    margin: 10px;
+    font-size: 30px;
+    color: black;
+    outline: none;
+    background-color: transparent;
+    border: none;
+    padding: 10px;
+    border-bottom: 2px solid black;
+    caret-color: black;
+}
+.contacts form textarea {
+    border: 2px solid black;
+    margin: 10px 0 0 0;
+}
+.contacts form input:hover {
+    border-bottom: 2px solid #f0ff00;
+}
+.contacts .contact_here form button {
+    background-color: transparent;
+    color: black;
+    font-size: 30px;
+    padding: 10px;
+    margin: 30px 0 0;
+    border: 2px solid black;
+}
+.contacts .contact_here form button:hover {
+    text-decoration: none;
+    color: #f0ff00;
+    background: rgba(0, 0, 0, 0.5);
+    border: 1px solid #f0ff00;
+    opacity: 1;
+    padding: 11px;
+    -webkit-box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.8);
+    -moz-box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.8);
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.8);
+}
+
+/* ------------------------------------------------------ */
+
+.footer {
+    background-color: black;
+    border-top: 1px solid #f0ff00;
+}
+.footer p,
+.footer ul {
+    margin: 10px 0;
+}
+.footer ul {
+    display: flex;
+}
+.footer ul li a {
+    color: white;
+    padding: 5px;
+}
+.footer ul li a:hover {
+    color: #f0ff00;
+}
+/* ------------------------------------------------------ */
+@media (min-width: 992px) {
+    .header .about_trainor {
+        padding: 300px 0;
+    }
+    .header h1 {
+        font-size: 60px;
+    }
+    .header h2 {
+        margin: 50px 0;
+        font-size: 44px;
+    }
+    .header a.yellow_btn {
+        font-size: 30px;
+        padding: 20px 35px;
+    }
+    .first_words p,
+    .second_words p,
+    .third_words p,
+    .how_to_do p,
+    .contacts .my_contacts p {
+        font-size: 35px;
+    }
+
+    .about_me .about_myself {
+        padding: 150px 0 150px 20px;
+    }
+    .about_me .about_myself h2{
+        font-size: 48px;
+    }
+    .about_me .about_myself p {
+        font-size: 18px;
+    }
+    .about_me .about_myself ul.social_links a {
+        font-size: 28px;
+    }
+
+
+    .my_achievements .my_experience p.title {
+        font-size: 48px;
+    }
+    .my_achievements .three_columns p.number {
+        font-size: 60px;
+    }
+    .my_achievements .three_columns .my_column p.italy {
+        font-style: italic;
+        font-size: 22px;
+    }
+
+
+    .third_words form button {
+        margin: 0 0 0 20px;
+    }
+
+
+
+
+}
