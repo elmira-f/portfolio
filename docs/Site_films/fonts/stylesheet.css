@@ -1,0 +1,65 @@
+@font-face {
+	font-family: 'Proxima Nova Rg';
+	src: url('ProximaNova-Bold.eot');
+	src: url('ProximaNova-Bold.eot?#iefix') format('embedded-opentype'),
+	url('ProximaNova-Bold.woff2') format('woff2'),
+	url('ProximaNova-Bold.woff') format('woff'),
+	url('ProximaNova-Bold.ttf') format('truetype');
+	font-weight: bold;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Roboto';
+	src: url('Roboto-Bold.eot');
+	src: url('Roboto-Bold.eot?#iefix') format('embedded-opentype'),
+	url('Roboto-Bold.woff2') format('woff2'),
+	url('Roboto-Bold.woff') format('woff'),
+	url('Roboto-Bold.ttf') format('truetype');
+	font-weight: bold;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Roboto Condensed';
+	src: url('RobotoCondensed-BoldItalic.eot');
+	src: url('RobotoCondensed-BoldItalic.eot?#iefix') format('embedded-opentype'),
+	url('RobotoCondensed-BoldItalic.woff2') format('woff2'),
+	url('RobotoCondensed-BoldItalic.woff') format('woff'),
+	url('RobotoCondensed-BoldItalic.ttf') format('truetype');
+	font-weight: bold;
+	font-style: italic;
+}
+
+@font-face {
+	font-family: 'Roboto Condensed';
+	src: url('RobotoCondensed-Bold.eot');
+	src: url('RobotoCondensed-Bold.eot?#iefix') format('embedded-opentype'),
+	url('RobotoCondensed-Bold.woff2') format('woff2'),
+	url('RobotoCondensed-Bold.woff') format('woff'),
+	url('RobotoCondensed-Bold.ttf') format('truetype');
+	font-weight: bold;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Roboto';
+	src: url('Roboto-Regular.eot');
+	src: url('Roboto-Regular.eot?#iefix') format('embedded-opentype'),
+	url('Roboto-Regular.woff2') format('woff2'),
+	url('Roboto-Regular.woff') format('woff'),
+	url('Roboto-Regular.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Roboto Condensed';
+	src: url('RobotoCondensed-Italic.eot');
+	src: url('RobotoCondensed-Italic.eot?#iefix') format('embedded-opentype'),
+	url('RobotoCondensed-Italic.woff2') format('woff2'),
+	url('RobotoCondensed-Italic.woff') format('woff'),
+	url('RobotoCondensed-Italic.ttf') format('truetype');
+	font-weight: normal;
+	font-style: italic;
+}
